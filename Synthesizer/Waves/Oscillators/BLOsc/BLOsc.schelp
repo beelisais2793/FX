@@ -1,0 +1,67 @@
+TITLE:: BLOsc
+summary:: Band Limited Oscillator
+categories:: UGens>Generators>Deterministic
+
+DESCRIPTION::
+Band Limited Oscillator based on Peter Pabon's algorithm.
+
+
+CLASSMETHODS::
+
+METHOD:: ar, kr
+
+ARGUMENT:: freq
+Fundamental frequency in Hertz.
+
+ARGUMENT:: loHarmonics
+The lowest harmonic index (starting from 1). Only integer value can be given.
+
+ARGUMENT:: numHarmonics
+The total number of harmonics. Only integer value can be given.
+
+ARGUMENT:: slope
+The slope of spectrum. Should be > 0.
+< 1 : The lower the harmonics, the higher the amplitude.
+= 1 : Flat spectrum.
+> 1 : The higher the harmonics, the higher the amplitude.
+
+ARGUMENT:: evenOddRatio
+The amplitude ratio of even number harmonics to odd number harmonics. Should fall between 0 and 1.
+The lower the value, the more square-wave like sound comes out.
+
+ARGUMENT:: mul
+Output will be multiplied by this value.
+
+ARGUMENT:: add
+Output will be added to this value.
+
+
+EXAMPLES::
+
+code::
+(
+~openAnalyzer = {
+var window, func;
+window = Window("Analyzer", Rect(100, 100, 511, 300));
+func = FreqScopeView(window, window.view.bounds);
+func.active_(true);
+func.freqMode_(1); //log scale
+window.onClose_({ func.kill });
+window.front;
+}.value
+)
+
+// Frequency Modulation
+
+{BLOsc.ar(440.0 + SinOsc.ar(MouseX.kr(1,220), mul:MouseY.kr(1,110)), 1, 9, 0.8, 1, mul:0.5)}.play;
+
+// Slope Modulation
+
+{BLOsc.ar(440.0, 1, 9, SinOsc.ar(MouseX.kr(1,220), mul:MouseY.kr(0,0.9), add:1), 1, mul:0.5)}.play;
+
+// Even to Odd Ratio Modulation
+
+{BLOsc.ar(440.0, 1, 9, 0.8, SinOsc.ar(MouseX.kr(1,220), mul:MouseY.kr(0,0.5), add:0.5), mul:0.5)}.play;
+
+
+::

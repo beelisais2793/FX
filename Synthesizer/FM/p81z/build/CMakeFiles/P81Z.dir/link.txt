@@ -1,0 +1,2 @@
+/usr/bin/ar qc libP81Z.a CMakeFiles/P81Z.dir/sources/FMArrangement.cpp.o CMakeFiles/P81Z.dir/sources/FMOperator.cpp.o CMakeFiles/P81Z.dir/sources/FMPatch.cpp.o CMakeFiles/P81Z.dir/sources/FMSynth.cpp.o CMakeFiles/P81Z.dir/sources/TX81Z/TX81Z_common.cpp.o CMakeFiles/P81Z.dir/sources/TX81Z/TX81Z_envelope.cpp.o CMakeFiles/P81Z.dir/sources/TX81Z/TX81Z_extra.cpp.o CMakeFiles/P81Z.dir/sources/TX81Z/TX81Z_oscillator.cpp.o CMakeFiles/P81Z.dir/sources/TX81Z/TX81Z_output_filter.cpp.o
+/usr/bin/ranlib libP81Z.a

@@ -1,0 +1,276 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%!TEX root = 2022-nono-re.tex
+%-------------------------------- PACKAGES AND OTHER DOCUMENT CONFIGURATIONS ---
+\documentclass[
+	a4paper,
+	twocolumn,
+	twoside,
+	%openright
+]{article}
+\usepackage[
+	top=20mm,
+	bottom=25mm,
+	textwidth=17.2cm,
+	columnsep=0.8cm,
+	bindingoffset=1cm,
+	showframe
+]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[\mylanguages]{babel}
+\usepackage{csquotes}
+%\usepackage{parskip}
+\usepackage[style=authoryear-ibid,backend=biber]{biblatex}
+\bibliography{includes/bibliography.bib}
+\usepackage{dblfloatfix}
+\usepackage{subfigure}
+\usepackage[subfigure]{tocloft}
+\advance\cftsecnumwidth 0.5em\relax
+\advance\cftsubsecindent 0.5em\relax
+\advance\cftsubsecnumwidth 0.5em\relax
+\usepackage{graphicx}
+\usepackage{wrapfig}
+% \usepackage{epstopdf}
+% \epstopdfsetup{update}
+\usepackage[usenames]{color}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes,
+                through,
+								calc,
+								intersections,
+								backgrounds,
+                positioning}
+\usepackage{tkz-euclide}
+\usepackage{amssymb}
+\usepackage[
+  colorlinks=true,
+  linkcolor=black,
+	anchorcolor=black,
+	citecolor=black,
+	filecolor=black,
+	menucolor=black,
+	runcolor=black,
+	urlcolor=black
+	]{hyperref}
+\usepackage{Alegreya}
+\linespread{1.05}
+\usepackage{
+	fontspec,
+	xltxtra,
+	xunicode
+	}
+\usepackage{
+	xfrac,
+	unicode-math
+	}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setmonofont[
+	Scale=MatchLowercase
+	]{Andale Mono}
+\setmathfont[
+	Scale=MatchLowercase,
+	Scale=1
+	]{Libertinus Math}
+
+\usepackage{microtype}
+
+\usepackage[
+	hang,
+	small,
+	labelfont=bf,
+	up,
+	textfont=it,
+	up
+	]{caption}
+\usepackage{paralist} % For compact item lists
+\usepackage{etoolbox} % Some tools: used for quote environment
+\AtBeginEnvironment{quote}{\small}
+\usepackage{titling} % Customizing the title section
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\Large}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+%------------------------------------------------------------- TITLE SECTION ---
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+\pretitle{\begin{center}\huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{\mytitle \\[0.1cm] \large{\emph{\mysubtitle}}} % Article title
+\author{%
+\textsc{\authorone}\\%
+\normalsize \institutione \\ %
+\normalsize \emailone %
+% activate
+% \and % duplicate these 4 lines if more
+% \textsc{\authortwo} \\%
+% \normalsize \institutiontwo \\ %
+% \normalsize \emailtwo %
+}
+\date{} % Leave empty to omit a date
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{\small Giuseppe SILVI • Canto alla durata} % Custom header text
+\fancyfoot[RO]{\small \today~ • w: \input{includes/words.txt} • c: \input{includes/char.txt} • p:~\thepage} % Custom footer text
+\fancyfoot[LE]{\small p:~\thepage~ • c: \input{includes/char.txt} • w: \input{includes/words.txt} • \today} % Custom footer text
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%	LISTINGS
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\usepackage{listings}
+% lstlistings setup
+\definecolor{gsbg}{rgb}{0.98,0.98,0.98}
+
+\lstset{%
+  aboveskip=10pt,
+	belowskip=5pt,
+  language=C++,
+  numbers=none,%left,%none,
+  tabsize=4,
+  %frame=single,
+  breaklines=true,
+  numberstyle=\tiny\ttfamily,
+  backgroundcolor=\color{gsbg},
+  basicstyle=\footnotesize\ttfamily,
+  %commentstyle=\slshape\color{mylstcmt}, %\itshape,
+  %frameround=tttt,
+  columns=flexible, %fixed,
+  showstringspaces=false,
+  emptylines=2,
+  inputencoding=utf8,
+  extendedchars=true,
+  literate=	{á}{{\'a}}1
+			{à}{{\`a}}1
+			{ä}{{\"a}}1
+			{â}{{\^a}}1
+			{é}{{\'e}}1
+			{è}{{\`e}}1
+			{ë}{{\"e}}1
+			{ê}{{\^e}}1
+			{ï}{{\"i}}1
+			{î}{{\^i}}1
+			{ö}{{\"o}}1
+			{ô}{{\^o}}1
+			{è}{{\`e}}1
+			{ù}{{\`u}}1
+			{û}{{\^u}}1
+			{ç}{{\c{c}}}1
+			{Ç}{{\c{C}}}1,
+  emph={component, declare, environment, import, library, process},
+  emph={[2]ffunction, fconstant, fvariable},
+  emph={[3]button, checkbox, vslider, hslider, nentry, vgroup, hgroup, tgroup, vbargraph, hbargraph, attach},
+  %emphstyle=\color{yotxt}, %\underline, %\bfseries,
+  %morecomment=[s][\color{mylstdoc}]{<mdoc>}{</mdoc>},
+  rulecolor=\color{black}
+}
+
+\usepackage[framemethod=tikz]{mdframed} % Allows defining custom boxed/framed environments
+
+%-------------------------------------------------------------------------------
+%--------------------------------------------------- INFORMATION ENVIRONMENT ---
+%-------------------------------------------------------------------------------
+
+% Usage:
+% \begin{info}[optional title, defaults to "Info:"]
+% 	contents
+% 	\end{info}
+
+\mdfdefinestyle{info}{%
+	topline=false, bottomline=false,
+	leftline=false, rightline=false,
+	nobreak,
+	singleextra={%
+		\fill[black](P-|O)circle[radius=0.4em];
+		\node at(P-|O){\color{white}\scriptsize\bf i};
+		\draw[very thick](P-|O)++(0,-0.8em)--(O);%--(O-|P);
+	}
+}
+
+% Define a custom environment for information
+\newenvironment{info}[1][Info:]{ % Set the default title to "Info:"
+	\medskip
+	\begin{mdframed}[style=info]
+		\footnotesize\noindent{\textbf{#1}}
+}{
+	\end{mdframed}
+}
+
+%-------------------------------------------------------------------------------
+%----------------------------------------------------- BIOGRAFIA ENVIRONMENT ---
+%-------------------------------------------------------------------------------
+
+% Usage:
+% \begin{bio}[optional title, defaults to "Info:"]
+% 	contents
+% 	\end{bio}
+
+\mdfdefinestyle{bio}{%
+	topline=false, bottomline=false,
+	leftline=false, rightline=false,
+	nobreak,
+	singleextra={%
+		\fill[black](P-|O)circle[radius=0.4em];
+		\node at(P-|O){\color{white}\scriptsize\bf b};
+		\draw[very thick](P-|O)++(0,-0.8em)--(O);%--(O-|P);
+	}
+}
+
+% Define a custom environment for information
+\newenvironment{bio}[1][Biografia:]{ % Set the default title to "Info:"
+	\medskip
+	\begin{mdframed}[style=bio]
+		\noindent{\textbf{#1}}
+}{
+	\end{mdframed}
+}
+
+%-------------------------------------------------------------------------------
+%------------------------------------------------------- WARNING ENVIRONMENT ---
+%-------------------------------------------------------------------------------
+
+% Usage:
+% \begin{warn}[optional title, defaults to "Warning:"]
+%	Contents
+% \end{warn}
+
+\mdfdefinestyle{warning}{
+	topline=false, bottomline=false,
+	leftline=false, rightline=false,
+	nobreak,
+	singleextra={%
+		\draw(P-|O)++(-0.5em,0)node(tmp1){};
+		\draw(P-|O)++(0.5em,0)node(tmp2){};
+		\fill[black,rotate around={45:(P-|O)}](tmp1)rectangle(tmp2);
+		\node at(P-|O){\color{white}\scriptsize\bf !};
+		\draw[very thick](P-|O)++(0,-1em)--(O);%--(O-|P);
+	}
+}
+
+% Define a custom environment for warning text
+\newenvironment{warn}[1][Warning:]{ % Set the default warning to "Warning:"
+	\medskip
+	\begin{mdframed}[style=warning]
+		\noindent{\textbf{#1}}
+}{
+	\end{mdframed}
+}
+
+%-------------------------------------------------------------------- ABSTRACT -
+\renewcommand{\maketitlehookd}{%
+\begin{abstract}
+\noindent\input{includes/abstract.txt}
+\end{abstract}
+}
+
+\newcommand{\canto}{\emph{canto}}

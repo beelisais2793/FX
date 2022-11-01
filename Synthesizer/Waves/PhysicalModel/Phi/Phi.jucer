@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="J6LvcO" name="Phi" projectType="guiapp" cppLanguageStandard="latest"
+              displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="J6rtXw" name="Phi">
+    <GROUP id="{6EA973C7-AFCB-9962-43A0-B724ACFC7C17}" name="Source">
+      <GROUP id="{34C086C5-FA82-E1D8-AE0D-3FBB5624DB98}" name="resources">
+        <GROUP id="{4721DD4A-B540-8EE5-B824-EE9B13CEEBCE}" name="svg">
+          <FILE id="gopQYq" name="Speaker_Icon.svg" compile="0" resource="1"
+                file="Source/resources/svg/Speaker_Icon.svg"/>
+        </GROUP>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{0AEC8051-0D68-DE0B-116C-A216490944C2}" name="src">
+      <GROUP id="{F11C30C8-B067-140A-9DB3-E55CC73BA1AF}" name="modules">
+        <GROUP id="{0B654586-A950-E2ED-3125-442650756008}" name="Gain">
+          <FILE id="tDgUvC" name="GainProcessor.h" compile="0" resource="0" file="Source/src/modules/Gain/GainProcessor.h"/>
+          <FILE id="H11Pgd" name="GainUI.h" compile="0" resource="0" file="Source/src/modules/Gain/GainUI.h"/>
+        </GROUP>
+        <GROUP id="{F098D998-BB79-BB43-D015-259BA2A784A0}" name="Impulse">
+          <FILE id="LWlIT3" name="ImpulseProcessor.h" compile="0" resource="0"
+                file="Source/src/modules/Impulse/ImpulseProcessor.h"/>
+          <FILE id="JHHaue" name="ImpulseUI.h" compile="0" resource="0" file="Source/src/modules/Impulse/ImpulseUI.h"/>
+        </GROUP>
+        <GROUP id="{E13C73A8-5B69-3D24-43CB-CB8950CF9DFC}" name="Output">
+          <FILE id="uekIeJ" name="OutputProcessor.h" compile="0" resource="0"
+                file="Source/src/modules/Output/OutputProcessor.h"/>
+          <FILE id="CGqaDm" name="OutputUI.h" compile="0" resource="0" file="Source/src/modules/Output/OutputUI.h"/>
+        </GROUP>
+        <GROUP id="{126D45FA-CBCE-F59D-DAD3-1DF376CA6BFF}" name="String">
+          <FILE id="O1ys42" name="StringProcessor.h" compile="0" resource="0"
+                file="Source/src/modules/String/StringProcessor.h"/>
+          <FILE id="o5O0WA" name="StringUI.h" compile="0" resource="0" file="Source/src/modules/String/StringUI.h"/>
+        </GROUP>
+        <FILE id="zBfsIA" name="Modules.h" compile="0" resource="0" file="Source/src/modules/Modules.h"/>
+      </GROUP>
+      <GROUP id="{43548976-3311-21A9-2FFB-B897874B39F7}" name="ui">
+        <FILE id="Ej3A5L" name="PhiDial.cpp" compile="1" resource="0" file="Source/src/ui/PhiDial.cpp"/>
+        <FILE id="Gk4wPv" name="PhiDial.h" compile="0" resource="0" file="Source/src/ui/PhiDial.h"/>
+        <FILE id="gfqSyR" name="PhiSliderButton.cpp" compile="1" resource="0"
+              file="Source/src/ui/PhiSliderButton.cpp"/>
+        <FILE id="DEOj3t" name="PhiSliderButton.h" compile="0" resource="0"
+              file="Source/src/ui/PhiSliderButton.h"/>
+        <FILE id="AG5mPg" name="PhiToggleButton.h" compile="0" resource="0"
+              file="Source/src/ui/PhiToggleButton.h"/>
+      </GROUP>
+      <FILE id="B1b1AK" name="AudioEngine.cpp" compile="1" resource="0" file="Source/src/AudioEngine.cpp"/>
+      <FILE id="CRK48Q" name="AudioEngine.h" compile="0" resource="0" file="Source/src/AudioEngine.h"/>
+      <FILE id="PyFuKJ" name="Connections.cpp" compile="1" resource="0" file="Source/src/Connections.cpp"/>
+      <FILE id="PtnFYM" name="Connections.h" compile="0" resource="0" file="Source/src/Connections.h"/>
+      <FILE id="PwNvq1" name="DSPUtils.h" compile="0" resource="0" file="Source/src/DSPUtils.h"/>
+      <FILE id="OaKC3c" name="Main.cpp" compile="1" resource="0" file="Source/src/Main.cpp"/>
+      <FILE id="U6GVYL" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/src/MainComponent.cpp"/>
+      <FILE id="lIrodI" name="MainComponent.h" compile="0" resource="0" file="Source/src/MainComponent.h"/>
+      <FILE id="GpUOZS" name="MainPatcher.cpp" compile="1" resource="0" file="Source/src/MainPatcher.cpp"/>
+      <FILE id="TuDGOh" name="MainPatcher.h" compile="0" resource="0" file="Source/src/MainPatcher.h"/>
+      <FILE id="GMHh8F" name="ModuleBox.cpp" compile="1" resource="0" file="Source/src/ModuleBox.cpp"/>
+      <FILE id="hFAgba" name="ModuleBox.h" compile="0" resource="0" file="Source/src/ModuleBox.h"/>
+      <FILE id="ugqUci" name="ModuleProcessor.h" compile="0" resource="0"
+            file="Source/src/ModuleProcessor.h"/>
+      <FILE id="Myr0Vi" name="ModuleUI.cpp" compile="1" resource="0" file="Source/src/ModuleUI.cpp"/>
+      <FILE id="zOtgrK" name="ModuleUI.h" compile="0" resource="0" file="Source/src/ModuleUI.h"/>
+      <FILE id="ohA5ti" name="Plug.cpp" compile="1" resource="0" file="Source/src/Plug.cpp"/>
+      <FILE id="BEBfoh" name="Plug.h" compile="0" resource="0" file="Source/src/Plug.h"/>
+      <FILE id="lmAW7m" name="PhiColours.h" compile="0" resource="0" file="Source/src/PhiColours.h"/>
+      <FILE id="EfB9CX" name="PlugHandler.h" compile="0" resource="0" file="Source/src/PlugHandler.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_blocks_basics" path="../../../../Applications/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_blocks_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>

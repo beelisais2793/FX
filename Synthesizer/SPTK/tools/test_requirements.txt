@@ -1,0 +1,9 @@
+black
+breathe
+clang-format
+cpplint
+docutils>=0.14,<0.18
+flake8
+isort
+sphinx
+sphinx-rtd-theme

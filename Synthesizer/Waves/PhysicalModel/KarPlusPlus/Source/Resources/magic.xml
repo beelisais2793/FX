@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="black" border-color="silver" display="contents"/>
+        <nomargin margin="0" padding="0" border="0">
+          <media/>
+        </nomargin>
+        <group margin="5" padding="5" border="2" flex-direction="column"/>
+        <parameter background-color="FFA97A81"/>
+        <harmonic background-color="8D1F2027" slider-background="380C0C88" slider-track="9F0C0C88"/>
+        <panel background-color="FF4E505F"/>
+        <freqSlider padding="0" margin="0" background-color="00000000" border="0"
+                    slider-track="FF0C44B8" lookAndFeel="FoleysFinest" rotary-fill="FF3372F3">
+          <media/>
+        </freqSlider>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below" lookAndFeel="FoleysFinest"
+                rotary-fill="FF219DD2" background-color="FF474959"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0" plot-fill-color="00000000"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" display="flexbox" flex-direction="column" background-color="FF343541"
+        resizable="1" resize-corner="1" width="550" height="400" min-width="550"
+        min-height="400" border="0" padding="0" margin="0" radius="0">
+    <View background-color="FF343541" margin="0" padding="0" radius="">
+      <View width="" min-width="0.0" max-width="120" flex-direction="column">
+        <ListBox margin="0" padding="0" list-box-model="presets"/>
+        <TextButton max-height="40" margin="0" padding="1" onClick="save-preset"
+                    text="Save"/>
+        <MidiLearn max-height="35" margin="0"/>
+      </View>
+      <View display="flexbox" flex-direction="row" caption="Oscillators"
+            caption-color="FFFFFFFF" class="panel" caption-placement="centred-top">
+        <View caption="f0" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="auto" lookAndFeel="FoleysFinest" parameter="osc0"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune0" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+        <View caption="f1" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="linear-vertical" lookAndFeel="FoleysFinest" parameter="osc1"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune1" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+        <View caption="f2" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="linear-vertical" lookAndFeel="FoleysFinest" parameter="osc2"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune2" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+        <View caption="f3" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="linear-vertical" lookAndFeel="FoleysFinest" parameter="osc3"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune3" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+        <View caption="f4" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="linear-vertical" lookAndFeel="FoleysFinest" parameter="osc4"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune4" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+        <View caption="f5" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="linear-vertical" lookAndFeel="FoleysFinest" parameter="osc5"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune5" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+        <View caption="f6" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="linear-vertical" lookAndFeel="FoleysFinest" parameter="osc6"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune6" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+        <View caption="f7" display="flexbox" flex-direction="column" class="harmonic">
+          <Slider slider-type="linear-vertical" lookAndFeel="FoleysFinest" parameter="osc7"
+                  slider-textbox="no-textbox" flex-grow="5" class="freqSlider"/>
+          <Slider parameter="detune7" slider-type="rotary" slider-textbox="no-textbox"
+                  lookAndFeel="LookAndFeel_V1" class="freqSlider"/>
+        </View>
+      </View>
+      <View flex-direction="column" display="flexbox" margin="0" padding="0"
+            background-color="FF343541" radius="0" border="0">
+        <View margin="0" padding="0" background-color="FF343541" radius="0">
+          <View background-color="black" throttle="30" display="contents" flex-grow="4"
+                background-image="Logo_png" background-alpha="0.2">
+            <Plot plot-color="FFA60000" plot-fill-color="50A60000" source="analyser"
+                  plot-decay="0.0" class="nomargin" background-color="00000000"/>
+            <Plot source="waveform" plot-decay="0.85" plot-color="FFCA8615" plot-fill-color="00000000"
+                  class="nomargin" background-color="00000000"/>
+          </View>
+          <Meter flex-grow="0.6" source="output" padding="5" radius="5" bar-background-color="FF1E1415"
+                 class="panel" background-color="FF4E505F" outline-color="00000000"/>
+        </View>
+        <View margin="0" padding="0" background-color="FF343541" radius="0">
+          <Slider parameter="attack" caption="Attack" class="panel" slider-type="rotary"/>
+          <Slider parameter="decay" caption="Decay" class="panel" slider-type="rotary"/>
+          <Slider parameter="sustain" caption="Sustain" class="panel" slider-type="rotary"/>
+          <Slider parameter="release" caption="Release" class="panel" slider-type="rotary"/>
+          <Slider parameter="gain" caption="Gain" class="panel" border="0" slider-type="rotary"/>
+        </View>
+      </View>
+    </View>
+    <KeyboardComponent flex-grow="0.7" margin="" padding="" border=""/>
+  </View>
+</magic>

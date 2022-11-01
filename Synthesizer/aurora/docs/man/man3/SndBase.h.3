@@ -1,0 +1,85 @@
+.TH "SndBase.h" 3 "Sun May 29 2022" "Version 0.1" "Aurora" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SndBase.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <cstdint>\fP
+.br
+\fC#include <functional>\fP
+.br
+\fC#include <iostream>\fP
+.br
+\fC#include <numeric>\fP
+.br
+\fC#include <vector>\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAurora::SndBase< S >\fP"
+.br
+.ti -1c
+.RI "class \fBAurora::Buff< S >\fP"
+.br
+.ti -1c
+.RI "class \fBAurora::BinOp< S, OP >\fP"
+.br
+.ti -1c
+.RI "class \fBAurora::Mix< S >\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI "namespace \fBAurora\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBM_PI\fP   3\&.14159265358979323846"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "template<typename S > S \fBAurora::linear_interp\fP (double pos, const std::vector< S > &t)"
+.br
+.ti -1c
+.RI "template<typename S > S \fBAurora::cubic_interp\fP (double pos, const std::vector< S > &t)"
+.br
+.ti -1c
+.RI "template<typename S > S \fBAurora::linear_interp_lim\fP (double pos, const std::vector< S > &t)"
+.br
+.ti -1c
+.RI "template<typename S > S \fBAurora::cubic_interp_lim\fP (double pos, const std::vector< S > &t)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "const int \fBAurora::def_vsize\fP = 64"
+.br
+.ti -1c
+.RI "const double \fBAurora::def_sr\fP = 44100\&."
+.br
+.ti -1c
+.RI "const double \fBAurora::twopi\fP = 2 * \fBM_PI\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define M_PI   3\&.14159265358979323846"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Aurora from the source code\&.

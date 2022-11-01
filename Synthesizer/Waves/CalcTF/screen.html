@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+<script type="text/javascript" src="MathJax/MathJax.js?config=AM_HTMLorMML"></script>
+</head>
+
+<body>
+    <div id="div_poly">
+        Display Works!!!        
+    </div>    
+</body>
+<script type="text/javascript">
+    (function () {
+        //var script = document.createElement("script");
+        //script.type = "text/javascript";
+        //script.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+        //script.src  = "MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+        //document.getElementsByTagName("head")[0].appendChild(script);
+        //<script type="text/javascript" src="MathJax/MathJax.js?config=AM_HTMLorMML">
+
+        function setEquation(equation){
+            document.getElementById("div_poly").innerHTML = equation;
+        }
+
+        //<!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
+        document.addEventListener("DOMContentLoaded", function () {
+			//if QWebChannel === undefined return;
+            new QWebChannel(qt.webChannelTransport, function (channel) {
+                var jshelper = channel.objects.jshelper;
+                // do what you gotta do
+                jshelper.showEquation.connect(function(equation) {
+                       setEquation("`" + equation + "`");
+                       //Tell mathJax to check the page for equations
+                       MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+                    });
+
+                //setEquation("`W(s) = (a1 * s ^3 + a2 * s ^ 2 + a3 * s + a4)/(b1 * s ^3 + b2 * s ^ 2 + b3 * s + b4)`");
+            });
+        });
+
+        //setEquation("`W(s) = (a1 * s ^3 + a2 * s ^ 2 + a3 * s + a4)/(b1 * s ^3 + b2 * s ^ 2 + b3 * s + b4)`")
+    })();
+</script>
+</html>

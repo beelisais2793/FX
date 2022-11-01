@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>StringSynthesisKarplus - AU.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>StringSynthesisKarplus - All.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>StringSynthesisKarplus - Shared Code.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>StringSynthesisKarplus - Standalone Plugin.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>StringSynthesisKarplus - VST.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>072D733361737084C560FBD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2B1957AEA3C0AEAE7FC57847</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3FC2A2629D0678BCD30CAC4C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>526214005C93012A45A3DBFE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53A121CADF57277B35CE47F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

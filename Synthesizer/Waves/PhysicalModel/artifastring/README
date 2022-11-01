@@ -1,0 +1,22 @@
+Artifastring ("artificial fast string") is a highly optimized
+physical simulation of string quartet instruments (violins,
+violas, and cellos) for sound synthesis.
+
+Project webpage, description:
+http://percival-music.ca/artifastring/
+
+
+To build from git, run
+  ./autogen.sh
+
+To build from a tarball, or to continue a build from git, run
+configure as normal, although I recommend a build dir:
+  mkdir build
+  cd build
+  ../configure
+To build with debug and swig python bindings, use:
+  ../configure --enable-debug --with-swig
+
+To build docs, do
+  make docs
+

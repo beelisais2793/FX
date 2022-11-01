@@ -1,0 +1,15 @@
+/* --------------------------------------------------------------
+ * Configures prerequisits for this library
+ * --------------------------------------------------------------*/
+
+#ifndef @LIBRARY_NAME@_CONFIG_HPP
+#   define @LIBRARY_NAME@_CONFIG_HPP
+
+#   include "kiss_fft/export.hpp"
+
+#cmakedefine KISS_FFT_FIXED_POINT
+#cmakedefine KISS_FFT_USE_SIMD
+#cmakedefine KISS_FFT_USE_ALLOCA @KISS_FFT_USE_ALLOCA@
+#define kiss_fft_scalar @KISS_FFT_DATATYPE@
+
+#endif /* @LIBRARY_NAME@_CONFIG_HPP */

@@ -1,0 +1,4 @@
+build/obj/Scheduler.o: src/Scheduler.cpp Gamma/Scheduler.h Gamma/Node.h \
+ Gamma/Print.h Gamma/Constants.h Gamma/pstdint.h Gamma/scl.h \
+ Gamma/Config.h Gamma/Conversion.h Gamma/Thread.h Gamma/SoundFile.h \
+ Gamma/mem.h Gamma/Access.h Gamma/std_swap.h Gamma/Timer.h

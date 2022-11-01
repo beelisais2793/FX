@@ -1,0 +1,30 @@
+//-----------------FM METAL----------------//
+//FM engine tailored to produce metallic percussions such as bells, hats or distorted snares
+//--------------PARAMETERS:
+//  1 - Pitch : Carrier's pitch
+//  2 - Mod Amount : Carrier's modulation amount
+//  3 - Ratio 1 : First modulator's frequency to carrier's frequency ratio
+//  4 - Ratio 2 : Second modulator's frequency to carrier's frequency ratio
+//  5 - Ratio 3 : Third modulator's frequency to carrier's frequency ratio
+//  6 - Feedback : First modulator's FM feedback
+//  7 - Mod Attack : Carrier's modulation envelope linear attack
+//  8 - Mod Decay : Carrier's modulation envelope linear decay
+
+wt = library("wavetables.lib");
+fm = library("fm.lib");
+volenv = library("volenv.lib");
+import("volenvUI.dsp");
+import("utilities.lib");
+
+fmmetal(pitch, modAmt,
+        r1, r2, r3, fb,
+        modAtk, modDec, t) = (mod1(pitch,r1,fb) : mod2(pitch, r2)),
+                              mod3(pitch, r3)
+                              :> *(t:modEnv) : fm.carrier(pitch, modAmt)
+                              * (t:volEnv) : clickSmooth
+with{
+    mod1(pitch, r1, fb) = fm.modulator(pitch, r1, fb) : + ~ (fb*_);
+    mod2(pitch, r2) = fm.modulator(pitch, r2);
+    mod3(pitch, r3) = fm.modulator(pitch, r3);
+    modEnv = volenv.are(modAtk,modDec * 2);
+};

@@ -1,0 +1,31 @@
+gcc -o convolve convolve.c -lm
+gcc -o frames frames.c -lm
+gcc -o pitch pitch.c -lm
+gcc -o reverse reverse.c -lm
+
+convolve Spechs22.snd Synthsiz.snd testCONV.snd
+pitch Spechs22.snd
+
+cd fft
+gcc -o fft fft.c -lm 
+gcc -o notchfft notchfft.c -lm
+gcc -o peaksfft peaksfft.c -lm
+gcc -o subband subband.c -lm 
+gcc -o vocod vocod.c -lm
+
+fft ../Spechs22.snd temp.fft
+fft ../Music22.snd temp2.fft
+vocod temp2.fft temp.fft temp3.fft
+fft temp3.fft vocod.snd
+rm *.fft
+
+cd ..
+cd lpc
+gcc -o fitlpc fitlpc.c -lm
+gcc -o float2wv float2wv.c -lm 
+gcc -o lpcresyn lpcresyn.c -lm
+gcc -o wv2float wv2float.c -lm
+lpcspech.SGI
+
+cd ..
+

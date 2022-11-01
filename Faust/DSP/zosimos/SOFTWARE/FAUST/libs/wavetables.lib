@@ -1,0 +1,29 @@
+//-----------------wavetables.lib----------------//
+//Library containing hard-synced versions of classic oscillators.
+
+
+import("stdfaust.lib");
+
+//-------------Useful constants-------------//
+
+//two PI
+twopi = 2.0 * ma.PI;
+
+//tablesize
+ts = 1<<16;
+
+//-------------Wavetable oscillators with phase sync-------------//
+
+//Triangle
+hstriangle(f, t) = 2.0*abs(2.0 * os.lf_sawpos_reset(f,t)-1)-1;
+
+//Sine
+hssine(f, t) = os.hs_osccos(f,t);
+
+//Square
+hssquare(f, t) = os.hs_osccos(f,t) : ma.signum;
+//PWM version
+hssquarePWM(f, pw, t) = (os.lf_sawpos_reset(f,t)>pw);
+
+//Saw
+hssaw(f,t) = (os.lf_sawpos_reset(f,t)-0.5)*2;

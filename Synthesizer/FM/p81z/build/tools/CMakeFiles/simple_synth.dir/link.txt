@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -fPIC -march=native -mavx2 CMakeFiles/simple_synth.dir/simple_synth.cpp.o -o simple_synth  ../libP81Z.a -ljack 

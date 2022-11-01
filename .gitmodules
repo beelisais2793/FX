@@ -1,0 +1,45 @@
+[submodule "Matlab/Features/matlab_speech_features"]
+	path = Matlab/Features/matlab_speech_features
+	url = https://github.com/jameslyons/matlab_speech_features
+[submodule "Matlab/Features/AudioProcessing-toolbox"]
+	path = Matlab/Features/AudioProcessing-toolbox
+	url = https://github.com/Ryuk17/AudioProcessing-toolbox
+[submodule "Matlab/Features/matlab_feat"]
+	path = Matlab/Features/matlab_feat
+	url = https://github.com/anicolson/matlab_feat
+[submodule "Matlab/Features/signal-recognition"]
+	path = Matlab/Features/signal-recognition
+	url = https://github.com/YesDong/signal-recognition
+[submodule "Matlab/Features/features_extraction"]
+	path = Matlab/Features/features_extraction
+	url = https://github.com/bootphon/features_extraction
+[submodule "Matlab/Features/AudioSignalFingerprinting"]
+	path = Matlab/Features/AudioSignalFingerprinting
+	url = https://github.com/amirta875/AudioSignalFingerprinting
+[submodule "Matlab/Features/matlab_audio_features"]
+	path = Matlab/Features/matlab_audio_features
+	url = https://github.com/lingxiaoyang/matlab_audio_features
+[submodule "Matlab/Features/audiofeatures-lerch"]
+	path = Matlab/Features/audiofeatures-lerch
+	url = https://github.com/jonasmargraf/audiofeatures-lerch
+[submodule "Matlab/Features/audio-analysis"]
+	path = Matlab/Features/audio-analysis
+	url = https://github.com/AlphaZero28/audio-analysis
+[submodule "Matlab/Analyzer/Multi-Stage-Signal-Analyzer"]
+	path = Matlab/Analyzer/Multi-Stage-Signal-Analyzer
+	url = https://github.com/McNibbler/Multi-Stage-Signal-Analyzer
+[submodule "Matlab/Analyzer/HarmonicAnalyzer"]
+	path = Matlab/Analyzer/HarmonicAnalyzer
+	url = https://github.com/tangkk/HarmonicAnalyzer
+[submodule "Matlab/Analyzer/siganalyzer"]
+	path = Matlab/Analyzer/siganalyzer
+	url = https://github.com/santi-pdp/siganalyzer
+[submodule "Matlab/Analyzer/Spectrum-Analyzer-and-Filter-design-tool"]
+	path = Matlab/Analyzer/Spectrum-Analyzer-and-Filter-design-tool
+	url = https://github.com/momegahed/Spectrum-Analyzer-and-Filter-design-tool
+[submodule "Matlab/ACA-Code"]
+	path = Matlab/ACA-Code
+	url = https://github.com/alexanderlerch/ACA-Code
+[submodule "Matlab/Introduction-to-Audio-Analysis---a-MATLAB-approach"]
+	path = Matlab/Introduction-to-Audio-Analysis---a-MATLAB-approach
+	url = https://github.com/pikrakis/Introduction-to-Audio-Analysis---a-MATLAB-approach

@@ -1,0 +1,6 @@
+#ifndef CUDAOSCILLATOR_HU
+#define CUDAOSCILLATOR_HU
+
+int main_CudaOscillator(void);
+
+#endif // CUDAOSCILLATOR_HU

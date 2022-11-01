@@ -1,0 +1,3 @@
+/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables/CMakeFiles/make_tables.dir
+/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables/CMakeFiles/edit_cache.dir
+/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables/CMakeFiles/rebuild_cache.dir

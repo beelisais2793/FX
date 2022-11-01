@@ -1,0 +1,6 @@
+#!/bin/sh
+
+rm -rf build/ CMakeCache.txt CMakeFiles/ cmake_install.cmake Makefile build.ninja rules.ninja Gamma.xcodeproj Gamma.build CMakeScripts CTestTestfile.cmake cmake_log.txt
+rm -rf AlloSystem-build/
+rm -rf doc/html/
+find . \( -name \*.filters -or -name \*.vcxproj -or -name \*.sln \) -delete

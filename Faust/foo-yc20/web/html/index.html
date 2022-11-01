@@ -1,0 +1,116 @@
+<html>
+<head>
+  <title>Foo YC20</title>
+	<link rel="stylesheet" href="foo-yc20.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="foo-yc20.js"></script>
+  <script type="text/javascript">
+    midiSupport.onInputsAvailable = function(list) {
+      var chosen = false;
+      var midiInSelect = document.getElementById('midiInput');
+      midiInSelect.innerHTML = '';
+      for (var i in list) {
+        if (!chosen && /keyboard/i.exec(list[i].name)) {
+          midiSupport.connectInput(list[i]);
+          chosen = list[i];
+        }
+        midiInSelect.appendChild(new Option(list[i].name, i, chosen === list[i], chosen === list[i] ));
+      }
+      if (!chosen && list.length > 0) {
+        midiSupport.connectInput(list[0]);
+        chosen = list[0];
+      }
+      midiInSelect.onchange = function(evt) {
+        var option = this.options[this.selectedIndex];
+        midiSupport.connectInput(list[option.value]);
+      }
+    }
+    $(document).ready(function() {
+      foo_yc20.init('#foo-yc20', midiSupport);
+    });
+  </script>
+  <style>
+body {
+  font-family: 'Open Sans';
+  padding: 0;
+  margin: 0;
+  cellspacing: 0;
+  background-color: #200101;
+  color: #c8a8a8;
+}
+a, a:visited {
+  color: #e1a156;
+}
+#header, #content, #organ, #footer {
+  padding: 10px;
+}
+#header {
+  background-color: #8c1f1f;
+}
+#header .header-text {
+  display: inline;
+  font-weight: bold;
+  font-size: 150%;
+  color: #eee;
+}
+
+#header .header-links {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+#select-midi-input {
+  padding-top: 0.5em;
+}
+
+#footer {
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="header-text">Foo YC20</div>
+    <div class="header-links">
+      <iframe src="https://ghbtns.com/github-btn.html?user=sampov2&repo=foo-yc20&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+      <a href="https://twitter.com/samposampo" class="twitter-follow-button" data-show-count="false">Follow @samposampo</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+  </div>
+
+  <div id="content">
+    <p>The Foo YC20 is an open source implementation of the Yamaha YC-20 combo organ from 1969.
+       Processing for the organ is based on original schematics and measurements from a working specimen. This instrument simulates
+       the circutry as a whole to realisticly reproduce the features and flaws of the real deal.</p>
+  </div>
+  <div id="organ">
+    <div id="foo-yc20"></div>
+    <div id="select-midi-input">
+      <span>Select MIDI input</span>
+      <select id="midiInput">
+        <option>MIDI not available</option>
+      </select>
+    </div>
+  </div>
+  <div id="content">
+    <p>You can play the instrument using your keyboard, a mouse, or with an attached MIDI keyboard. Google Chrome 43+ recommended.</p>
+  </div>
+  <div id="content">
+    <p>DSP for this organ is written in <a href="http://faust.grame.fr/">Faust</a>, which is a functional programming language dedicated for writing DSP.</p>
+    <p>This instrument is also available as a VST plugin for Windows and OS X, and as a standalone client and LV2 plugin for Linux.
+       Source and downloads are available on <a href="https://github.com/sampov2/foo-yc20">github</a>.</p>
+    </p>More info is available on <a href="http://codeforcode.com/blog/2015/3/2/foo-yc20-web">codeforcode.com</a></p>
+  </div>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-16141635-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+</html>

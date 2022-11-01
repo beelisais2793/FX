@@ -1,0 +1,446 @@
+/*
+ * Copyright (c) 2016, fukuroda(https://github.com/fukuroder)
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ * * Redistributions of source code must retain the above copyright notice, this
+ *   list of conditions and the following disclaimer.
+ *
+ * * Redistributions in binary form must reproduce the above copyright notice,
+ *   this list of conditions and the following disclaimer in the documentation
+ *   and/or other materials provided with the distribution.
+ *
+ * * Neither the name of faster_and_better_sin_approx nor the names of its
+ *   contributors may be used to endorse or promote products derived from
+ *   this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+ * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+ * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+// References
+//   https://code.google.com/p/fastapprox/
+/*
+static inline float
+fastersin (float x)
+{
+  static const float fouroverpi = 1.2732395447351627f;
+  static const float fouroverpisq = 0.40528473456935109f;
+  static const float q = 0.77633023248007499f;
+  union { float f; uint32_t i; } p = { 0.22308510060189463f };
+  union { float f; uint32_t i; } vx = { x };
+  uint32_t sign = vx.i & 0x80000000;
+  vx.i &= 0x7FFFFFFF;
+  float qpprox = fouroverpi * x - fouroverpisq * x * vx.f;
+  p.i |= sign;
+  return qpprox * (q + p.f * qpprox);
+}
+*/
+
+#pragma once
+#define M_PI 3.14159265358979323846 
+#include <cstdint>
+
+//
+static inline float remez_sin_float32(float x)
+{
+    const float s1 = 1.2728678435556479f;
+    const float s2 = 0.4051664184092053f;
+    const float s3 = 0.77754742428930464f;
+    union { float f; uint32_t i; } s4 = { 0.22207681739058507f };
+
+    union { float f; uint32_t i; } vx = { x };
+    uint32_t sign = vx.i & 0x80000000;
+    vx.i &= 0x7FFFFFFF;
+
+    float qpprox = x * (s1 - s2 * vx.f);
+
+    s4.i |= sign;
+
+    return qpprox * (s3 + s4.f * qpprox);
+}
+
+//
+static inline double remez_sin_float64(double x)
+{
+    const double s1 = 1.2728678435556479;
+    const double s2 = 0.4051664184092053;
+    const double s3 = 0.77754742428930464;
+    union { double f; uint64_t i; } s4 = { 0.22207681739058507 };
+    
+    union { double f; uint64_t i; } vx = { x };
+    uint64_t sign = vx.i & 0x8000000000000000;
+    vx.i &= 0x7FFFFFFFFFFFFFFF;
+
+    double qpprox = x * (s1 - s2 * vx.f);
+    
+    s4.i |= sign;
+    
+    return qpprox * (s3 + s4.f * qpprox);
+}
+
+//
+static inline double remez_sin_int32(int32_t x)
+{
+    const double s1 = 1.2728678435556479 * M_PI / INT32_MAX;
+    const double s2 = 0.4051664184092053 * M_PI * M_PI / INT32_MAX / INT32_MAX;
+    union { double f; uint64_t i; } s3 = { 0.77754742428930464 };
+    union { double f; uint64_t i; } s4 = { 0.22207681739058507 };
+    
+    uint64_t sign = ((uint64_t)(x & 0x80000000)) << 32;
+    x &= 0x7FFFFFFF;
+    
+    double qpprox = x * (s1 - s2 * x);
+    
+    s3.i |= sign;
+    s4.i |= sign;
+    
+    return qpprox * (s3.f + s4.f * qpprox);
+}
+
+//
+static inline double remez_sin_int64(int64_t x)
+{
+    const double s1 = 1.2728678435556479 * M_PI / INT64_MAX;
+    const double s2 = 0.4051664184092053 * M_PI * M_PI / INT64_MAX / INT64_MAX;
+    union { double f; uint64_t i; } s3 = { 0.77754742428930464 };
+    union { double f; uint64_t i; } s4 = { 0.22207681739058507 };
+    
+    uint64_t sign = x & 0x8000000000000000;
+    x &= 0x7FFFFFFFFFFFFFFF;
+    
+    double qpprox = x * (s1 - s2 * x);
+    
+    s3.i |= sign;
+    s4.i |= sign;
+    
+    return qpprox * (s3.f + s4.f * qpprox);
+}
+
+//
+static inline double remez_cos_int32(int32_t x)
+{
+    return remez_sin_int32(x + 0x40000000);
+}
+
+//
+static inline double remez_cos_int64(int64_t x)
+{
+    return remez_sin_int64(x + 0x4000000000000000);
+}
+
+//
+static inline double remez_tan_int32(int32_t x)
+{
+    return remez_sin_int32(x) / remez_cos_int32(x);
+}
+
+//
+static inline double remez_tan_int64(int64_t x)
+{
+    return remez_sin_int64(x) / remez_cos_int64(x);
+}
+
+
+/*
+ * BLITSineHardSync_oscillator.h
+ *
+ * Copyright (c) 2017, fukuroda (https://github.com/fukuroder)
+ * Released under the MIT license
+ */
+
+#pragma once
+#include <array>
+#include "pluginterfaces/vst/ivstevents.h"
+
+using namespace Steinberg;
+using namespace Steinberg::Vst;
+namespace MyVst {
+    //
+    class BLITSineHardSync_oscillator_note
+    {
+    public:
+        BLITSineHardSync_oscillator_note();
+
+        // ADSR
+        enum ADSR
+        {
+            //
+            Off,
+
+            //
+            On,
+        };
+
+        //
+        ADSR envelope;
+
+        //
+        int32_t t;
+
+        //
+        int32 sampleOffset;
+
+        //
+        double blit;
+
+        //
+        double value;
+
+        //
+        int32_t n;
+
+        //
+        int32_t dt;
+
+        //
+        int32_t note_id;
+
+        //
+        double velocity;
+    };
+
+    //
+    class BLITSineHardSync_oscillator
+    {
+    public:
+        // constructor
+        BLITSineHardSync_oscillator();
+
+        //
+        void setSlave(double value);
+
+        //
+        void trigger(const NoteOnEvent& noteOn, int32 sampleOffset, double srate);
+
+        //
+        void release(const NoteOffEvent& noteOff);
+
+        //
+        bool is_silent();
+
+        //
+        double render();
+
+        //
+        void next();
+
+    protected:
+
+        //
+        static const int _note_no_center = 69;
+
+        //
+        std::array<BLITSineHardSync_oscillator_note, 8> _notes;
+
+        //
+        double _Slave;
+
+        //
+        const double _Leak;
+
+        // Fourier coefficient for sin(2*PI*1*t)
+        double _b1;
+
+        // Fourier coefficient for sin(2*PI*2*t)
+        double _b2;
+
+        // used for BLIT section
+        double _b3;
+
+        //
+        double BLIT(int32_t t, int n)const;
+    };
+} //  namespace
+
+/*
+ * BLITSineHardSync_oscillator.cpp
+ *
+ * Copyright (c) 2017, fukuroda (https://github.com/fukuroder)
+ * Released under the MIT license
+ */
+
+#define _USE_MATH_DEFINES
+#include <math.h>
+#include <algorithm>
+#include "BLITSineHardSync_oscillator.h"
+#include "../remez_approx/remez_approx.h"
+
+namespace MyVst {
+
+    // constructor
+    BLITSineHardSync_oscillator_note::BLITSineHardSync_oscillator_note()
+        :envelope(ADSR::Off)
+        , t(0)
+        , sampleOffset(0)
+        , blit(0.0)
+        , value(0.0)
+        , n(0)
+        , dt(0)
+        , note_id(0)
+        , velocity(0.0)
+    {
+    }
+
+    //
+    void BLITSineHardSync_oscillator::trigger(const NoteOnEvent& noteOn, int32 sampleOffset, double srate)
+    {
+        //
+        auto available_note = std::find_if(
+            _notes.begin(),
+            _notes.end(),
+            [](const BLITSineHardSync_oscillator_note& n) {return n.envelope == BLITSineHardSync_oscillator_note::Off; });
+
+        if (available_note != _notes.end()) {
+            available_note->note_id = noteOn.noteId;
+            available_note->velocity = noteOn.velocity;
+            available_note->envelope = BLITSineHardSync_oscillator_note::On;
+
+            //
+            double freq = 440.0 * (::pow(2.0, (static_cast<double>(noteOn.pitch) - 69) / 12.0));
+            available_note->n = static_cast<int>(srate / 2.0 / freq);
+            available_note->dt = static_cast<int32_t>(0xFFFFFFFFU / srate * freq);
+            available_note->blit = 0.0;
+            available_note->t = INT32_MIN;
+            available_note->value = 0.0;
+        }
+    }
+
+    //
+    void BLITSineHardSync_oscillator::release(const NoteOffEvent& noteOff)
+    {
+        const int32 note_id = noteOff.noteId;
+        auto target_note = std::find_if(
+            _notes.begin(),
+            _notes.end(),
+            [note_id](const BLITSineHardSync_oscillator_note& n) {return n.note_id == note_id; });
+
+        if (target_note != _notes.end()) {
+            //
+            target_note->envelope = BLITSineHardSync_oscillator_note::Off;
+        }
+    }
+
+    bool BLITSineHardSync_oscillator::is_silent()
+    {
+        return std::all_of(
+            _notes.begin(),
+            _notes.end(),
+            [](const BLITSineHardSync_oscillator_note& n) {return n.envelope == BLITSineHardSync_oscillator_note::Off; });
+    }
+
+    // constructor
+    BLITSineHardSync_oscillator::BLITSineHardSync_oscillator()
+        :_Slave(0.0)
+        , _Leak(0.995)
+        , _b1(0.0)
+        , _b2(0.0)
+        , _b3(0.0)
+    {
+        setSlave(1.2);
+    }
+
+    // set slave parameter
+    void BLITSineHardSync_oscillator::setSlave(double value)
+    {
+        _Slave = value;
+        if (value < 1.0 + 1.0e-12)
+        {
+            _b1 = -1.0;
+            _b2 = 0.0;
+            _b3 = 0.0;
+        }
+        else if (value < 2.0 - 1.0e-12)
+        {
+            _b1 = ::sin(M_PI * value) / M_PI * (-1 / (1 + value) - 1 / (1 - value) + 2);
+            _b2 = ::sin(M_PI * value) / M_PI * (-1 / (2 + value) - 1 / (2 - value) + 1);
+            _b3 = -::sin(M_PI * value) / 0xFFFFFFFFU;
+        }
+        else
+        {
+            _b1 = 0.0;
+            _b2 = 1.0;
+            _b3 = 0.0;
+        }
+    }
+
+    //
+    double BLITSineHardSync_oscillator::BLIT(int32_t t, int n)const
+    {
+        double den = remez_sin_int32(t / 2);
+        double num = remez_sin_int32(t / 2 + n * t);
+
+        if (den < -1.0e-12 || 1.0e-12 < den)
+        {
+            return 2.0 * num / den;
+        }
+        else
+        {
+            // apply L'Hopital's rule
+            return 2.0 * (2.0 * n + 1.0);
+        }
+    }
+
+    //
+    double BLITSineHardSync_oscillator::render()
+    {
+        double value = 0.0;
+        for (auto& note : _notes)
+        {
+            if (note.envelope == BLITSineHardSync_oscillator_note::On) {
+                // add
+                value += note.value * note.velocity;
+            }
+        }
+        return value;
+    }
+
+    //
+    void BLITSineHardSync_oscillator::next()
+    {
+        for (auto& note : _notes)
+        {
+            // update t
+            note.t += note.dt;
+
+            if (note.n >= 3)
+            {
+                // update BLIT section(n=3 -> Nyquist limit)
+                note.blit = note.blit * _Leak + (BLIT(note.t, note.n) - 2.0) * note.dt;
+
+                // synthesize value
+                note.value = _b1 * remez_sin_int32(note.t)
+                           + _b2 * remez_sin_int32(2 * note.t)
+                           + _b3 * note.blit;
+            }
+            else if (note.n == 2)
+            {
+                // reset BLIT section
+                note.blit = 0.0;
+
+                // synthesize value
+                note.value = _b1 * remez_sin_int32(note.t)
+                           + _b2 * remez_sin_int32(2 * note.t);
+            }
+            else
+            {
+                // reset BLIT section
+                note.blit = 0.0;
+
+                // synthesize value
+                note.value = _b1 * remez_sin_int32(note.t);
+            }
+        }
+    }
+
+} // namespace

@@ -1,0 +1,1444 @@
+The system is: Linux - 5.13.0-40-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: -O2;-fPIC;-march=native;-mavx2
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/3.23.20220404-gfd46a55/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: -O2;-fPIC;-march=native;-mavx2
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/3.23.20220404-gfd46a55/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4e78b/fast && /usr/bin/make  -f CMakeFiles/cmTC_4e78b.dir/build.make CMakeFiles/cmTC_4e78b.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2    -v -o CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o' '-c'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase CMakeCCompilerABI.c -mavx2 -auxbase-strip CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -O2 -version -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchPruP3.s
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o' '-c'
+ as -v --64 -o CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o /tmp/cchPruP3.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o' '-c'
+Linking C executable cmTC_4e78b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e78b.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2   -v CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -o cmTC_4e78b 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'cmTC_4e78b'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccm1nSDw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4e78b /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'cmTC_4e78b'
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_4e78b/fast && /usr/bin/make  -f CMakeFiles/cmTC_4e78b.dir/build.make CMakeFiles/cmTC_4e78b.dir/build]
+  ignore line: [make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -O2 -fPIC -march=native -mavx2    -v -o CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -c /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/local/share/cmake-3.23/Modules/CMakeCCompilerABI.c -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase CMakeCCompilerABI.c -mavx2 -auxbase-strip CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -O2 -version -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cchPruP3.s]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o /tmp/cchPruP3.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [Linking C executable cmTC_4e78b]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e78b.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc -O2 -fPIC -march=native -mavx2   -v CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -o cmTC_4e78b ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'cmTC_4e78b']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccm1nSDw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_4e78b /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccm1nSDw.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4e78b] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_4e78b.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c863d/fast && /usr/bin/make  -f CMakeFiles/cmTC_c863d.dir/build.make CMakeFiles/cmTC_c863d.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -O2 -fPIC -march=native -mavx2    -v -o CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase CMakeCXXCompilerABI.cpp -mavx2 -auxbase-strip CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -O2 -version -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccawjxV5.s
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+ as -v --64 -o CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccawjxV5.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+Linking CXX executable cmTC_c863d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c863d.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -fPIC -march=native -mavx2   -v CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c863d 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'cmTC_c863d' '-shared-libgcc'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmpN9cz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c863d /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'cmTC_c863d' '-shared-libgcc'
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/9]
+    add: [/usr/include/x86_64-linux-gnu/c++/9]
+    add: [/usr/include/c++/9/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+  collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_c863d/fast && /usr/bin/make  -f CMakeFiles/cmTC_c863d.dir/build.make CMakeFiles/cmTC_c863d.dir/build]
+  ignore line: [make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -O2 -fPIC -march=native -mavx2    -v -o CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/local/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase CMakeCXXCompilerABI.cpp -mavx2 -auxbase-strip CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -O2 -version -fPIC -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccawjxV5.s]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccawjxV5.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [Linking CXX executable cmTC_c863d]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c863d.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++ -O2 -fPIC -march=native -mavx2   -v CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c863d ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-v' '-o' 'cmTC_c863d' '-shared-libgcc']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccmpN9cz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_c863d /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccmpN9cz.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c863d] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [CMakeFiles/cmTC_c863d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if files dlfcn.h;stdint.h;stddef.h;inttypes.h;stdlib.h;strings.h;string.h;float.h exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ba57d/fast && /usr/bin/make  -f CMakeFiles/cmTC_ba57d.dir/build.make CMakeFiles/cmTC_ba57d.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ba57d.dir/StandardHeadersExist.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_ba57d.dir/StandardHeadersExist.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CheckIncludeFiles/StandardHeadersExist.c
+Linking C executable cmTC_ba57d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ba57d.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_ba57d.dir/StandardHeadersExist.c.o -o cmTC_ba57d 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test memchrExists succeeded with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_705e2/fast && /usr/bin/make  -f CMakeFiles/cmTC_705e2.dir/build.make CMakeFiles/cmTC_705e2.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_705e2.dir/src.c.o
+/usr/bin/cc -DmemchrExists  -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_705e2.dir/src.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_705e2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_705e2.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_705e2.dir/src.c.o -o cmTC_705e2 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <string.h>
+
+int main()
+{
+#ifndef memchr
+   int i = sizeof(&memchr);
+#endif
+  return 0;
+}
+
+Performing C SOURCE FILE Test freeExists succeeded with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_09a08/fast && /usr/bin/make  -f CMakeFiles/cmTC_09a08.dir/build.make CMakeFiles/cmTC_09a08.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_09a08.dir/src.c.o
+/usr/bin/cc -DfreeExists  -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_09a08.dir/src.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_09a08
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_09a08.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_09a08.dir/src.c.o -o cmTC_09a08 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+#include <stdlib.h>
+
+int main()
+{
+#ifndef free
+   int i = sizeof(&free);
+#endif
+  return 0;
+}
+
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_39343/fast && /usr/bin/make  -f CMakeFiles/cmTC_39343.dir/build.make CMakeFiles/cmTC_39343.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_39343.dir/HAVE_UNISTD_H.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_39343.dir/HAVE_UNISTD_H.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CheckIncludeFiles/HAVE_UNISTD_H.c
+Linking C executable cmTC_39343
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39343.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_39343.dir/HAVE_UNISTD_H.c.o -o cmTC_39343 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the DIR symbol is defined as in AC_HEADER_DIRENT passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_85f4f/fast && /usr/bin/make  -f CMakeFiles/cmTC_85f4f.dir/build.make CMakeFiles/cmTC_85f4f.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_85f4f.dir/CheckDIRSymbolExists.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_85f4f.dir/CheckDIRSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckDIRSymbolExists.c
+Linking C executable cmTC_85f4f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85f4f.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_85f4f.dir/CheckDIRSymbolExists.c.o -o cmTC_85f4f 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckDIRSymbolExists.c:
+/* */
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <dirent.h>
+
+int main()
+{if ((DIR *) 0) return 0;}
+
+Determining if the include file stdio.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_35b08/fast && /usr/bin/make  -f CMakeFiles/cmTC_35b08.dir/build.make CMakeFiles/cmTC_35b08.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_35b08.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_35b08.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_35b08
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_35b08.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_35b08.dir/CheckIncludeFile.c.o -o cmTC_35b08 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file math.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_61ab6/fast && /usr/bin/make  -f CMakeFiles/cmTC_61ab6.dir/build.make CMakeFiles/cmTC_61ab6.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61ab6.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_61ab6.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_61ab6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61ab6.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_61ab6.dir/CheckIncludeFile.c.o -o cmTC_61ab6 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file errno.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_7a2bc/fast && /usr/bin/make  -f CMakeFiles/cmTC_7a2bc.dir/build.make CMakeFiles/cmTC_7a2bc.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a2bc.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_7a2bc.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7a2bc
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a2bc.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_7a2bc.dir/CheckIncludeFile.c.o -o cmTC_7a2bc 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdarg.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_964e7/fast && /usr/bin/make  -f CMakeFiles/cmTC_964e7.dir/build.make CMakeFiles/cmTC_964e7.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_964e7.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_964e7.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_964e7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_964e7.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_964e7.dir/CheckIncludeFile.c.o -o cmTC_964e7 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/mman.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_384e8/fast && /usr/bin/make  -f CMakeFiles/cmTC_384e8.dir/build.make CMakeFiles/cmTC_384e8.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_384e8.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_384e8.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_384e8
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_384e8.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_384e8.dir/CheckIncludeFile.c.o -o cmTC_384e8 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2d1ea/fast && /usr/bin/make  -f CMakeFiles/cmTC_2d1ea.dir/build.make CMakeFiles/cmTC_2d1ea.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d1ea.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_2d1ea.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_2d1ea
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d1ea.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_2d1ea.dir/CheckIncludeFile.c.o -o cmTC_2d1ea 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9693a/fast && /usr/bin/make  -f CMakeFiles/cmTC_9693a.dir/build.make CMakeFiles/cmTC_9693a.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9693a.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_9693a.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9693a
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9693a.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_9693a.dir/CheckIncludeFile.c.o -o cmTC_9693a 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/socket.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_da757/fast && /usr/bin/make  -f CMakeFiles/cmTC_da757.dir/build.make CMakeFiles/cmTC_da757.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da757.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_da757.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_da757
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da757.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_da757.dir/CheckIncludeFile.c.o -o cmTC_da757 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netinet/in.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_254f2/fast && /usr/bin/make  -f CMakeFiles/cmTC_254f2.dir/build.make CMakeFiles/cmTC_254f2.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_254f2.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_254f2.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_254f2
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_254f2.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_254f2.dir/CheckIncludeFile.c.o -o cmTC_254f2 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file netinet/tcp.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_28d61/fast && /usr/bin/make  -f CMakeFiles/cmTC_28d61.dir/build.make CMakeFiles/cmTC_28d61.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_28d61.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_28d61.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_28d61
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28d61.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_28d61.dir/CheckIncludeFile.c.o -o cmTC_28d61 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file arpa/inet.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aa3ee/fast && /usr/bin/make  -f CMakeFiles/cmTC_aa3ee.dir/build.make CMakeFiles/cmTC_aa3ee.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aa3ee.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_aa3ee.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_aa3ee
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aa3ee.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_aa3ee.dir/CheckIncludeFile.c.o -o cmTC_aa3ee 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file limits.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_98221/fast && /usr/bin/make  -f CMakeFiles/cmTC_98221.dir/build.make CMakeFiles/cmTC_98221.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_98221.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_98221.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_98221
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98221.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_98221.dir/CheckIncludeFile.c.o -o cmTC_98221 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1740d/fast && /usr/bin/make  -f CMakeFiles/cmTC_1740d.dir/build.make CMakeFiles/cmTC_1740d.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1740d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_1740d.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_1740d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1740d.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_1740d.dir/CheckIncludeFile.c.o -o cmTC_1740d 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file signal.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9da0f/fast && /usr/bin/make  -f CMakeFiles/cmTC_9da0f.dir/build.make CMakeFiles/cmTC_9da0f.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9da0f.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_9da0f.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9da0f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9da0f.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_9da0f.dir/CheckIncludeFile.c.o -o cmTC_9da0f 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file getopt.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_20848/fast && /usr/bin/make  -f CMakeFiles/cmTC_20848.dir/build.make CMakeFiles/cmTC_20848.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20848.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_20848.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_20848
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20848.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_20848.dir/CheckIncludeFile.c.o -o cmTC_20848 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of long long passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_76d6d/fast && /usr/bin/make  -f CMakeFiles/cmTC_76d6d.dir/build.make CMakeFiles/cmTC_76d6d.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76d6d.dir/LONG_LONG.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_76d6d.dir/LONG_LONG.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CheckTypeSize/LONG_LONG.c
+Linking C executable cmTC_76d6d
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_76d6d.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_76d6d.dir/LONG_LONG.c.o -o cmTC_76d6d 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test _have_inline succeeded with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_47b27/fast && /usr/bin/make  -f CMakeFiles/cmTC_47b27.dir/build.make CMakeFiles/cmTC_47b27.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47b27.dir/src.c.o
+/usr/bin/cc -DTESTKEYWORD=inline -D_have_inline  -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_47b27.dir/src.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_47b27
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47b27.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_47b27.dir/src.c.o -o cmTC_47b27 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+typedef int foo_t;
+             static TESTKEYWORD foo_t static_foo(){return 0;}
+             foo_t foo(){return 0;}
+             int main(int argc, char *argv[]){return 0;}
+Performing C SOURCE FILE Test _have_vla succeeded with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_91dbe/fast && /usr/bin/make  -f CMakeFiles/cmTC_91dbe.dir/build.make CMakeFiles/cmTC_91dbe.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_91dbe.dir/src.c.o
+/usr/bin/cc -DTESTKEYWORD=inline -D_have_vla  -O2 -fPIC -march=native -mavx2  -fPIE -std=gnu90 -o CMakeFiles/cmTC_91dbe.dir/src.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_91dbe
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91dbe.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  CMakeFiles/cmTC_91dbe.dir/src.c.o -o cmTC_91dbe 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(int argc, char *argv[]){int arr[argc]; return 0;}
+Performing C SOURCE FILE Test HAVE_INCOMPATIBLE_POINTER_TYPES succeeded with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_e124f/fast && /usr/bin/make  -f CMakeFiles/cmTC_e124f.dir/build.make CMakeFiles/cmTC_e124f.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e124f.dir/src.c.o
+/usr/bin/cc -DHAVE_INCOMPATIBLE_POINTER_TYPES  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration  -fPIE   -Werror=incompatible-pointer-types -std=gnu90 -o CMakeFiles/cmTC_e124f.dir/src.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e124f
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e124f.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration   -Wl,--as-needed  CMakeFiles/cmTC_e124f.dir/src.c.o -o cmTC_e124f 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6c162/fast && /usr/bin/make  -f CMakeFiles/cmTC_6c162.dir/build.make CMakeFiles/cmTC_6c162.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c162.dir/CheckIncludeFile.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_6c162.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_6c162
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c162.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_6c162.dir/CheckIncludeFile.c.o -o cmTC_6c162 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9a484/fast && /usr/bin/make  -f CMakeFiles/cmTC_9a484.dir/build.make CMakeFiles/cmTC_9a484.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a484.dir/CheckFunctionExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -std=gnu90 -o CMakeFiles/cmTC_9a484.dir/CheckFunctionExists.c.o -c /usr/local/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9a484
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a484.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,--as-needed  CMakeFiles/cmTC_9a484.dir/CheckFunctionExists.c.o -o cmTC_9a484  -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file ladspa.h exists passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9b7a6/fast && /usr/bin/make  -f CMakeFiles/cmTC_9b7a6.dir/build.make CMakeFiles/cmTC_9b7a6.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9b7a6.dir/CheckIncludeFile.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_9b7a6.dir/CheckIncludeFile.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_9b7a6
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b7a6.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_9b7a6.dir/CheckIncludeFile.c.o -o cmTC_9b7a6 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_481ae/fast && /usr/bin/make  -f CMakeFiles/cmTC_481ae.dir/build.make CMakeFiles/cmTC_481ae.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o
+/usr/bin/cc   -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -fopenmp -v -fPIE -std=gnu90 -o CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=gnu90' '-o' 'CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o' '-c' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase OpenMPTryFlag.c -mavx2 -auxbase-strip CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -O2 -Wall -Wextra -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -std=gnu90 -version -fopenmp -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccOcPj5n.s
+GNU C89 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C89 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b
+COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=gnu90' '-o' 'CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o' '-c' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o /tmp/ccOcPj5n.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=gnu90' '-o' 'CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o' '-c' '-pthread'
+Linking C executable cmTC_481ae
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481ae.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -fopenmp -v  -Wl,--as-needed  CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -o cmTC_481ae  -v 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-o' 'cmTC_481ae' '-v' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccg3GpBi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_481ae /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --as-needed CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-o' 'cmTC_481ae' '-v' '-pthread'
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_481ae/fast && /usr/bin/make  -f CMakeFiles/cmTC_481ae.dir/build.make CMakeFiles/cmTC_481ae.dir/build]
+  ignore line: [make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o]
+  ignore line: [/usr/bin/cc   -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -fopenmp -v -fPIE -std=gnu90 -o CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=gnu90' '-o' 'CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o' '-c' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1 -quiet -v -imultiarch x86_64-linux-gnu -D_REENTRANT /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase OpenMPTryFlag.c -mavx2 -auxbase-strip CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -O2 -Wall -Wextra -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -std=gnu90 -version -fopenmp -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccOcPj5n.s]
+  ignore line: [GNU C89 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C89 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c0c95c0b4209efec1c1892d5ff24030b]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=gnu90' '-o' 'CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o' '-c' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o /tmp/ccOcPj5n.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=gnu90' '-o' 'CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o' '-c' '-pthread']
+  ignore line: [Linking C executable cmTC_481ae]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_481ae.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align -fopenmp -v  -Wl --as-needed  CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -o cmTC_481ae  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wstrict-prototypes' '-Wno-unused-parameter' '-Wdeclaration-after-statement' '-Werror=implicit-function-declaration' '-Werror=incompatible-pointer-types' '-Wbad-function-cast' '-Wcast-align' '-fopenmp' '-v' '-o' 'cmTC_481ae' '-v' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccg3GpBi.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_481ae /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --as-needed CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccg3GpBi.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_481ae] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [--as-needed] ==> ignore
+    arg [CMakeFiles/cmTC_481ae.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+  implicit objs: []
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting CXX OpenMP compiler ABI info compiled with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_b0c40/fast && /usr/bin/make  -f CMakeFiles/cmTC_b0c40.dir/build.make CMakeFiles/cmTC_b0c40.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o
+/usr/bin/c++   -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wno-unused-parameter -Wcast-align -fopenmp -v -fPIE -std=c++98 -o CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=c++98' '-o' 'CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase OpenMPTryFlag.cpp -mavx2 -auxbase-strip CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -O2 -Wall -Wextra -Wpointer-arith -Wcast-qual -Wno-unused-parameter -Wcast-align -std=c++98 -version -fopenmp -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccdjxkCX.s
+GNU C++98 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/9
+ /usr/include/x86_64-linux-gnu/c++/9
+ /usr/include/c++/9/backward
+ /usr/lib/gcc/x86_64-linux-gnu/9/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++98 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0
+COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=c++98' '-o' 'CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread'
+ as -v --64 -o CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o /tmp/ccdjxkCX.s
+GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=c++98' '-o' 'CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread'
+Linking CXX executable cmTC_b0c40
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0c40.dir/link.txt --verbose=1
+/usr/bin/c++ -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wno-unused-parameter -Wcast-align -fopenmp -v  -Wl,--as-needed  CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -o cmTC_b0c40  -v 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-o' 'cmTC_b0c40' '-v' '-shared-libgcc' '-pthread'
+ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMdxoAl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b0c40 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --as-needed CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o
+COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-o' 'cmTC_b0c40' '-v' '-shared-libgcc' '-pthread'
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_b0c40/fast && /usr/bin/make  -f CMakeFiles/cmTC_b0c40.dir/build.make CMakeFiles/cmTC_b0c40.dir/build]
+  ignore line: [make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/usr/bin/c++   -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wno-unused-parameter -Wcast-align -fopenmp -v -fPIE -std=c++98 -o CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=c++98' '-o' 'CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -march=haswell -mmmx -mno-3dnow -msse -msse2 -msse3 -mssse3 -mno-sse4a -mcx16 -msahf -mmovbe -maes -mno-sha -mpclmul -mpopcnt -mabm -mno-lwp -mfma -mno-fma4 -mno-xop -mbmi -mno-sgx -mbmi2 -mno-pconfig -mno-wbnoinvd -mno-tbm -mavx -mavx2 -msse4.2 -msse4.1 -mlzcnt -mno-rtm -mno-hle -mrdrnd -mf16c -mfsgsbase -mno-rdseed -mno-prfchw -mno-adx -mfxsr -mxsave -mxsaveopt -mno-avx512f -mno-avx512er -mno-avx512cd -mno-avx512pf -mno-prefetchwt1 -mno-clflushopt -mno-xsavec -mno-xsaves -mno-avx512dq -mno-avx512bw -mno-avx512vl -mno-avx512ifma -mno-avx512vbmi -mno-avx5124fmaps -mno-avx5124vnniw -mno-clwb -mno-mwaitx -mno-clzero -mno-pku -mno-rdpid -mno-gfni -mno-shstk -mno-avx512vbmi2 -mno-avx512vnni -mno-vaes -mno-vpclmulqdq -mno-avx512bitalg -mno-avx512vpopcntdq -mno-movdiri -mno-movdir64b -mno-waitpkg -mno-cldemote -mno-ptwrite --param l1-cache-size=32 --param l1-cache-line-size=64 --param l2-cache-size=10240 -mtune=haswell -quiet -dumpbase OpenMPTryFlag.cpp -mavx2 -auxbase-strip CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -O2 -Wall -Wextra -Wpointer-arith -Wcast-qual -Wno-unused-parameter -Wcast-align -std=c++98 -version -fopenmp -fPIE -fasynchronous-unwind-tables -fstack-protector-strong -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccdjxkCX.s]
+  ignore line: [GNU C++98 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/9]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+  ignore line: [ /usr/include/c++/9/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++98 (Ubuntu 9.4.0-1ubuntu1~20.04.1) version 9.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 65fe925b83d3956b533de4aaba7dace0]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=c++98' '-o' 'CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o /tmp/ccdjxkCX.s]
+  ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-fPIE' '-std=c++98' '-o' 'CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread']
+  ignore line: [Linking CXX executable cmTC_b0c40]
+  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0c40.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++ -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wno-unused-parameter -Wcast-align -fopenmp -v  -Wl --as-needed  CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -o cmTC_b0c40  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.1' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-Av3uEd/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.1) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-O2' '-fPIC' '-march=native' '-mavx2' '-Wall' '-Wextra' '-Wpointer-arith' '-Wcast-qual' '-Wno-unused-parameter' '-Wcast-align' '-fopenmp' '-v' '-o' 'cmTC_b0c40' '-v' '-shared-libgcc' '-pthread']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMdxoAl.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_b0c40 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --as-needed CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMdxoAl.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_b0c40] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+    arg [--as-needed] ==> ignore
+    arg [CMakeFiles/cmTC_b0c40.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: []
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the sinf exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_ec6eb/fast && /usr/bin/make  -f CMakeFiles/cmTC_ec6eb.dir/build.make CMakeFiles/cmTC_ec6eb.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec6eb.dir/CheckSymbolExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_ec6eb.dir/CheckSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:11: warning: cast discards 'const' qualifier from pointer target type [-Wcast-qual]
+    8 |   return ((int*)(&sinf))[argc];
+      |           ^
+Linking C executable cmTC_ec6eb
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec6eb.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_ec6eb.dir/CheckSymbolExists.c.o -o cmTC_ec6eb  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sinf
+  return ((int*)(&sinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the cosf exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2735e/fast && /usr/bin/make  -f CMakeFiles/cmTC_2735e.dir/build.make CMakeFiles/cmTC_2735e.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2735e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_2735e.dir/CheckSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:11: warning: cast discards 'const' qualifier from pointer target type [-Wcast-qual]
+    8 |   return ((int*)(&cosf))[argc];
+      |           ^
+Linking C executable cmTC_2735e
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2735e.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_2735e.dir/CheckSymbolExists.c.o -o cmTC_2735e  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef cosf
+  return ((int*)(&cosf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the fabsf exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dcef7/fast && /usr/bin/make  -f CMakeFiles/cmTC_dcef7.dir/build.make CMakeFiles/cmTC_dcef7.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dcef7.dir/CheckSymbolExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_dcef7.dir/CheckSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function 'main':
+/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:11: warning: cast discards 'const' qualifier from pointer target type [-Wcast-qual]
+    8 |   return ((int*)(&fabsf))[argc];
+      |           ^
+Linking C executable cmTC_dcef7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dcef7.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_dcef7.dir/CheckSymbolExists.c.o -o cmTC_dcef7  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fabsf
+  return ((int*)(&fabsf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the powf exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_456e8/fast && /usr/bin/make  -f CMakeFiles/cmTC_456e8.dir/build.make CMakeFiles/cmTC_456e8.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_456e8.dir/CheckSymbolExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_456e8.dir/CheckSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_456e8
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_456e8.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_456e8.dir/CheckSymbolExists.c.o -o cmTC_456e8  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef powf
+  return ((int*)(&powf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sqrtf exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_541e5/fast && /usr/bin/make  -f CMakeFiles/cmTC_541e5.dir/build.make CMakeFiles/cmTC_541e5.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_541e5.dir/CheckSymbolExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_541e5.dir/CheckSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_541e5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_541e5.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_541e5.dir/CheckSymbolExists.c.o -o cmTC_541e5  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sqrtf
+  return ((int*)(&sqrtf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the logf exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_aded5/fast && /usr/bin/make  -f CMakeFiles/cmTC_aded5.dir/build.make CMakeFiles/cmTC_aded5.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aded5.dir/CheckSymbolExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_aded5.dir/CheckSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_aded5
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aded5.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_aded5.dir/CheckSymbolExists.c.o -o cmTC_aded5  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef logf
+  return ((int*)(&logf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the inet_ntop exist passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_dbc83/fast && /usr/bin/make  -f CMakeFiles/cmTC_dbc83.dir/build.make CMakeFiles/cmTC_dbc83.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dbc83.dir/CheckSymbolExists.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_dbc83.dir/CheckSymbolExists.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dbc83
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbc83.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement  -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_dbc83.dir/CheckSymbolExists.c.o -o cmTC_dbc83  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+File /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <arpa/inet.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_ntop
+  return ((int*)(&inet_ntop))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining size of socklen_t passed with the following output:
+Change Dir: /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_93cdd/fast && /usr/bin/make  -f CMakeFiles/cmTC_93cdd.dir/build.make CMakeFiles/cmTC_93cdd.dir/build
+make[1]: Entering directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_93cdd.dir/SOCKLEN_T.c.o
+/usr/bin/cc -DTESTKEYWORD=inline  -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align  -fPIE -std=gnu90 -o CMakeFiles/cmTC_93cdd.dir/SOCKLEN_T.c.o -c /home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CheckTypeSize/SOCKLEN_T.c
+Linking C executable cmTC_93cdd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93cdd.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2 -Wall -W -Wpointer-arith -Wcast-qual -Wstrict-prototypes -Wno-unused-parameter -Wdeclaration-after-statement -Werror=implicit-function-declaration -Werror=incompatible-pointer-types -Wbad-function-cast -Wcast-align   -Wl,--as-needed  CMakeFiles/cmTC_93cdd.dir/SOCKLEN_T.c.o -o cmTC_93cdd  -lm -lpthread 
+make[1]: Leaving directory '/home/quake/Projects/fluidsynth/fluidsynth/build/CMakeFiles/CMakeTmp'
+
+
+

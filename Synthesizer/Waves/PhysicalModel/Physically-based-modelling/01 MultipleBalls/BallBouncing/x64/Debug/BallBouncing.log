@@ -1,0 +1,17 @@
+﻿Source.obj : error LNK2019: unresolved external symbol __imp___glutInitWithExit referenced in function glutInit_ATEXIT_HACK
+Source.obj : error LNK2019: unresolved external symbol __imp_glutInitDisplayMode referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowPosition referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutInitWindowSize referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutMainLoop referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp___glutCreateWindowWithExit referenced in function glutCreateWindow_ATEXIT_HACK
+Source.obj : error LNK2019: unresolved external symbol __imp_glutPostRedisplay referenced in function "void __cdecl idle(void)" (?idle@@YAXXZ)
+Source.obj : error LNK2019: unresolved external symbol __imp_glutSwapBuffers referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+Source.obj : error LNK2019: unresolved external symbol __imp_glutDisplayFunc referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutReshapeFunc referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutMouseFunc referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutMotionFunc referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutIdleFunc referenced in function main
+Source.obj : error LNK2019: unresolved external symbol __imp_glutTimerFunc referenced in function "void __cdecl timer(int)" (?timer@@YAXH@Z)
+Source.obj : error LNK2019: unresolved external symbol __imp_glutSolidSphere referenced in function "void __cdecl display(void)" (?display@@YAXXZ)
+C:\Users\sai3097ganesh\Documents\GitHub\Physically-based-modelling\BallBouncing_SimLoop\BallBouncing\lib\glut32.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\sai3097ganesh\Documents\GitHub\Physically-based-modelling\BallBouncing_SimLoop\x64\Debug\BallBouncing.exe : fatal error LNK1120: 15 unresolved externals

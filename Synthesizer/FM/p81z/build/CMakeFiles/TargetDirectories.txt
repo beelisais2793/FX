@@ -1,0 +1,7 @@
+/home/quake/Projects/AudioDSP/FM/p81z/build/CMakeFiles/P81Z.dir
+/home/quake/Projects/AudioDSP/FM/p81z/build/CMakeFiles/edit_cache.dir
+/home/quake/Projects/AudioDSP/FM/p81z/build/CMakeFiles/rebuild_cache.dir
+/home/quake/Projects/AudioDSP/FM/p81z/build/tools/CMakeFiles/read_syx_patches.dir
+/home/quake/Projects/AudioDSP/FM/p81z/build/tools/CMakeFiles/simple_synth.dir
+/home/quake/Projects/AudioDSP/FM/p81z/build/tools/CMakeFiles/edit_cache.dir
+/home/quake/Projects/AudioDSP/FM/p81z/build/tools/CMakeFiles/rebuild_cache.dir

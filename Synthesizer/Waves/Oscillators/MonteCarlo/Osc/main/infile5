@@ -1,0 +1,5 @@
+a           0.125
+ThermalT    500
+Nsweep      50000000
+Dbin        5000
+Lambda      1.2

@@ -1,0 +1,42 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/quake/Projects/TStk/stk/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_764dd/fast && /usr/bin/make  -f CMakeFiles/cmTC_764dd.dir/build.make CMakeFiles/cmTC_764dd.dir/build
+make[1]: Entering directory '/home/quake/Projects/TStk/stk/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_764dd.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -O2 -fPIC -march=native -mavx2  -o CMakeFiles/cmTC_764dd.dir/src.c.o -c /home/quake/Projects/TStk/stk/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_764dd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_764dd.dir/link.txt --verbose=1
+/usr/bin/cc -O2 -fPIC -march=native -mavx2  -rdynamic CMakeFiles/cmTC_764dd.dir/src.c.o -o cmTC_764dd 
+/usr/bin/ld: CMakeFiles/cmTC_764dd.dir/src.c.o: in function `main':
+src.c:(.text.startup+0x27): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text.startup+0x30): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text.startup+0x39): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text.startup+0x44): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_764dd.dir/build.make:99: cmTC_764dd] Error 1
+make[1]: Leaving directory '/home/quake/Projects/TStk/stk/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_764dd/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

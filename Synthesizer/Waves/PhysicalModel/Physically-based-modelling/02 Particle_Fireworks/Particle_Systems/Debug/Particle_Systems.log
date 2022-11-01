@@ -1,0 +1,4 @@
+﻿  System.cpp
+c:\users\sai ganesh\desktop\github\physically-based-modelling\02 particle_fireworks\particle_systems\system.cpp(226): warning C4101: 'tangent_vector': unreferenced local variable
+  Particle_Systems.vcxproj -> C:\Users\Sai Ganesh\Desktop\GitHub\Physically-based-modelling\02 Particle_FireWorks\Debug\Particle_Systems.exe
+  Particle_Systems.vcxproj -> C:\Users\Sai Ganesh\Desktop\GitHub\Physically-based-modelling\02 Particle_FireWorks\Debug\Particle_Systems.pdb (Partial PDB)

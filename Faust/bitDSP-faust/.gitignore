@@ -1,0 +1,8 @@
+myDevelopment
+examples/*.app
+**/Builds
+**/JuceLibraryCode
+**/*.app
+
+**/_sc/*.sc
+**/_sc/*.scd

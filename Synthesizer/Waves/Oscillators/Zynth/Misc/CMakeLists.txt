@@ -1,0 +1,12 @@
+set(libzynth_misc_SRCS
+    Misc/Bank.cpp
+    Misc/Config.cpp
+    Misc/Microtonal.cpp
+    Misc/Instrument.cpp
+    Misc/Util.cpp
+    Misc/XMLwrapper.cpp
+    Misc/WavFile.cpp
+    Misc/WaveShapeSmps.cpp
+    Misc/Master.cpp
+    PARENT_SCOPE
+    )

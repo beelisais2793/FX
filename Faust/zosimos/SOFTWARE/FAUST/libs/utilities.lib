@@ -1,0 +1,14 @@
+//-----------------utilities.lib----------------//
+//Library containing various utility functions.
+
+import("stdfaust.lib");
+
+//Holds input trigger for n samples
+holdN(n, t) = counting
+with{
+    countup = +(1) ~ *(t != 1);
+    counting = (countup <= n);
+};
+
+//Avoid clicking envelopes without altering the sound too much
+clickSmooth = si.smooth(0.8);

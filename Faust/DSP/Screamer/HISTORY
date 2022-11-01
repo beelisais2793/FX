@@ -1,0 +1,26 @@
+v1.4.0 (2017-03-12)
+===================
+
+* clip distortion with automatic make-up gain
+
+* moved parameter pre-processing to modules
+
+* added UI to modules
+
+* cleaned up code
+
+
+
+v1.2.0 (2017-03-11)
+===================
+
+* bypass effect blocks
+
+* added automatic make-up gain to mathematical overdrive 
+
+
+
+v1.0 (2017-03-10)
+=================
+
+* accurate reproduction of the original plug-in

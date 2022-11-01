@@ -1,0 +1,30 @@
+[] Concise but complete summary
+
+# An awesome description describing WHY this work over HOW/WHAT it does.
+
+# Any references to tickets, articles...
+# Fixes [Ticket #12]
+
+# --- COMMIT END ---
+#--------------------------------------------------------------------------#
+#
+# - Capitalize the summary line.
+# - Do not end the summary line with a period.
+# - Summary is in 3rd person declarative / descriptive rather than 2nd
+#   person imperative / prescriptive.
+# - Summary and description should be wrapped to 76 characters. #-symbol
+#   above is a marker for that.
+# - Separate summary from body with a blank line.
+#
+# --------------------
+# Tag can be:
+#
+# - [ADD] new feature or extended functionality
+# - [CHG] changes to code that do affect its behavior
+# - [DOC] for all kinds of documentation-only related commits
+# - [FIX] bug fix
+# - [FMT] formatting only (spacing...)
+# - [MAK] repository related changes (e.g. changes in the ignore list)
+# - [REF] restructuring code without changing its external behavior
+# - [TEST] related to test code only
+#

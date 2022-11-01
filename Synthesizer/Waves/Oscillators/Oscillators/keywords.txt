@@ -1,0 +1,13 @@
+OscillatorBase	KEYWORD1
+BlinkOscillator KEYWORD1
+NoiseOscillator KEYWORD1
+SequenceOscillator KEYWORD1
+ShapedOscillator KEYWORD1
+
+setFrequency	KEYWORD2
+update	KEYWORD2
+setXShape	KEYWORD2
+setYShape	KEYWORD2
+setOnOffRatio KEYWORD2
+setSpeedRatio KEYWORD2
+setSequence KEYWORD2

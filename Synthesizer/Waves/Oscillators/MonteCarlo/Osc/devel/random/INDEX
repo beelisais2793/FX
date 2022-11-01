@@ -1,0 +1,18 @@
+
+Random number generation and related programs 
+
+
+check1        Correctness of ranlxs and ranlxd
+
+check2        Save state of ranlxs to a file and reset the generator 
+              from the data on the file
+
+check3        Save state of ranlxd to a file and reset the generator 
+              from the data on the file
+
+time1         Timing of ranlxs
+
+time2         Timing of ranlxd
+
+
+

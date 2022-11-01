@@ -1,0 +1,71 @@
+TITLE:: BLOsc2
+summary:: Band Limited Oscillator 2
+categories:: UGens>Generators>Deterministic
+
+DESCRIPTION::
+BLOsc2 is improved version of BLOsc. Different from BLOsc, hiHarmonics is given as an argument instead of numHarmonics, and loHarmonics and hiHarmonics accept floating point values as inputs. For example, if you specifiy 1.3 as loHarmonics input, it makes interpolating state between loHarmonics = 1 and loHarmonics = 2. Floating point input for hiHarmonics works in the same manner. This change makes it possible to module loHarmonics and hiHarmonics continuously. On the other hand, the CPU usage of BLOsc2 is heavier than that of BLOsc. Therefore, if you don't need to modulate loHarmonics and hiHarmonics, use the original version of BLOsc.
+
+warning::
+Use audio rate UGens to modulate loHarmonics and hiHarmonic wherever possible. Modulating those arguments with control rate UGens may introduce noises, especially with relatively high control frequency.
+::
+
+
+CLASSMETHODS::
+
+METHOD:: ar, kr
+
+ARGUMENT:: freq
+Fundamental frequency in Hertz.
+
+ARGUMENT:: loHarmonics
+The lowest harmonic index (starting from 1.0). Floating point value can be given and is modulatable.
+
+ARGUMENT:: hiHarmonics
+The highest harmonic index. Floating point value can be given and is modulatable.
+
+ARGUMENT:: slope
+The slope of spectrum. Should be > 0.
+< 1 : The lower the harmonics, the higher the amplitude.
+= 1 : Flat spectrum.
+> 1 : The higher the harmonics, the higher the amplitude.
+
+ARGUMENT:: evenOddRatio
+The amplitude ratio of even number harmonics to odd number harmonics. Should fall between 0 and 1.
+The lower the value, the more square-wave like sound comes out.
+
+ARGUMENT:: mul
+Output will be multiplied by this value.
+
+ARGUMENT:: add
+Output will be added to this value.
+
+
+EXAMPLES::
+
+code::
+(
+~openAnalyzer = {
+var window, func;
+window = Window("Analyzer", Rect(100, 100, 511, 300));
+func = FreqScopeView(window, window.view.bounds);
+func.active_(true);
+func.freqMode_(1); //log scale
+window.onClose_({ func.kill });
+window.front;
+}.value
+)
+
+// loHarmonics Modulation
+
+{BLOsc2.ar(freq: 110.0, loHarmonics: SinOsc.ar(MouseX.kr(1.0,10), mul:MouseY.kr(0,4.0), add:5.0), hiHarmonics: 20.0, slope: 0.8, evenOddRatio: 1, mul:0.5)}.play;
+
+// hiHarmonics Modulation
+
+{BLOsc2.ar(freq: 110.0, loHarmonics: 1.0, hiHarmonics: SinOsc.ar(MouseX.kr(1.0,10), mul:MouseY.kr(0,9.0), add:10.0), slope: 0.8, evenOddRatio: 1, mul:0.5)}.play;
+
+// Conbination of frequency, loHarmonics, and hiHarmonics modulation
+
+{BLOsc2.ar(freq: SinOsc.kr(0.05, 1.5pi, 150, 200), loHarmonics: SinOsc.ar(3.0, 0, 2.0, 3.0), hiHarmonics: SinOsc.ar(3.0, pi, 10.0, 15.0),  slope: 0.8, evenOddRatio: 1, mul:0.5)}.play;
+
+
+::

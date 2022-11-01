@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="qC5GNq" name="Flute_DigitalWaveguide" projectType="guiapp"
+              useAppConfig="1" addUsingNamespaceToJuceHeader="1" displaySplashScreen="1"
+              jucerFormatVersion="1">
+  <MAINGROUP id="D2Pxup" name="Flute_DigitalWaveguide">
+    <GROUP id="{88967B57-ECDC-B25C-D03C-343CAEA3124C}" name="Source">
+      <FILE id="REMhVO" name="flute.cpp" compile="1" resource="0" file="Source/flute.cpp"/>
+      <FILE id="oJE7NN" name="flute.h" compile="0" resource="0" file="Source/flute.h"/>
+      <FILE id="rnVtEC" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="Ctn2WA" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="dwvsHT" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Flute_DigitalWaveguide"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Flute_DigitalWaveguide"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Flute_DigitalWaveguide"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Flute_DigitalWaveguide"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../Marius/UNIVERSITY/juce-6.0.1-windows/JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>

@@ -1,0 +1,73 @@
+#!/usr/bin/env perl
+
+use warnings; # tell me if something looks wrong
+use strict;   # be a grammar nazi
+use threads;  # let me spawn threads
+
+-e $ARGV[0] or die<<USAGE;
+
+  deploy <program_binary> [user\@host1 user\@host2 ...]
+
+this perl script uses mpssh and rsync to copy your binary to all a set of given
+machines and then run your program on each machine. after you run this, hit the
+enter key to tear down the program you're running.
+
+USAGE
+
+my $filePath = $ARGV[0];
+
+# configuration information specific to nonce/grXX for now
+#
+my $hostlist = 'sphere@gr01 sphere@gr02 sphere@gr03 sphere@gr04 sphere@gr05 sphere@gr06 sphere@gr07 sphere@gr08 sphere@gr09 sphere@gr10 sphere@gr11 sphere@gr12 sphere@gr13 sphere@gr14';
+
+@ARGV > 1 and do {
+  my @foo = @ARGV;
+  shift @foo;
+  $hostlist = join(" ", @foo);
+  print "hostlist override: $hostlist\n";
+};
+
+my $mpssh = "echo $hostlist | tr ' ' '\\n' | mpssh -E -s -f - ";
+
+# figure out the name of the file and generate the shell commands to 1) copy
+# the file to /tmp, 2) rsync the file from the server to a host, 3) run the
+# file on a host, and 4) shutdown the program on a host.
+#
+my $fileName = (split('/', $filePath))[-1];
+my $prepare = "cp $filePath /tmp/$fileName ; chmod 777 /tmp/$fileName";
+my $run = "ulimit -s unlimited ; export DISPLAY=:0 ; /tmp/$fileName";
+my $kill = "pkill -fx /tmp/$fileName";
+
+# copy the file to the hosts
+#
+qx($prepare);
+for (split(' ', $hostlist)) {
+  print("copying to $_\n");
+  qx(rsync -a /tmp/$fileName $_:/tmp);
+}
+
+# start a thread that waits for the ENTER key and tears down the program
+# 
+my $thread = threads->create(sub {
+  print "hit the ENTER key to shutdown.\n";
+  getc(STDIN);
+  qx($mpssh \"$kill\");
+});
+
+# because some people will think to use CTRL-C...
+#
+$SIG{'INT'} = sub {
+  qx($mpssh \"$kill\");
+  die "\n\nCaught CTRL-C! Please hit ENTER rather than using CTRL-C\n\n";
+};
+
+# run the given binary program file on every host, printing the output to the
+# terminal as it runs.
+#
+open MPSSH, "$mpssh \"$run\" |" || die $!;
+print while (<MPSSH>);
+close MPSSH;
+
+# cleanup the "wait for ENTER" thread
+#
+$thread->join();

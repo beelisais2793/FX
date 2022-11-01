@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Symbolic Transfer Function", "Symbolic Transfer Function\Symbolic Transfer Function.vcxproj", "{D3C857AD-9664-4CAF-9BA4-A75414E568DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TFClient", "TFClient\TFClient.vcxproj", "{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Debug|x64.ActiveCfg = Debug|x64
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Debug|x64.Build.0 = Debug|x64
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Debug|x86.ActiveCfg = Debug|Win32
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Debug|x86.Build.0 = Debug|Win32
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Release|x64.ActiveCfg = Release|x64
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Release|x64.Build.0 = Release|x64
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Release|x86.ActiveCfg = Release|Win32
+		{D3C857AD-9664-4CAF-9BA4-A75414E568DD}.Release|x86.Build.0 = Release|Win32
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Debug|x64.ActiveCfg = Debug|x64
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Debug|x64.Build.0 = Debug|x64
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Debug|x86.ActiveCfg = Debug|Win32
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Debug|x86.Build.0 = Debug|Win32
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Release|x64.ActiveCfg = Release|x64
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Release|x64.Build.0 = Release|x64
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Release|x86.ActiveCfg = Release|Win32
+		{4714D31F-4236-41F1-9C8D-D7B4E763ECA9}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A317CD42-CDFE-4F4F-8044-08F745C7E898}
+	EndGlobalSection
+EndGlobal

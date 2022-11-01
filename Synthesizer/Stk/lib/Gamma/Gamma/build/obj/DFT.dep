@@ -1,0 +1,5 @@
+build/obj/DFT.o: src/DFT.cpp Gamma/DFT.h Gamma/mem.h Gamma/Access.h \
+ Gamma/std_swap.h Gamma/tbl.h Gamma/arr.h Gamma/scl.h Gamma/Config.h \
+ Gamma/Conversion.h Gamma/Constants.h Gamma/pstdint.h Gamma/Types.h \
+ Gamma/Domain.h Gamma/Node.h Gamma/Containers.h Gamma/Allocator.h \
+ Gamma/FFT.h

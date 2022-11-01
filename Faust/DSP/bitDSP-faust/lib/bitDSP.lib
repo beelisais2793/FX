@@ -1,0 +1,661 @@
+declare name "bitDSP";
+declare author "LFSaw (Till Bovermann), Dario Sanfilippo";
+declare copyright "MIT";
+
+// bit = library("bitDSP.lib"); // main library
+// bit32 = library("bitDSP_int32.lib"); // int32-based library
+// bitBus = library("bitDSP_binBus.lib"); // int32-based library
+bitConv = library("bitDSP_conversion.lib"); // conversion between formats library
+
+// sc = library("scUGens.lib"); // part of https://github.com/tai-studio/faust-sc
+// lf = library("taiStudio.lib"); // part of https://github.com/tai-studio/faust-sc
+
+// import("stdfaust.lib");
+// only import what is necessary
+// 
+// an = library("analyzers.lib");
+ba = library("basics.lib");
+// co = library("compressors.lib");
+de = library("delays.lib");
+// dm = library("demos.lib");
+// dx = library("dx7.lib");
+// en = library("envelopes.lib");
+fi = library("filters.lib");
+// ho = library("hoa.lib");
+// it = library("interpolators.lib");
+ma = library("maths.lib");
+// mi = library("mi.lib");
+// ef = library("misceffects.lib");
+os = library("oscillators.lib");
+// no = library("noises.lib");
+// pf = library("phaflangers.lib");
+// pl = library("platform.lib");
+// pm = library("physmodels.lib");
+// rm = library("reducemaps.lib");
+// re = library("reverbs.lib");
+ro = library("routes.lib");
+// sp = library("spats.lib");
+si = library("signals.lib");
+// so = library("soundfiles.lib");
+// sy = library("synths.lib");
+// ve = library("vaeffects.lib");
+// wa = library("webaudio.lib");
+// sf = library("all.lib");
+// vl = library("version.lib");
+
+/////////////////////////// oscillators
+
+//---------------------------------`(bit.)silence`---------------------------------------
+//
+// (author: Till Bovermann) 
+//
+// by definition, silence is the alteration of the two binary states at nyquist frequency
+// 
+//
+//
+// #### Usage
+//
+// ```
+// silence : _; // bimodal, i.e. between [-1, 1]
+// ```
+//-----------------------------------------------------------------------------
+silence = dirac : fb(_) ~ _ with {
+  dirac = 1-1';
+  fb(init, x) = -x + init;
+};
+
+
+// bool_osc0(del1[n], del2[n], del3[n], del4[n]); ------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Basic Boolean oscillator with four cross-coupled nodes, mainly for
+// chaotic oscillations including limit cycles and strange attractors.
+//
+// The future development of this approach could be to have a set of
+// nodes with specific Boolean processes that can be combined in
+// networks of arbitrary sizes and topology by simple argument
+// specification.
+//
+// 4 inputs:
+//    del1[n], delay of the output of the first node up to SR samples;
+//    del2[n], delay of the output of the second node up to SR samples;
+//    del3[n], delay of the output of the third node up to SR samples;
+//    del4[n], delay of the output of the fourth node up to SR samples;
+//
+// 1 outputs:
+//    y[n], first node;
+//
+bool_osc0(del1, del2, del3, del4) = node1         
+      letrec {
+           'node1 = not(node1 & node2) @ max(0, min(ma.SR, del1));
+           'node2 = not(node2 | node3) @ max(0, min(ma.SR, del2));
+           'node3 = not(node3 xor node4) @ max(0, min(ma.SR, del3));
+           'node4 = not(node4 & node1) @ max(0, min(ma.SR, del4));
+      }
+      with {
+           not(x) = rint(1 - x);
+      };
+// -----------------------------------------------------------------------------
+
+// bool_osc1(del1[n], del2[n]); ------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// Basic Boolean oscillator with two cross-coupled nodes, mainly for 
+// chaotic oscillations including limit cycles and strange attractors.
+//
+// The future development of this approach could be to have a set of
+// nodes with specific Boolean processes that can be combined in
+// networks of arbitrary sizes and topology by simple argument
+// specification.
+//
+// 2 inputs:
+//    del1[n], delay of the output of the first node up to SR samples;
+//    del2[n], delay of the output of the second node up to SR samples;
+//
+// 1 outputs:
+//    y[n], first node;
+//
+bool_osc1(del1, del2) = node1
+      letrec {
+           'node1 = not(node1 xor node2 & node1) @ max(0, min(ma.SR, del1));
+           'node2 = not(node2 xor node1 xor node2) @ max(0, min(ma.SR, del2));
+      } 
+      with {
+           not(x) = 1 - x;
+      };
+// -----------------------------------------------------------------------------
+
+// bool_osc2(del1[n], del2[n]); ------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Basic Boolean oscillator with two cross-coupled nodes, mainly for
+// chaotic oscillations including limit cycles and strange attractors.
+//
+// The future development of this approach could be to have a set of
+// nodes with specific Boolean processes that can be combined in
+// networks of arbitrary sizes and topology by simple argument
+// specification.
+//
+// 2 inputs:
+//    del1[n], delay of the output of the first node up to SR samples;
+//    del2[n], delay of the output of the second node up to SR samples;
+//
+// 1 outputs:
+//    y[n], first node;
+//
+bool_osc2(del1, del2) = node1
+                           
+      letrec {
+           'node1 = not(node1 & node2) @ max(0, min(ma.SR, del1));
+           'node2 = not(node1 & node2) @ max(0, min(ma.SR, del2));
+      }
+      with {
+           not(x) = rint(1 - x);
+      };
+// -----------------------------------------------------------------------------
+
+// cic(N, CF[n], x[n]); --------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// Comb-integrator circuit lowpass filter.
+// Based on Eric Lyon's: https://www.dsprelated.com/showarticle/1337.php.
+//
+// 2 inputs:
+//    CF[n], cut-off frequency in Hz;
+//    x[n].
+//
+// 1 outputs:
+//    y[n], lowpassed x[n].
+//
+// 1 compile-time arguments: 
+//    "N", (integer) order of the filter.
+//
+cic(N, cf, x) = x : seq(i, N, delta(1, .5 / cf) :
+    fi.pole(1)) / (.5 / cf * ma.SR) ^ N;
+// -----------------------------------------------------------------------------
+
+
+// delta(S, dt[n], x[n]); ------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// First derivative using linear interpolation delay lines, hence
+// allowing fractional differentiation periods.
+//
+// 2 inputs:
+//    dt[n], differentiation period in seconds;
+//    x[n].
+//
+// 1 outputs:
+//    y[n], first derivative of x[n].
+//
+// 1 compile-time arguments:
+//    S, maximum differentiation period in seconds.
+//
+delta(S, dt, in) =  in - de.fdelay(S * ma.SR, dt * ma.SR, in);
+// -----------------------------------------------------------------------------
+
+// dsm1(x[n]); -----------------------------------------------------------------
+//
+// (author: Till Bovermann) 
+//
+// First-order digital delta-sigma modulator.
+//
+// 1 inputs:
+//    x[n];
+//
+// 1 outputs:
+//    y[n], modulated input in the range [-1; 1].
+//
+dsm1(x) = loop
+         ~ _
+      with {
+        loop(fb) = x - fb : posFB > 0 : select2(_, -1, 1);
+        posFB(fb) = (_, fb : +) ~ _;
+      };
+// -----------------------------------------------------------------------------
+
+// ddsm1(x[n]); -----------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// First-order digital delta-sigma modulator, alternat implementation.
+//
+// 1 inputs:
+//    x[n];
+//
+// 1 outputs:
+//    y[n], modulated input in the range [-1; 1].
+//
+ddsm1(x) = y
+    letrec {
+        'y = ba.if(fi.pole(1, x - y) < 0, -1, 1);
+    };
+// -----------------------------------------------------------------------------
+
+// dsm2(x[n]); -----------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// Second-order digital delta-sigma modulator.
+//
+// 1 inputs:
+//    x[n];
+//
+// 1 outputs:
+//    y[n], modulated input in the range [-1; 1].
+//
+dsm2(x) =  loop
+           ~ _
+      with {
+           loop(fb) = x - fb : fi.pole(1) - 2 * fb : fi.pole(1) : Q;
+           Q(z) = select2(z < 0, 1, -1);
+      };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// First and second-order dsm with gain input.
+//
+ddsm1G(G, x) = y
+    letrec {
+        'y = ba.if(fi.pole(1, x - y * G) < 0, -1, 1);
+    };
+ddsm2G(G, x) =  loop
+           ~ _
+      with {
+           loop(fb) = Q(fi.pole(1, fi.pole(1, x - fb * G) - 2 * fb * G));
+           Q(z) = select2(z < 0, 1, -1);
+      };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// First and second-order summing busses. N is the number of signals being 
+// summed.
+//
+summing1(N) = si.bus(N) :> ddsm1G(N);
+summing2(N) = si.bus(N) :> ddsm2G(N);
+// -----------------------------------------------------------------------------
+
+// full_adder(x1[n], x2[n], c_in[n]); ------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Adder for binary values. It adds two operands as well as a carrier
+// input. It outputs the sum as well as the carrier output.
+//
+// 3 inputs:
+//    x1[n], first operand;
+//    x2[n], second operand;
+//    c_in[n], carrier input.
+//
+// 2 outputs:
+//    s_out[n], resulting sum;
+//    c_out[n], carrier output.
+//
+full_adder(x1, x2, c_in) = s_out , 
+                           c_out
+      with {
+           s_out = xor(rint(c_in), xor(rint(x1), rint(x2)));
+           c_out = (rint(c_in) & xor(rint(x1), rint(x2))) | 
+      (rint(x1) & rint(x2));
+      };
+// -----------------------------------------------------------------------------
+
+// bitstream_adder(x1[n], x2[n]); ----------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Adder for delta-sigma-modulated streams.
+//
+// 2 inputs:
+//    x1[n], first bitstream;
+//    x2[n], second bitstream.
+//
+// 1 outputs:
+//    y[n], resulting bitstream summation.
+//
+bitstream_adder(x1, x2) =  loop
+                           ~ _ :   ! , 
+                                   _
+      with {
+           loop(fb) = full_adder(x1, x2, fb);
+      };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// Clipped integrator with state-reset input: 1 to reset, 0 to accumulate.
+//
+int_clip_r(reset, low, high, x) = clip(low, high, +(x)) ~ *(1 - reset);
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// First-order dsm with clipped and reset-state integrator; G is the ddsm gain.
+//
+ddsm1_clip_r(reset, low, high, G, x) = y
+    letrec {
+        'y = ba.if(int_clip_r(reset, low, high, x - G * y) < 0, -1, 1);
+    };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// First-order dsm integrator with clipping and reset-state.
+//
+int1bit_clip_r(reset, low, high, G, x) = 
+    ddsm1_clip_r(reset, low, high, G, int_clip_r(reset, low, high, x));
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// First-order clipped with reset ddsm lowpass.
+//
+lp1bit_clip_r(reset, low, high, G, cf, x) = y
+    letrec {
+        'y = int1bit_clip_r(reset, low, high, G, (x - y) * cf);
+    };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// First-order clipped with reset ddsm highpass.
+//
+hp1bit_clip_r(reset, low, high, G, cf, x) = 
+    ddsm1_clip_r(reset, low, high, G, x - y)
+    letrec {
+        'y = int1bit_clip_r(reset, low, high, G, (x - y) * cf);
+    };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// Bipolar bitwise operations.
+//
+and(x, y) = ba.if((x > 0) & (y > 0), 1, -1);
+or(x, y) = ba.if((x > 0) | (y > 0), 1, -1);
+orx(x, y) = ba.if((x > 0) xor (y > 0), 1, -1);
+// -----------------------------------------------------------------------------
+
+//---------------------------------`(bit.)bitrot`---------------------------------------
+//
+// (author: Till Bovermann) 
+//
+// bitrot
+//
+// under a specified likelihood (noise, chance) and depending on type, either 
+// + `type == 1` -- set a bit's value to low 
+// + `type == 2` -- flip bit
+// + `type == 3` -- set a bit's value to high
+//
+// #### Usage
+//
+// ```
+// _ : bitrot(noise, chance, type) : _
+// ```
+// with
+// + `input` -- a bimodal bitstream
+// + `noise` -- unimodal noise source between [0, 1[
+// + `chance` -- parameter between 0 and 1
+// + `type` -- see above
+//-----------------------------------------------------------------------------
+bitrot_low(noise, chance, x) = select2(coin(noise, chance), x, -1);
+bitrot_flip(noise, chance, x) = select2(coin(noise, chance), x, -x);
+bitrot_high(noise, chance, x) = select2(coin(noise, chance), x, 1);
+
+// helper
+coin(noise, chance) = noise <= chance;
+
+bitrot(noise, chance, type, x) = select3(type-1, 
+  bitrot_low(noise, chance, x), 
+  bitrot_flip(noise, chance, x), 
+  bitrot_high(noise, chance, x)
+);
+
+// zc1bit(x1[n]); --------------------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// The zero-crossing detection function corresponds to the multibit
+// operation 1 - |2x|, hence it can be used as a nonlinear distorion
+// unit.
+//
+// 2 inputs:
+//    x1[n], bitstream;
+//
+// 1 outputs:
+//    y[n], ones when a ZC occurs, -1 otherwise.
+//
+zc1bit(x) = ba.if((x xor x') != 0, 1, -1); // corresponds to 1 - |2x|
+// -----------------------------------------------------------------------------
+
+// pattern_match(list, x[n]); --------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// This function takes a list of bitstream values as first argument, and
+// the bitstream input as second argument. The function outputs 1 is the
+// pattern in the list macthes the current input stream, zero otherwise.
+// The function was tested and gave promising results as a bitstream
+// nonlinear distortion technique, for example, by flipping the current
+// bit whenever the pattern is matched.
+//
+pattern_match(pattern, x) =
+    par(i, L, r_int((x @ i)) == r_int(ba.take(L - i, pattern))) :> r_int == L
+    with {
+        L = r_int(ba.count(pattern));
+    };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+// As above but working with signal, hence potentially time-variant patterns.
+// L is the length of the pattern, x is the input signal, and N is an int
+// between 0 and 2 ^ L - 1 that is converted into binary for the comparison.
+//
+pattern_match_sig(L, x, N) =
+    pattern : par(i, L, r_int((x @ i)) == _) :> r_int == L
+    with {
+        pattern = bitConv.int32_to_bitBus(L, N) : par(i, L, ba.if(>(0), 1, -1));
+    };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo) 
+//
+//
+// Flip the current bit if the pattern matches the stream.
+//
+pattern_bitflip(pattern, x) = ba.if(pattern_match(pattern, x), -x, x);
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// As above but working with signal, hence potentially time-variant patterns.
+// L is the length of the pattern, x is the input signal, and N is an int
+// between 0 and 2 ^ L - 1 that is converted into binary for the comparison.
+//
+pattern_bitflip_sig(L, x, N) = ba.if(pattern_match_sig(L, x, N), -x, x);
+// -----------------------------------------------------------------------------
+
+// noisiness1bit(x[n]); --------------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Noisiness measurement based on a zero-latency approach for approximated
+// autocorrelation.
+//
+noisiness(rate, bi_x) = par(i, 32, lp1p(rate, abs(delta(ba.take(i + 1, lags), x)))) : 
+    1 - aad(32) * cal : uni_sigmoid
+    with {
+        x = bi_x > 0;
+        cal = 4; // calibration to roughly match 0 with a sine, and 1 with noise
+        stretch = 1; // might eventually be used for pitch estim. (big might)
+        prime_bands = // prime frequencies
+            (17, 19, 23, 31, 41, 53, 61, 79, 101, 127, 157, 199, 251, 
+                317, 397, 503, 631, 797, 997, 1259, 1583, 1997, 2521, 3163, 
+                    3989, 5011, 6301, 7949, 10007, 12589, 15859, 19949);
+        lags = par(i, 32, (1 / ba.take(i + 1, prime_bands)) * ma.SR * stretch);
+        delta(del, in) = in xor (in @ del); // binary differentiaton
+        uni_sigmoid(x) = 1 / (1 + exp(-x * 4 + 2)); // unipolar sigmoid
+        div(x1, x2) = x1 / ba.if(   x2 < 0, // safe division
+                                    min(ma.EPSILON * -1, x2),
+                                    max(ma.EPSILON, x2));
+        aad(N) = // normalised average absolute deviation
+            si.bus(N) <:    (   si.bus(N) ,
+                                (si.bus(N) :> /(N) <: si.bus(N)) :
+                                    ro.interleave(N, 2) :
+                                        par(i, N, (- : abs)) :> _) ,
+                            (si.bus(N) :> / (N)) : div : /((N - 1) * 2);
+    };
+// -----------------------------------------------------------------------------
+
+// relay_hysteron(A[n], B[n], x[n]); -------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Relay hysteron – the basic building block of the Preisach model.
+//
+// 3 inputs:
+//    A[n], lower edge;
+//    B[n], upper edge;
+//    x[n].
+//
+// 1 outputs:
+//    y[n], relay output, 0 or 1 (non-active or active).
+//
+relay_hysteron(alpha, beta, x) =   loop 
+                                   ~ _
+    with {
+        loop(fb) = ba.if(   x <= alpha, 
+                            0, 
+                            ba.if(  x >= beta, 
+                                    1, 
+                                    fb));
+    };
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Autogate is a function that gates a signal according to basic
+// statistical measures of the signal itself. Specifically, the signal
+// is integrated three times using three cascaded leaky integrators and the 
+// sign determines whether the gate is open or closed. Essentially,
+// the gating mechanism is determined by the polarity tendency of the signal.
+//
+// These function will be deployed in each output stage of the network, and
+// their collective behaviour will result in an autonomous mixer.
+//
+autogate(rate, x) = x * (x : seq(i, 4, lp1p(rate)) > 0);
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// Autonomous parameter modulation based on noisiness analysis.
+//
+autoparam(step_rate, incr_rate, alpha, beta, x) = 
+    ma.frac(ba.if(sel, step, step + incr(sel)))
+    with {
+        info = noisiness(1 / 8, x);
+        step_info = info : seq(i, 3, lp1p(step_rate));
+        incr_info = info : seq(i, 3, lp1p(incr_rate));
+        // switching section between stepped and continuous modulation
+        sel = relay_hysteron(alpha, beta, info);
+        // stepped modulator triggered by direction changes in info
+        step = ba.sAndH(dir_change, variant)
+            with {
+                dir_change = nonzero_s_diff * nonzero_s_diff' < 0
+                    with {
+                        nonzero_s_diff = 
+                            ba.sAndH(abs(s_diff) > ma.EPSILON, s_diff);
+                        s_diff = step_info - step_info';
+                    };
+                variant = (sin(os.phasor(2.0 * ma.PI, step_info)) + 1) * .5;
+            };
+        // continuous modulation through low-rate shift of the step value
+        incr(reset) = fi.pole(reset, abs(i_diff) / ma.SR) 
+            with {
+                i_diff = incr_info - incr_info';
+            };
+    };
+// -----------------------------------------------------------------------------
+
+////////////////////// utilities
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Smoothing function with a one-pole lowpass. Cut-off is 1/(2pi) Hz.
+//
+//smooth(in) = fi.pole(1 - (1 / ma.SR), in * (1 / ma.SR));
+smooth(in) = fi.pole(1 - (1 / (ma.SR * 20)), in * (1 / (ma.SR * 20)));
+// -----------------------------------------------------------------------------
+
+lp1p(cf, x) = fi.pole(p, x * (1 - p))
+    with {
+        p = exp(-2 * ma.PI * cf / ma.SR);
+    };
+
+// r_int(x[n]); ----------------------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// Unlike Faust's "rint" primitive, this function returns an int.
+// Till: we may want to replace rint with this function in the entire
+// library, how would that be?
+//
+r_int(x) = ba.if(x < 0, int(x - .5), int(x + .5));
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Basic clipping function.
+//
+clip(l, h, x) = max(l, min(h, x));
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Signal inspector
+//
+inspect(i, lower, upper, x) = 
+    attach(x, x : vbargraph("sig_%2i [style:numerical][2i]", lower, upper));
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Signal inspector
+//
+meter(i, lower, upper, x) =
+    attach(x, x : abs : ba.linear2db : hbargraph("Level_%2i", lower, upper));
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+//
+// (author: Dario Sanfilippo)
+//
+// One-bit to multi-bit converter.
+//
+onebit2mbit(x) = x : fi.highpass(1, 20) : fi.lowpass(4, 20000);
+// -----------------------------------------------------------------------------

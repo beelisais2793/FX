@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -O3 -DNDEBUG -O3 -DNDEBUG -rdynamic CMakeFiles/effects.dir/effects.cpp.o -o /home/quake/Projects/TStk/stk/projects/effects/effects  -ljack -lasound ../../libstk.a -ljack -pthread -lasound 

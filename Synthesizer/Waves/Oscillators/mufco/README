@@ -1,0 +1,118 @@
+MUFCO README
+============
+:Author: Manuel Castillo Cagigal
+:email: manuel.castillo@upm.es
+
+MUFCO simulator is a multifrequency coupled oscillators simulator.
+It is design to analyzed different coupling effects in a group
+of oscillators with external perturbations. Oscillators 
+can operate with different nominal frequencies, spread over a 
+discrete number of frequency components.
+
+Downloading MUFCO
+-----------------
+
+The source code of mufco simulator can be downloaded
+through git:
+
+$ git clone https://github.com/mccagigal/mufco.git
+
+Compiling MUFCO
+---------------
+
+The MUFCO simulator can be compiled using the compilation 
+script in the main folder:
+
+$ ./build_simulator.sh 
+
+The compilation stuff is in ./build directory.
+The executable file "./mufcoSim" is copied in the parent directory.
+
+Running MUFCO
+~~~~~~~~~~~~~
+
+The MUFCO experiments are executed:
+
+$ ./mufcoSim -p cnf/<CONFIGURATION_FILE>
+
+The <CONFIGURATION_FILE> is an xml file which defines the experiment to be executed.
+
+Configuring MUFCO
+-----------------
+
+The configuration of the MUFCO simulator is divided in five sections:
+
+* Simulation: experiment general parameters.
+- seed : define the seed of the random number generator.
+	[0-N] int value of the seed.
+	-1    the seed is taken from the CPU clock.
+- length : experiment time in time steps.
+	[1-N] int value.
+- sampling : sampling period of signals.
+	[1-N] int value.
+-fft_lng : FFT windows length.
+	[2-N] int value 2-power.
+
+* Environment: environment parameters.
+- type: define the type of external perturbation.
+	0 no perturbation.
+	1 sinusoidal perturbation.
+	2 profile perturbation.
+- amplitude: the amplitude of the external perturbation.
+	[0-N] float value.
+- offset: the offset of perturbation.
+	[0-N] float value.
+- <src_1> file: sinusoidal perturbation configuration file.
+- <src_2> file: profile perturbation file.
+
+* Oscillators: oscillator parameters.
+- number: number of oscillators.
+	[0-N] int value.
+- distribution: nominal frequency distribution.
+	-1    random distribution.
+	[0-N] frequency component related to the FFT.
+- ff: form factor function.
+	0 zero form factor.
+	1 maximum normalization form factor.
+	2 constant normalization form factor.
+	3 form factor is the relationship between variance and average.
+- offset: the offset of oscillators collective.
+	[0-N] float value.
+- <coupling> coupling configuration.
+	- type: type of coupling.
+		1       mean field coupling.
+		2       DFT coupling.
+		3       ADFT coupling.
+		4       Z-ADFT coupling.
+		default no coupling.
+	- K : kuramoto factor.
+		[-N,N] float value.
+- <switching> frequency switching configuration.
+	- type: type of switching.
+		0       no switching.
+		default simple probability switching.
+	- P : probability factor.
+		[0,N] float value.
+
+* Visualization: visualization parameters.
+- active : activation flag.
+	0 deactivated.
+	1 activated.
+- rf_rate :  refresh rate.
+	[1,N] int value.
+- <scr> screens:
+	- type  data to be represented.
+	- title string with the title of the screen.
+	- x_lng length of the x axis.
+	- y_ini initial value of the y axis.  
+	- y_end final value of the y axis.
+
+* Writer: writer parameters.
+- active : activation flag.
+	0 deactivated.
+	1 activated.
+- <components> especial information about a frequency component.
+	- number : frequency component of the FFT.
+		[0-N] int value.
+- <output> output address
+	- folder : string with the output folder. 

@@ -1,0 +1,2 @@
+build/obj/SoundFile.o: src/SoundFile.cpp Gamma/SoundFile.h Gamma/mem.h \
+ Gamma/Access.h Gamma/std_swap.h src/SoundFileIO.h

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="QKr1pO" name="FModSynth" projectType="audioplug" jucerVersion="5.4.3"
+              pluginVST3Category="Instrument,Synth" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              pluginFormats="buildAU,buildVST3" pluginAAXCategory="2" pluginManufacturer="Quasar"
+              pluginManufacturerCode="NEON" pluginDesc="A frequency modulation synthesizer"
+              pluginName="NEON FM">
+  <MAINGROUP id="KxkJpk" name="FModSynth">
+    <GROUP id="{6C673BCC-F8F4-D710-E30A-E0D52F5EE1D9}" name="Source">
+      <FILE id="kKrs5E" name="Operator.cpp" compile="1" resource="0" file="Source/Operator.cpp"/>
+      <FILE id="mC4Z1R" name="Operator.h" compile="0" resource="0" file="Source/Operator.h"/>
+      <FILE id="vvmrmA" name="Gain.cpp" compile="1" resource="0" file="Source/Gain.cpp"/>
+      <FILE id="lmjAcM" name="Gain.h" compile="0" resource="0" file="Source/Gain.h"/>
+      <GROUP id="{C5247C92-D128-A6F4-EEF3-8EC1487A3415}" name="Maximilian">
+        <GROUP id="{BA40BA14-6C39-B388-0749-760CCBAB2AAE}" name="libs">
+          <FILE id="bDSQY9" name="fft.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/fft.cpp"/>
+          <FILE id="JJcL36" name="fft.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/fft.h"/>
+          <FILE id="sdohV5" name="maxiAtoms.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiAtoms.cpp"/>
+          <FILE id="dM9ToF" name="maxiAtoms.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiAtoms.h"/>
+          <FILE id="tTPwuA" name="maxiBark.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiBark.cpp"/>
+          <FILE id="ulvvuX" name="maxiBark.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiBark.h"/>
+          <FILE id="U72QAh" name="maxiFFT.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiFFT.cpp"/>
+          <FILE id="dfKJnH" name="maxiFFT.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiFFT.h"/>
+          <FILE id="bYGh4Q" name="maxiGrains.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiGrains.cpp"/>
+          <FILE id="yXlutl" name="maxiGrains.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiGrains.h"/>
+          <FILE id="EoTrU4" name="maxim.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxim.h"/>
+          <FILE id="n6gwE3" name="maxiMFCC.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiMFCC.cpp"/>
+          <FILE id="k8Q6R3" name="maxiMFCC.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/maxiMFCC.h"/>
+          <FILE id="NalcUs" name="sineTable.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/libs/sineTable.h"/>
+        </GROUP>
+        <FILE id="Uv2L1Q" name="main.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/main.cpp"/>
+        <FILE id="EM2BsD" name="maximilian.cpp" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/maximilian.cpp"/>
+        <FILE id="KrePh6" name="maximilian.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/maximilian.h"/>
+        <FILE id="FsZeO1" name="README" compile="0" resource="1" file="C:/Users/quasa/SDKs/Maximilian/README"/>
+        <FILE id="bUtOYg" name="stb_vorbis.c" compile="1" resource="0" file="C:/Users/quasa/SDKs/Maximilian/stb_vorbis.c"/>
+        <FILE id="b2pYMY" name="stb_vorbis.h" compile="0" resource="0" file="C:/Users/quasa/SDKs/Maximilian/stb_vorbis.h"/>
+      </GROUP>
+      <FILE id="ZlCY32" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="MEe3hM" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="eX9lAm" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="mkpDKM" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="wgPRwf" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
+      <FILE id="avfVxq" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+    </GROUP>
+    <FILE id="I9iuvo" name="CustomLook.h" compile="0" resource="0" file="Source/CustomLook.h"/>
+    <FILE id="f14JdP" name="Envelope.cpp" compile="1" resource="0" file="Source/Envelope.cpp"/>
+    <FILE id="ykPcxd" name="Envelope.h" compile="0" resource="0" file="Source/Envelope.h"/>
+    <FILE id="FSMVss" name="Filter.cpp" compile="1" resource="0" file="Source/Filter.cpp"/>
+    <FILE id="Fyw3pZ" name="Filter.h" compile="0" resource="0" file="Source/Filter.h"/>
+    <FILE id="P2KOZH" name="GainProcessor.h" compile="0" resource="0" file="Source/GainProcessor.h"/>
+    <FILE id="Ki98lv" name="LowFrequencyOscillator.cpp" compile="1" resource="0"
+          file="Source/LowFrequencyOscillator.cpp"/>
+    <FILE id="SqAcbo" name="LowFrequencyOscillator.h" compile="0" resource="0"
+          file="Source/LowFrequencyOscillator.h"/>
+    <FILE id="heQWeH" name="ModMatrix.cpp" compile="1" resource="0" file="Source/ModMatrix.cpp"/>
+    <FILE id="xgwUN6" name="ModMatrix.h" compile="0" resource="0" file="Source/ModMatrix.h"/>
+    <FILE id="tTDuOv" name="ProcessorGraph.cpp" compile="1" resource="0"
+          file="Source/ProcessorGraph.cpp"/>
+    <FILE id="aLaw7H" name="ProcessorGraph.h" compile="0" resource="0"
+          file="Source/ProcessorGraph.h"/>
+    <FILE id="LSZJHJ" name="Router.cpp" compile="1" resource="0" file="Source/Router.cpp"/>
+    <FILE id="hLmRmE" name="Router.h" compile="0" resource="0" file="Source/Router.h"/>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="C:\Users\quasa\SDKs\Maximilian"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="C:/Users/quasa/SDKs/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>

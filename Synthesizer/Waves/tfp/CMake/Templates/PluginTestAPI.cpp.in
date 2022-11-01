@@ -1,0 +1,14 @@
+#include <iostream>
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
+#include "tfp/plugin/Plugin.hpp"
+
+extern "C" {
+
+int run_tests(int argc, char** argv)
+{
+    std::cout << "Running tests from run_tests() in plugin " "@TARGET@" "\n";
+    return RUN_ALL_TESTS();
+}
+
+}

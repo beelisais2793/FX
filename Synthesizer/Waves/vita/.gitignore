@@ -1,0 +1,28 @@
+# Temporary files
+*.P
+*.o
+*.*~
+*.a
+tmp/
+
+# Html output of doxygen
+doc/doxygen/vita.api
+
+# Clone of Github's Vita Wiki
+doc/wiki/
+
+# Dummy directories for sr utility
+src/examples/sr/dataset
+src/examples/sr/stat
+src/examples/sr/symbolset
+
+# Executables
+build/
+
+# External tools
+tools/*.pyc
+
+# GNU Global files
+GPATH
+GRTAGS
+GTAGS

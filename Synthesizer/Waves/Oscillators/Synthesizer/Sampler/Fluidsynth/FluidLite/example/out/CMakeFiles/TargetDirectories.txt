@@ -1,0 +1,8 @@
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/fluidlite-static.dir
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/fluidlite.dir
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/edit_cache.dir
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/rebuild_cache.dir
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/list_install_components.dir
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/install.dir
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/install/local.dir
+/home/quake/Projects/fluidsynth/FluidLite/example/out/CMakeFiles/install/strip.dir

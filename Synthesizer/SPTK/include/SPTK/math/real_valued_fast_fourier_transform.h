@@ -1,0 +1,138 @@
+// ------------------------------------------------------------------------ //
+// Copyright 2021 SPTK Working Group                                        //
+//                                                                          //
+// Licensed under the Apache License, Version 2.0 (the "License");          //
+// you may not use this file except in compliance with the License.         //
+// You may obtain a copy of the License at                                  //
+//                                                                          //
+//     http://www.apache.org/licenses/LICENSE-2.0                           //
+//                                                                          //
+// Unless required by applicable law or agreed to in writing, software      //
+// distributed under the License is distributed on an "AS IS" BASIS,        //
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. //
+// See the License for the specific language governing permissions and      //
+// limitations under the License.                                           //
+// ------------------------------------------------------------------------ //
+
+#ifndef SPTK_MATH_REAL_VALUED_FAST_FOURIER_TRANSFORM_H_
+#define SPTK_MATH_REAL_VALUED_FAST_FOURIER_TRANSFORM_H_
+
+#include <vector>  // std::vector
+
+#include "SPTK/math/fast_fourier_transform.h"
+#include "SPTK/utils/sptk_utils.h"
+
+namespace sptk {
+
+/**
+ * Calculate DFT of real-valued input data.
+ *
+ * The input is @f$M@f$-th order real-valued data:
+ * @f[
+ *   \begin{array}{cccc}
+ *     x(0), & x(1), & \ldots, & x(M).
+ *   \end{array}
+ * @f]
+ * The outputs are
+ * @f[
+ *   \begin{array}{cccc}
+ *   \mathrm{Re}(X(0)), & \mathrm{Re}(X(1)), & \ldots, & \mathrm{Re}(X(L-1)), \\
+ *   \mathrm{Im}(X(0)), & \mathrm{Im}(X(1)), & \ldots, & \mathrm{Im}(X(L-1)),
+ *   \end{array}
+ * @f]
+ * where @f$L@f$ is the FFT length and must be a power of two.
+ */
+class RealValuedFastFourierTransform {
+ public:
+  /**
+   * Buffer for RealValuedFastFourierTransform class.
+   */
+  class Buffer {
+   public:
+    Buffer() {
+    }
+
+    virtual ~Buffer() {
+    }
+
+   private:
+    std::vector<double> real_part_input_;
+    std::vector<double> imag_part_input_;
+
+    friend class RealValuedFastFourierTransform;
+    DISALLOW_COPY_AND_ASSIGN(Buffer);
+  };
+
+  /**
+   * @param[in] fft_length FFT length, @f$L@f$.
+   */
+  explicit RealValuedFastFourierTransform(int fft_length);
+
+  /**
+   * @param[in] num_order Order of input, @f$M@f$.
+   * @param[in] fft_length FFT length, @f$L@f$.
+   */
+  RealValuedFastFourierTransform(int num_order, int fft_length);
+
+  virtual ~RealValuedFastFourierTransform() {
+  }
+
+  /**
+   * @return Order of input.
+   */
+  int GetNumOrder() const {
+    return num_order_;
+  }
+
+  /**
+   * @return FFT length.
+   */
+  int GetFftLength() const {
+    return fft_length_;
+  }
+
+  /**
+   * @return True if this object is valid.
+   */
+  bool IsValid() const {
+    return is_valid_;
+  }
+
+  /**
+   * @param[in] real_part_input @f$M@f$-th order real part of input.
+   * @param[out] real_part_output @f$L@f$-length real part of output.
+   * @param[out] imag_part_output @f$L@f$-length imaginary part of output.
+   * @param[out] buffer Buffer.
+   * @return True on success, false on failure.
+   */
+  bool Run(const std::vector<double>& real_part_input,
+           std::vector<double>* real_part_output,
+           std::vector<double>* imag_part_output,
+           RealValuedFastFourierTransform::Buffer* buffer) const;
+
+  /**
+   * @param[in,out] real_part Real part.
+   * @param[out] imag_part Imaginary part.
+   * @param[out] buffer Buffer.
+   * @return True on success, false on failure.
+   */
+  bool Run(std::vector<double>* real_part, std::vector<double>* imag_part,
+           RealValuedFastFourierTransform::Buffer* buffer) const;
+
+ private:
+  const int num_order_;
+  const int fft_length_;
+  const int half_fft_length_;
+
+  const FastFourierTransform fast_fourier_transform_;
+
+  bool is_valid_;
+
+  std::vector<double> sine_table_;
+
+  DISALLOW_COPY_AND_ASSIGN(RealValuedFastFourierTransform);
+};
+
+}  // namespace sptk
+
+#endif  // SPTK_MATH_REAL_VALUED_FAST_FOURIER_TRANSFORM_H_

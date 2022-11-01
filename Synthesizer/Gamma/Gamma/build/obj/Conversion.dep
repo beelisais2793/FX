@@ -1,0 +1,2 @@
+build/obj/Conversion.o: src/Conversion.cpp Gamma/Conversion.h \
+ Gamma/Constants.h Gamma/pstdint.h

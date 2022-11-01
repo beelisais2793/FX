@@ -1,0 +1,15 @@
+///////////////////////////////////////////////////////
+// TDSP
+///////////////////////////////////////////////////////
+
+#pragma once 
+#include "samples.hpp"
+#include "samples_dsp.hpp"
+
+// resamplers (filters)
+// r8brains
+// zita 
+// speex
+// samplerate converters
+// polyphase
+// halfbands

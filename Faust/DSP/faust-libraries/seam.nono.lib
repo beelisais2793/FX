@@ -1,0 +1,255 @@
+// ---
+// description: Luigi Nono's Live Electronics Instruments
+// ---
+//
+// <!-- LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -->
+//
+// # nono.lib
+//
+// ```text
+declare name "Nono's Elements - Library";
+declare version "0.2";
+declare author "Giuseppe Silvi";
+declare license "CC4";
+
+sln = library("seam.nono.lib");
+
+// ```
+//
+// ## Harmonizer
+//
+// #### Code
+//
+// ```text
+harmonizer(c) = ef.transpose(400,300,(c*0.01));
+// cents = hslider("HARMONIZER (cents)", 0, -2600, +100, 1) : si.smoo;
+// process = harmonizer(cents);
+// ```
+
+im_pitch_shift(w, x, s, f, sig) = de.fdelay(mDel,d(f),sig)*ma.fmin(d(f)/x,1) + de.fdelay(mDel,d(f)+w,sig)*(1-ma.fmin(d(f)/x,1))
+with {
+	mDel = ma.SR;
+	i = 1 - s;//1 - pow(2, s/12);
+	d(f) = i*vib(f) : (+ : +(w) : fmod(_,w)) ~ _;
+    vib(f) = os.osc(f); // manca depth
+};
+//ratio = hslider("RATIO", 0.99, 0.250, 2, 0.001);
+//vf = hslider("F", 0.1, 0.1, 50, 0.1);
+//process = os.osc(1000) <: _, im_pitch_shift(400,400,ratio,vf);
+
+pplpd_phaser = im_pitch_shift(400,400,0.99,0.1) + im_pitch_shift(400,400,0.98,0.2);
+
+delbank(N,delays) = _ <: par(i,N, (de.delay(d1(i),d1(i)-1)))
+with{
+    d1(i) = ba.take(i+1,delays);
+};
+//process = delbank(4,(5,7,10,15));
+
+//
+// ## DELAY BANK WITH FEEDBACK
+//
+// #### Code
+//
+// ```text
+// delbank = _ <: (+<: de.delay(D1,D1), de.delay(D2,D2))~*(fbgain1),
+//                (+<: de.delay(D3,D3), de.delay(D4,D4))~*(fbgain2),
+//                (+<: de.delay(D5,D5), de.delay(D6,D6))~*(fbgain3),
+//                (+<: de.delay(D7,D7), de.delay(D8,D8))~*(fbgain4);
+// N = number of delay line (each line 2 delay out)
+// d1l = list of odd delay times
+// d2l = list of even delay times
+// fb1l = list of fb coefficient (odd delay)
+delbankfb(N,d1l,d2l,fb1l) = _ <: par(i,N, (+<: de.delay(d1(i),d1(i)-1), de.delay(d2(i),d2(i)-1))~*(fb1(i)))
+with{
+    d1(i) = ba.take(i+1,d1l);
+    d2(i) = ba.take(i+1,d2l);
+    fb1(i) = ba.take(i+1,fb1l);
+};
+//process = delbank(2,(10,11),(15,19),(0.1,0.2));
+
+//
+// ## PHASER
+//
+// #### Code
+//
+// ```text
+phaser(N,x,d,g,fb) = x <: _,(+:alseq(N,d,g))~*(fb):> _
+with{
+  ap(d,g) = (+ <: de.fdelay((ma.SR/2),d),*(-g)) ~ *(g) : mem,_ : +;
+  alseq(N,d,g) = seq(i,N,ap(d,g));
+};
+// ```
+
+//
+// ## AMPLIFICAZIONE TRASPARENTE
+//
+// #### Code
+//
+// ```text
+ampt(g,mt) = *(g) : de.delay(ma.SR,mt2samp(mt));
+//process = <:,ampt(0.5,20);
+amptn(N,g,mt) = par(i,N, *(ba.take(i+1,g)) : de.delay(ma.SR,mt2samp(ba.take(i+1,mt))));
+//amps(n) = par(i,n+1,(n+1)-i);
+//dists(n) = par(i,n,(n*(i))+1);
+//process = _ <: amptn(18,(amps(20)),(dists(20)));
+// ```
+
+
+
+
+
+
+
+
+//------------------------------------------------------------------------------
+// REVERB 4 SEC
+//------------------------------------------------------------------------------
+// Converts an LR stereo image into Mid mono signal describes the frontal
+// directional component of the sound image.
+//
+// #### Reference
+//
+// #### Usage
+//
+// ```
+// _,_ : mid : _
+// ```
+//
+// Where the two inputs are respectively:
+// L,R
+//
+// Where the output is the Mid component
+//
+//------------------------------------------------------------------------------
+rev_quattro(N,NB,BBSO) = _ <: re.fdnrev0(MAXDELAY,delays,BBSO,freqs,durs,loopgainmax,nonl) :> *(gain), *(gain)
+with{
+	MAXDELAY = 8192; // sync w delays and prime_power_delays above
+	defdurs = (3.00, 4.0, 6.5, 4.5, 2.0); // NB default durations (sec)
+	deffreqs = (350, 1250, 3500, 8000); // NB-1 default crossover frequencies (Hz)
+	fdn_group(x)  = vgroup("FDN REV 4", x);
+	freq_group(x)   = fdn_group(hgroup("[1] Crossover Frequencies", x));
+	t60_group(x)    = fdn_group(hgroup("[2] Band Decay Times (T60)", x));
+	path_group(x)   = fdn_group(vgroup("[3] Room Dimensions", x));
+	revin_group(x)  = fdn_group(hgroup("[4] Input Controls", x));
+	nonl_group(x)   = revin_group(vgroup("[4] Nonlinearity",x));
+	quench_group(x) = revin_group(vgroup("[3] Reverb State",x));
+	nonl = nonl_group(hslider("[style:knob] [tooltip: nonlinear mode coupling]", 0, -0.999, 0.999, 0.001));
+	loopgainmax = 1.0-0.5*quench_group(button("[1] Clear [tooltip: Hold down to clear the reverberator]"));
+	pathmin = path_group(hslider("[1] min acoustic ray length [unit:m] [scale:log]", 12.0, 0.1, 63, 0.1));
+	pathmax = path_group(hslider("[2] max acoustic ray length [unit:m] [scale:log]", 63.0, 0.1, 63, 0.1));
+	durvals(i) = t60_group(nentry("[%i] %i [unit:s]",ba.take(i+1,defdurs), 0.1, 100, 0.1));
+ durs = par(i,NB,durvals(NB-1-i));
+	freqvals(i) = freq_group(nentry("[%i] Band %i upper edge in Hz [unit:Hz]",ba.take(i+1,deffreqs), 100, 10000, 1));
+ freqs = par(i,NB-1,freqvals(i));
+	delays = de.prime_power_delays(N,pathmin,pathmax);
+	gain = hslider("[3] Output Level (dB) [unit:dB][tooltip: Output scale factor]", -40, -70, 20, 0.1) : ba.db2linear;
+};
+
+//------------------------------------------------------------------------------
+// REVERB 80 SEC
+//------------------------------------------------------------------------------
+// Converts an LR stereo image into Mid mono signal describes the frontal
+// directional component of the sound image.
+//
+// #### Reference
+//
+// #### Usage
+//
+// ```
+// _,_ : mid : _
+// ```
+//
+// Where the two inputs are respectively:
+// L,R
+//
+// Where the output is the Mid component
+//
+//------------------------------------------------------------------------------
+rev_ottanta(N,NB,BBSO) = _ <: re.fdnrev0(MAXDELAY,delays,BBSO,freqs,durs,loopgainmax,nonl) :> *(gain), *(gain), *(gain), *(gain)
+with{
+	MAXDELAY = 8192; // sync w delays and prime_power_delays above
+	defdurs = (43.00, 84.0, 66.5, 44.5, 22.0); // NB default durations (sec)
+	deffreqs = (350, 1250, 3500, 8000); // NB-1 default crossover frequencies (Hz)
+	fdn_group(x)  = vgroup("FDN REV 80", x);
+	freq_group(x)   = fdn_group(hgroup("[1] Crossover Frequencies", x));
+	t60_group(x)    = fdn_group(hgroup("[2] Band Decay Times (T60)", x));
+	path_group(x)   = fdn_group(vgroup("[3] Room Dimensions", x));
+	revin_group(x)  = fdn_group(hgroup("[4] Input Controls", x));
+	nonl_group(x)   = revin_group(vgroup("[4] Nonlinearity",x));
+	quench_group(x) = revin_group(vgroup("[3] Reverb State",x));
+	nonl = nonl_group(hslider("[style:knob] [tooltip: nonlinear mode coupling]", 0, -0.999, 0.999, 0.001));
+	loopgainmax = 1.0-0.5*quench_group(button("[1] Clear [tooltip: Hold down to clear the reverberator]"));
+	pathmin = path_group(hslider("[1] min acoustic ray length [unit:m] [scale:log]", 12.0, 0.1, 63, 0.1));
+	pathmax = path_group(hslider("[2] max acoustic ray length [unit:m] [scale:log]", 63.0, 0.1, 63, 0.1));
+	durvals(i) = t60_group(nentry("[%i] %i [unit:s]",ba.take(i+1,defdurs), 0.1, 100, 0.1));
+ durs = par(i,NB,durvals(NB-1-i));
+	freqvals(i) = freq_group(nentry("[%i] Band %i upper edge in Hz [unit:Hz]",ba.take(i+1,deffreqs), 100, 10000, 1));
+ freqs = par(i,NB-1,freqvals(i));
+	delays = de.prime_power_delays(N,pathmin,pathmax);
+	gain = hslider("[3] Output Level (dB) [unit:dB][tooltip: Output scale factor]", -40, -70, 20, 0.1) : ba.db2linear;
+};
+
+//------------------------------------------------------------------------------
+// HALAPHON
+//------------------------------------------------------------------------------
+// Converts an LR stereo image into Mid mono signal describes the frontal
+// directional component of the sound image.
+//
+// #### Reference
+//
+// #### Usage
+//
+// ```
+// _,_ : mid : _
+// ```
+//
+// Where the two inputs are respectively:
+// L,R
+//
+// Where the output is the Mid component
+//
+//------------------------------------------------------------------------------
+halafon(N,t,r) = sp.spat(N,time,r) : halmeters(N)
+  with{
+    time = os.lf_sawpos(1/t);
+    h1(v) = vgroup("Ch %v", hmeter);
+    halmeters(N) = vgroup("h1 meters", par(i, N, h1(i)));
+    hmeter(x) = attach(x, an.amp_follower(0.150, x) : ba.linear2db : hbargraph("[05][unit:dB] Meter", -70, +5));
+};
+// time = hslider("[01] h1 time", 3.0, -23.0, 23.0, 0.01);
+// radius = hslider("[02] h1 distance", 1, 0, 1, 0.01);
+// process = no.pink_noise : halaphon(8,time,radius);
+
+aa = library("aanl.lib");
+sf = library("all.lib");
+an = library("analyzers.lib");
+ba = library("basics.lib");
+co = library("compressors.lib");
+de = library("delays.lib");
+dm = library("demos.lib");
+dx = library("dx7.lib");
+en = library("envelopes.lib");
+fd = library("fds.lib");
+fi = library("filters.lib");
+ho = library("hoa.lib");
+it = library("interpolators.lib");
+ma = library("maths.lib");
+mi = library("mi.lib");
+ef = library("misceffects.lib");
+os = library("oscillators.lib");
+no = library("noises.lib");
+pf = library("phaflangers.lib");
+pl = library("platform.lib");
+pm = library("physmodels.lib");
+qu = library("quantizers.lib");
+rm = library("reducemaps.lib");
+re = library("reverbs.lib");
+ro = library("routes.lib");
+sp = library("spats.lib");
+si = library("signals.lib");
+so = library("soundfiles.lib");
+sy = library("synths.lib");
+ve = library("vaeffects.lib");
+vl = library("version.lib");
+wa = library("webaudio.lib");
+wd = library("wdmodels.lib");

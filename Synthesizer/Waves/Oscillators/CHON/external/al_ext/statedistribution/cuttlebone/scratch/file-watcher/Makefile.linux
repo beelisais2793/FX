@@ -1,0 +1,15 @@
+.SUFFIXES:
+.PHONY: _
+
+CXX11 += -std=c++11
+
+_: watch
+
+watch: main.o FileWatcherLinux.o
+	g++ -o $@ $^
+
+%.o :: %.cpp
+	g++ -x c++ $(CXX11) -c $< -o $@
+
+clean:
+	rm -rf watch main.o FileWatcherLinux.o

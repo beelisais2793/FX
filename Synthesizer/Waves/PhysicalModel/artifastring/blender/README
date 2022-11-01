@@ -1,0 +1,22 @@
+Images and video can only be produced with blender 2.5 or higher.
+
+
+BASIC TEST
+
+You can produce images in /tmp/artifastring/images/  with:
+  actions2images.py testfile.actions
+
+For options, use
+  actions2images.py --help
+
+
+ENTIRE VIDEO
+
+To produce the entire video, use
+  actions2images.py testfile.actions
+  actions2wav testfile.actions
+  artifastring-movie.py testfile.wav
+
+For options, use
+  artifastring-movie.py --help
+

@@ -1,0 +1,23 @@
+#N canvas 1326 695 450 300 10;
+#X floatatom 50 173 0 0 0 0 - - -;
+#X obj 31 122 notein;
+#X floatatom 31 196 0 0 0 0 - - -;
+#X floatatom 70 148 0 0 0 0 - - -;
+#X text 65 196 note;
+#X text 80 174 velocity;
+#X text 100 150 channel;
+#X floatatom 299 181 0 0 0 0 - - -;
+#X floatatom 283 210 0 0 0 0 - - -;
+#X floatatom 315 148 0 0 0 0 - - -;
+#X obj 283 123 ctlin;
+#X text 314 213 value;
+#X text 330 174 controller number, f 10;
+#X text 348 149 channel;
+#X text 27 20 When connected to a MIDI device \, MIDI controller numbers
+can be found using this patch (from the MIDI help files).;
+#X connect 1 0 2 0;
+#X connect 1 1 0 0;
+#X connect 1 2 3 0;
+#X connect 10 0 8 0;
+#X connect 10 1 7 0;
+#X connect 10 2 9 0;

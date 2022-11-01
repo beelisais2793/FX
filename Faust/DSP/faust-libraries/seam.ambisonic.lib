@@ -1,0 +1,155 @@
+// ---
+// description: A library for the exploration of Michael Gerzon's algorithms
+// ---
+//
+// <!-- LICENSE: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 -->
+//
+// # gerzon.lib
+//
+// ```text
+declare name "Ambisonic Elements Faust Library";
+declare version "0.1";
+declare author "Giuseppe Silvi";
+declare license "CC4";
+
+sam = library("seam.ambisonic.lib");
+
+//================================================================= ENCODERS ===
+//==============================================================================
+//------------------------------------------------------------------------------
+// MS STEREO TO FIRST ORDER B-FORMAT ENCODER
+//------------------------------------------------------------------------------
+// Converts a Mid-Side Stereo stream into Firts Order B-Format
+//------------------------------------------------------------------------------
+ms2bfmt(m,s) = w,x,y,z
+with{
+  w = (m+s/2);
+  x = m;
+  y = s;
+  z = 0;
+};
+
+//------------------------------------------------------------------------------
+// LR STEREO TO FIRST ORDER B-FORMAT ENCODER
+//------------------------------------------------------------------------------
+// Converts a Left-Right Stereo stream into Firts Order B-Format
+//------------------------------------------------------------------------------
+lr2bfmt(l,r) = w(l,r), x(l,r), y(l,r), z
+with{
+  w(l,r) = ((l+r)/2)*(1/sqrt(2));
+  x(l,r) = ((l+r)/2);
+  y(l,r) = ((l-r)/2);
+  z = 0;
+};
+
+//================================================================= DECODERS ===
+//==============================================================================
+//------------------------------------------------------------------------------
+// FIRST ORDER PLANAR B-FORMAT TO MONO DECODER
+//------------------------------------------------------------------------------
+// Converts a First Order Planar B-Format into mono first order signal
+//
+// #### Reference
+// https://en.wikipedia.org/wiki/Ambisonics
+//
+// The B-format components can be combined to derive virtual microphones with
+// any first-order polar pattern (omnidirectional, cardioid, hypercardioid,
+// figure-of-eight or anything in between) pointing in any direction. Several
+// such microphones with different parameters can be derived at the same time,
+// to create coincident stereo pairs (such as a Blumlein) or surround arrays.
+// A horizontal virtual microphone at horizontal angle Θ \Theta with pattern
+// 0 ≤ p ≤ 1 0 \leq p \leq 1 is given by
+//
+// This virtual mic is free-field normalised, which means it has a constant
+// gain of one for on-axis sounds. The illustration on the left shows some
+// examples created with this formula. Virtual microphones can be manipulated
+// in post-production: desired sounds can be picked out, unwanted ones
+// suppressed, and the balance between direct and reverberant sound can be
+// fine-tuned during mixing.
+//
+// #### Usage
+//
+// ```
+// encoder(x) = hgroup("BFMT MONO-DECODER", x);
+// azi = encoder(vslider("[01] Azimuth [style:knob]", 0, 0, 360, 0.1) : deg2rad : si.smoo);
+// p = encoder(vslider("[02] Polar [style:knob]", 0.5, 0, 1, 0.01) : si.smoo);
+// deg2rad = *(ma.PI/180);
+// process = _,_,_ : pbf2hm(azi,p) : _;
+// ```
+//
+// Where the four inputs are respectively:
+// W,X,Y
+//
+// Where the output is a mono signal with modulable polar pattern:
+// out: m
+// polar pattern: p
+//
+//------------------------------------------------------------------------------
+pbf2m(a,p) = p*(sqrt(2)*(_))+((1-p)*((_*cos(a))+(_*sin(a))));
+
+//------------------------------------------------------------------------------
+// FIRST ORDER B-FORMAT TO REGULAR POLYGON
+//------------------------------------------------------------------------------
+// Converts a First Order B-Format n mono first order signal on the edge of a
+// polygon
+//
+// #### Reference
+// https://en.wikipedia.org/wiki/Ambisonics
+//
+// #### Usage
+//
+// ```
+// _,_,_ : bfmt2m : _
+// ```
+//
+// Where the two inputs are respectively:
+// W,X,Y,Z
+//
+// Where the output is a mono signal with modulable polar pattern:
+// m
+//
+//------------------------------------------------------------------------------
+pbf2poly(n,p) = polygon
+  with{
+      azi(n) = 360/(n) : deg2rad;
+      polygon(n) = par(i, n, pbf2m);
+};
+
+//------------------------------------------------------------------------------
+fuma2sn3d(W,X,Y,Z) = W*(1/sqrt(2)), X, Y, Z;
+fuma2acn_sn3d(W,X,Y,Z) = fuma2sn3d(W,X,Y,Z) : _, ro.cross(2), _ : _,_, ro.cross(2);
+//process = fuma2acn_sn3d;
+
+aa = library("aanl.lib");
+sf = library("all.lib");
+an = library("analyzers.lib");
+ba = library("basics.lib");
+co = library("compressors.lib");
+de = library("delays.lib");
+dm = library("demos.lib");
+dx = library("dx7.lib");
+en = library("envelopes.lib");
+fd = library("fds.lib");
+fi = library("filters.lib");
+ho = library("hoa.lib");
+it = library("interpolators.lib");
+ma = library("maths.lib");
+mi = library("mi.lib");
+ef = library("misceffects.lib");
+os = library("oscillators.lib");
+no = library("noises.lib");
+pf = library("phaflangers.lib");
+pl = library("platform.lib");
+pm = library("physmodels.lib");
+qu = library("quantizers.lib");
+rm = library("reducemaps.lib");
+re = library("reverbs.lib");
+ro = library("routes.lib");
+sp = library("spats.lib");
+si = library("signals.lib");
+so = library("soundfiles.lib");
+sy = library("synths.lib");
+ve = library("vaeffects.lib");
+vl = library("version.lib");
+wa = library("webaudio.lib");
+wd = library("wdmodels.lib");

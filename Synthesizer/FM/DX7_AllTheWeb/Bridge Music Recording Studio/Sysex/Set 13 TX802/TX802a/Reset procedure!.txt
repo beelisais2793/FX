@@ -1,0 +1,16 @@
+TX802 Factory Reset procedure 
+WARNING: All user-stored data (Internal Voices, Performances, 
+Global MIDI and Utility settings) will be deleted. If the current settings and data 
+are not expendable, save the data to a cartridge or externally before executing the 
+Factory Reset.
+Reference: Owner's Manual, p. 11 
+1) Power ON while holding the [8] and [9] buttons.
+2) Press the [ENTER] button.
+3) Press the [YES] button, then advance to Test #56.
+4) Press the [ENTER] button.
+5) Press the [YES] button.
+6) When Test #57 displays, press the [YES] button.
+7) Turn OFF the power.
+8) Turn the power back ON to return to 'Normal' mode.
+
+ 

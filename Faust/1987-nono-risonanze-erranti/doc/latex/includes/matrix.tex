@@ -1,0 +1,142 @@
+\documentclass[
+    crop,
+    tikz
+    ]{standalone}
+
+\begin{document}
+
+\begin{tikzpicture}[
+    %auto,
+    inputs/.style    = {
+    	font=\scriptsize\sffamily,
+    	rectangle,
+		draw=black,
+		thick,
+		%fill=black!10,
+		text width=6em,
+		text centered,
+		%rounded corners,
+		minimum height=1.5em,
+		rotate=90
+		},
+    outs/.style    = {
+    	font=\scriptsize\sffamily,
+    	rectangle,
+		draw=black,
+		thick,
+		%fill=black!10,
+		text width=6em,
+		text centered,
+		%rounded corners,
+		minimum height=1.5em,
+		%rotate=-90
+		},
+	line/.style = {
+    	draw,
+		thick,
+		fill=black
+		%shorten >=2pt
+		},
+	ctl/.style = {
+    	draw,
+		circle,
+		thick,
+		fill=black,
+		%shorten >=2pt
+		},
+empty/.style = {
+		},
+    arrow/.style = {
+    	draw,
+		thick,
+		->,
+		shorten >=2pt
+		},
+  ]
+  % Define nodes in a matrix
+\matrix [column sep=5mm, row sep=2mm]{
+	& \node [inputs] (c)  {CONTRALTO};
+	& \node [inputs] (fl) {FLAUTI};
+	& \node [inputs] (tb) {TUBA};
+  & \node [inputs] (cs) {CAMP. SARDE};
+	& \node [inputs] (bng) {BONGHI};
+	& \node [inputs] (crt) {CROTALI};
+	& \node [inputs] (idly) {8 DELAY};
+	& \node [inputs] (ir4) {REVERB 4"};
+	& \node [inputs] (ir80) {REVERB 10$\sim$80"};
+	& \node [inputs] (ihar) {HARMONIZER};
+	& \node [inputs] (ih1) {HALAPHON 1};
+	& \node [inputs] (ih2) {HALAPHON 2};
+	& \node [inputs] (ih3) {HALAPHON 3}; \\
+	% -------------------------------&---------------------&--------------------&--------------------&--------------------&--------------------&-----------------&-----------------&-----------------&-----------------&-----------------&-----------------&-----------------&-----------------
+  % -------------------------------&--CONTRALTO----------&--FLAUTO------------&--TUBA--------------&--CAMPANE-SARDE-----&--BONGOS-------------&--CROTALI------------&--DELAY----------&--REV4-----------&--REV80----------&--HARMONIZER-----&--HALAPHON 1-----&--HALAPHON 2-----&--HALAPHON 3-----
+	\node [outs] (dly) {DELAYS};     &                     &                    &                    & \node[ctl](){};    &                     & \node[ctl](crtdly){};&                &                 &                 &                 &                 &                 &  \\
+	\node [outs] (r4) {REVERB 4"};   & \node[ctl](){};     & \node[ctl](flr4){};&                    &                    &                     &                     &                 &                 &                 &                 &                 &                 &  \\
+	\node [outs] (r80) {REVERB 80"}; & \node[ctl](){};     & \node[ctl](){};    & \node[ctl](){};    & \node[ctl](){};    &                     & \node[ctl](crtr80){};&                &                 &                 &                 &                 &                 &  \\
+	\node [outs] (har) {HARMONIZER}; & \node[ctl](){};     & \node[ctl](){};    &                    & \node[ctl](){};    & \node[ctl](){};     & \node[ctl](){};     &                 &                 & \node[ctl](harr80){}; &           &                 &                 &  \\
+	\node [outs] (h1) {HALAPHON 1};  & \node[ctl](){};     &                    &                    &                    &                     &                     &                 &                 & \node[ctl](h1r80){}; &            &                 &                 &  \\
+	\node [outs] (h2) {HALAPHON 2};  &                     & \node[ctl](){};    &                    &                    &                     &                     &                 &                 & \node[ctl](h2r80){}; &            &                 &                 &  \\
+	\node [outs] (h3) {HALAPHON 3};  &                     &                    & \node[ctl](tbh3){};    &                    &                     &                     &                 &                 &                 &                 &                 &                 &  \\
+	\node [outs] (l1) {L 1};         &                     & \node[ctl](){};    & \node[ctl](){};    & \node[ctl](){};    & \node[ctl](){};     & \node[ctl](){};     & \node[ctl](){}; &                 & \node[ctl](){}; &                 & \node[ctl](){}; & \node[ctl](){}; & \node[ctl](h3l1){}; \\
+	\node [outs] (l2) {L 2};         &                     & \node[ctl](fl2){}; & \node[ctl](tb2){}; & \node[ctl](cs2){}; & \node[ctl](bng2){}; & \node[ctl](crt2){}; & \node[ctl](){}; &                 & \node[ctl](){}; &                 & \node[ctl](){}; & \node[ctl](){}; & \node[ctl](h3l2){}; \\
+	\node [outs] (l3) {L 3};         &                     &                    &                    &                    &                     &                     & \node[ctl](){}; &                 & \node[ctl](){}; &                 & \node[ctl](){}; & \node[ctl](){}; & \node[ctl](h3l3){}; \\
+	\node [outs] (l4) {L 4};         &                     &                    &                    &                    &                     &                     & \node[ctl](){}; &                 & \node[ctl](){}; &                 & \node[ctl](h1l4){}; & \node[ctl](h2l4){}; & \node[ctl](h3l4){}; \\
+	\node [outs] (l5) {L 5};         &                     &                    &                    &                    &                     &                     & \node[ctl](){}; &                 & \node[ctl](l5r8){}; &                 &                 &                 &  \\
+	\node [outs] (l6) {L 6};         &                     &                    &                    &                    &                     &                     & \node[ctl](){}; &                 & \node[ctl](l6r8){}; &                 &                 &                 &  \\
+	\node [outs] (l7) {L 7};         &                     &                    &                    &                    &                     &                     & \node[ctl](){}; &                 & \node[ctl](l7r8){}; &                 &                 &                 &  \\
+	\node [outs] (l8) {L 8};         &                     &                    &                    &                    &                     &                     & \node[ctl](l8d){}; &              & \node[ctl](l8r8){}; &            &                 &                 &  \\
+	\node [outs] (l9) {L 9};         & \node[ctl](cl9){};  &                    &                    &                    &                     &                     &                 & \node[ctl](){}; &                 & \node[ctl](l9har){}; &            &                 &  \\
+	\node [outs] (l10) {L 10};       & \node[ctl](cl10){}; &                    &                    &                    &                     &                     &                 & \node[ctl](l10r4){}; &            & \node[ctl](l10har){}; &           &                 &  \\
+};
+
+%	& \node [draw,circle] (inputs) {+}; & & & \node [draw,circle] (direct) {+}; & \\
+%	& \node[ctl](){}; & & \node [block] (victor) {VICTOR}; & \node [draw,circle] (mix1) {+}; & \\
+%	& \node [ctl] (node2) {}; & & \node [block] (freezer) {FREEZER}; & \node [draw,circle] (mix2) {+}; & \\
+%	& \node [ctl] (node3) {}; & & \node [block] (sdelay) {SPECTRAL DELAY}; & \node [draw,circle] (mix3) {+}; & \\
+%	& & & \node [block] (bfmt) {B-FORMAT}; & \node [block] (afmt) {A-FORMAT}; & \\
+%	& & & \node [block] (outputs) {STEREO / QUAD}; & \node [block] (stone) {S.T.ONE}; & \\
+
+
+\begin{scope} [every path/.style=line]
+  \path (dly) -- (crtdly);
+  \path (r4) -- (flr4);
+  \path (r80) -- (crtr80);
+  \path (c) -- (cl10);
+  \path (fl) -- (fl2);
+  \path (tb) -- (tb2);
+  \path (cs) -- (cs2);
+  \path (bng) -- (bng2);
+  \path (crt) -- (crt2);
+  \path (l1) -- (h3l1);
+  \path (l2) -- (h3l2);
+  \path (l3) -- (h3l3);
+  \path (l4) -- (h3l4);
+  \path (l5) -- (l5r8);
+  \path (l6) -- (l6r8);
+  \path (l7) -- (l7r8);
+  \path (l8) -- (l8r8);
+  \path (l9) -- (l9har);
+  \path (l10) -- (l10har);
+  \path (har) -- (harr80);
+  \path (h1) -- (h1r80);
+  \path (h2) -- (h2r80);
+  \path (h3) -- (tbh3);
+  \path (idly) -- (l8d);
+  \path (ir4) -- (l10r4);
+  \path (ir80) -- (l8r8);
+  \path (ihar) -- (l10har);
+  \path (ih1) -- (h1l4);
+  \path (ih2) -- (h2l4);
+  \path (ih3) -- (h3l4);
+%  \path (r80) -- (r80l8);
+%    \path () -- (victor) -- (mix1);
+%    \path (node2) -- (freezer) -- (mix2);
+%    \path (node3) -- (sdelay) -- (mix3);
+%    \path (tape) -- (direct) -- (mix1) -- (mix2) -- (mix3);
+%    \path (mix3) -- (afmt) -- (stone);
+%    \path (afmt) -- (bfmt) -- (outputs);
+     \end{scope}
+
+\end{tikzpicture}
+
+\end{document}

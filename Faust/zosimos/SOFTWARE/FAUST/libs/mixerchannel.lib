@@ -1,0 +1,23 @@
+//-----------------MIXER CHANNEL----------------//
+// A voice's mixer channel.
+//--------------PARAMETERS:
+//  1 - Sample Level : the gain of the sample part
+//  2 - Sample Pan : the panning of the sample part
+//  1 - Engine Level : the gain of the engine part
+//  2 - Engine Pan : the panning of the engine part
+
+import("stdfaust.lib");
+
+panner(pan) = _ <: _ * left, _ * right
+with{
+    left = 1 - pan;
+    right = pan;
+};
+
+gain(lvl) = _ * lvl;
+
+mixer(smpLvl, smpPan, engLvl, engPan, inSmp, inEng) = sample, engine :> (_,_)
+with{
+    sample = inSmp * smpLvl : panner(smpPan);
+    engine = inEng * engLvl : panner(engPan);
+};

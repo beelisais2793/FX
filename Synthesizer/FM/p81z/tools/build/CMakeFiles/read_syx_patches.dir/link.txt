@@ -1,0 +1,1 @@
+/usr/bin/c++ -O2 -fPIC -march=native -mavx2 -rdynamic CMakeFiles/read_syx_patches.dir/read_syx_patches.o -o read_syx_patches  -lP81Z 

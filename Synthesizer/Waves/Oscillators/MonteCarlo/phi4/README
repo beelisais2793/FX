@@ -1,0 +1,31 @@
+
+This directory contains basic routines to start developing
+a code for simulating the phi**4 theory with the HMC algorithm
+as described during the lectures. 
+
+Here is a short description of the folder content:
+
+main: phi4.c : main program. Compile using make and run as:
+      phi4 infile
+
+modules: contains subfolders with the working modules. 
+         As a start you will find:
+
+         geometry: hopping.c : initializes the hopping field
+
+         random: ranlxd.c : Luescher's random number generator
+
+         extras: example folder
+
+include: contains the include files:
+
+         lattice.h: contains global variables, the field and
+                    its dimensions
+
+         phi4.h: include for the main program
+
+         ranlxd.h: include for ranlxd.c
+
+devel: development folder where you can test your programs
+
+       hmc: check1.c : example of test. Compile using make

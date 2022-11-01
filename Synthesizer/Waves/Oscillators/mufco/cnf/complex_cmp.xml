@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Signal>	
+	<Cmp period="2880" phase="0.0" amplitude="1.0" />
+	<Cmp period="1440" phase="0.0" amplitude="0.6" />	
+	<Cmp period="720"  phase="0.0" amplitude="0.4" />			
+</Signal>

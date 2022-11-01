@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/splash">
+        <file>splash.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Emblem_NSTU_orange.png</file>
+        <file>Emblem_NSTU_orange_r.png</file>
+        <file>DejaVuLGCSansCondensed.ttf</file>
+        <file>DejaVuLGCSans.ttf</file>
+        <file>DejaVuLGCSans-ExtraLight.ttf</file>
+    </qresource>
+</RCC>

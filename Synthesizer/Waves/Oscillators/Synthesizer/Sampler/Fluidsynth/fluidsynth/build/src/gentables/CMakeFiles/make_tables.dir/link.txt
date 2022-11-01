@@ -1,0 +1,1 @@
+/usr/bin/cc -g -rdynamic CMakeFiles/make_tables.dir/make_tables.c.o CMakeFiles/make_tables.dir/gen_conv.c.o CMakeFiles/make_tables.dir/gen_rvoice_dsp.c.o -o make_tables.exe  -lm 

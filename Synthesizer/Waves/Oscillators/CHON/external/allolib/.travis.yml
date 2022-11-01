@@ -1,0 +1,49 @@
+#branches:
+#  except:
+#  - devel
+language: cpp
+dist: trusty
+os:
+  - linux
+#  - osx
+compiler:
+- gcc
+- clang
+before_install:
+- ( wget https://github.com/Kitware/CMake/releases/download/v3.13.4/cmake-3.13.4-Linux-x86_64.sh; chmod a+x cmake-3.13.4-Linux-x86_64.sh;mkdir cmake;./cmake-3.13.4-Linux-x86_64.sh --skip-license --prefix=./cmake )
+  # - ( git clone -b devel https://github.com/AlloSphere-Research-Group/Gamma /tmp/Gamma )
+  # - ( git clone -b cmake https://github.com/AlloSphere-Research-Group/GLV /tmp/GLV )
+  # - ( git clone https://github.com/rbtsx/cuttlebone.git /tmp/cuttlebone )
+install:
+  - if [ "$CXX" = "g++" ]; then export CXX="g++-8" CC="gcc-8"; fi
+addons:
+  apt:
+    sources:
+ #   - sourceline: 'ppa:keithw/glfw3'
+    - sourceline: 'ppa:ubuntu-toolchain-r/test'
+    packages:
+    - gcc-8
+    - g++-8
+    - portaudio19-dev
+    - libsndfile1-dev
+    #- libglew-dev
+    #- libglfw3-dev
+    - xorg-dev
+    # - libusb-1.0-0-dev
+    - libfreeimage-dev
+    - libfreetype6-dev
+    - libassimp-dev
+    # - libluajit-5.1-dev
+    # - libjsoncpp-dev
+    # - libfftw3-dev
+script:
+    - mkdir allolib_build
+    - cd allolib_build
+    - ../cmake/bin/cmake .. -DTRAVIS_BUILD=1 -DBUILD_EXAMPLES=1 -DCMAKE_BUILD_TYPE=Debug -DALLOLIB_BUILD_TESTS=1 -DALLOLIB_RUN_TESTS=1
+    - ../cmake/bin/cmake --build .
+sudo: false
+notifications:
+  email:
+    recipients:
+    - mantaraya36@gmail.com
+    - younkeehong@gmail.com

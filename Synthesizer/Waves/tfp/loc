@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cloc application tfp gource scripts CMake CMakeLists.txt

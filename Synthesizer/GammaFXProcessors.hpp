@@ -1,0 +1,11 @@
+#pragma once
+#include "GammaFXAMProcessor.hpp"
+#include "GammaFXBiquad3.hpp"
+#include "GammaFXBurst.hpp"
+#include "GammaFXChirp.hpp"
+#include "GammaFXChorus.hpp"
+#include "GammaFXFreqShift.hpp"
+#include "GammaFXPanProcessor.hpp"
+#include "GammaFXPluck.hpp"
+#include "GammaFXQuantizer.hpp"
+#include "GammaFXChebyshevPolynomials.hpp"

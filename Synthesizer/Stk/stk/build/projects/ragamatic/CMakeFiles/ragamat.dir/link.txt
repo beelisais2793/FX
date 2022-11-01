@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -O3 -DNDEBUG -O3 -DNDEBUG -rdynamic CMakeFiles/ragamat.dir/Drone.cpp.o CMakeFiles/ragamat.dir/Tabla.cpp.o CMakeFiles/ragamat.dir/VoicDrum.cpp.o CMakeFiles/ragamat.dir/ragamat.cpp.o -o /home/quake/Projects/TStk/stk/projects/ragamatic/ragamat  -ljack -lasound ../../libstk.a -ljack -pthread -lasound 

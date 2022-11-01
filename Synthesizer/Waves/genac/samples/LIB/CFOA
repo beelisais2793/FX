@@ -1,0 +1,6 @@
+.SUBCKT CFOA 1 2 3 4
+R_Y 2 0 _inf
+E_X 1 0 2 0 1
+F_Z 0 3 E_X 1
+E_W 4 0 3 0 1
+.ENDS

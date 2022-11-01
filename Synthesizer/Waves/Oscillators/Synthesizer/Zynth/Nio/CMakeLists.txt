@@ -1,0 +1,15 @@
+set(libzynth_nio_SRCS
+    Nio/IMixer.h
+    Nio/WavEngine.cpp
+    Nio/NulEngine.cpp
+    Nio/AudioOut.cpp
+    Nio/MidiIn.cpp
+    Nio/OutMgr.cpp
+    Nio/InMgr.cpp
+    Nio/Engine.cpp
+    Nio/EngineMgr.cpp
+    Nio/Nio.cpp
+    Nio/RtEngine.cpp
+    Nio/RtMidi.cpp
+    PARENT_SCOPE
+    )

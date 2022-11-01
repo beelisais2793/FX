@@ -1,0 +1,122 @@
+class:: X75Boids
+summary:: Boids based chaotic oscillator
+categories:: UGens>Generators>Chaotic
+
+Boids is a general algorithm for simulating a flock of birds. See Craig Reynolds: http://www.red3d.com/cwr/boids/.
+
+The audio output is created by taking the average of the X and Y coordinates of the boids for the left and right channels respectively.
+
+Originally by Oswald Berthold, updated 2016 by Nathan Ho.
+
+warning:: This oscillator is really finicky about its inputs. Its output can easily shoot beyond ±1 (although won't blow up to infinity, bugs notwithstanding). Use proper safety measures. ::
+
+classmethods::
+
+method:: ar
+
+Stereo output.
+
+argument:: in
+Not used currently. Reserved for a future excitation signal.
+
+argument:: numboids
+Non-modulatable number of boids, up to 20. If you need more than 20, hack the source. The CPU cost of an additional boid is fairly large, so
+
+argument:: diss
+dissipative term for stabilisation, 0 to 1.
+
+argument:: f1
+Strength of rule 1 (clumping) force.
+
+argument:: f2
+Strength of rule 2 (avoidance) force.
+
+argument:: f3
+Strength of rule 3 (alignment) force.
+
+examples::
+
+code::
+// prepare
+s.boot;
+
+// Run a few variants:
+
+{X75Boids.ar(numboids: 2, diss: 0.995, f1: 0.002)}.play;
+
+{X75Boids.ar(numboids: 13, diss: 0.9)}.play; // my maximum
+
+{LeakDC.ar(X75Boids.ar(numboids: 5, diss: 0.9955))}.play;
+
+{LeakDC.ar(X75Boids.ar(numboids: 5, diss: Line.kr(0, 0.995, 10)))}.play;
+
+{LeakDC.ar(X75Boids.ar(numboids: 11, diss: 0.91))}.play;
+
+// some more tests
+{LeakDC.ar(X75Boids.ar(numboids: 11, diss: 0.90, f1: 0.002))}.play; // doesnt work anymore
+
+{LeakDC.ar(X75Boids.ar(numboids: 10, diss: 0.996, f1: 0.002))}.play;
+
+{LeakDC.ar(X75Boids.ar(numboids: 3, diss: 0.99))}.play;
+
+// make synthdef to test parameter setting on the fly
+(
+SynthDef(\boids, {|numboids = 2, diss = 0.9, f1 = 0.002, f2 = 0.002, f3 = 0.005|
+	var boids;
+	boids = X75Boids.ar(numboids: numboids, diss: diss, f1: f1, f2: f2, f3: f3);
+	Out.ar(0, boids);
+}).store;
+)
+
+// small swarm
+x = Synth(\boids, [\numboids, 2, \diss, 0.9945]);
+x.set(\f1, 0.0015);
+x.set(\diss, 0.99);
+x.set(\diss, 0.91);
+
+// larger swarm
+x = Synth(\boids, [\numboids, 10, \diss, 0.9945]);
+x.set(\f1, 0.074);
+x.set(\diss, 0.99);
+
+// more params
+x = Synth(\boids, [\numboids, 10, \diss, 0.9945]);
+x.set(\diss, 0.95);
+x.set(\f1, 0.008);
+x.set(\f2, 0.008);
+x.set(\f3, 0.15);
+
+// more params
+x = Synth(\boids, [\numboids, 6, \diss, 0.99]);
+x.set(\diss, 0.95);
+x.set(\f1, 0.001);
+x.set(\f2, 0.2);
+x.set(\f3, 0.15);
+
+
+// create buffer
+b = Buffer.alloc(s, 2000, 2); // a four second 1 channel Buffer
+// record output
+(
+b.zero;
+{
+	var recbuf;
+	// test: numboids: 1,2,3,..., diss: 1.0, 0.995, 0.992, 0.99, ...
+	#x, y = X75Boids.kr(numboids: 3, diss: 0.99);
+	Poll.kr(Impulse.kr(10), x, "x");
+	Poll.kr(Impulse.kr(10), y, "y");
+	recbuf = RecordBuf.kr([x,y], b.bufnum, loop: 0, doneAction: 2);
+	FreeSelfWhenDone.kr(recbuf); // doesn't seem to work
+}.play;
+)
+// so stop synth manually here
+
+h = GNUPlot.new;
+b.loadToFloatArray(action: {|array| {h.plot(array.unlace(2), 2);}.defer; "done".postln;});
+//b.getn(0, b.numFrames, {|msg| h.plot(msg.unlace(2), 2)}); // getn has 1633 values limit because of UDP packet size
+h.stop;
+
+b.plot // alternatively use GUI plot
+
+b.close;
+::

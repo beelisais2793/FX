@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/technology.png</file>
+        <file>images/window.png</file>
+        <file>images/controlsystem.png</file>
+        <file>images/clear.png</file>
+    </qresource>
+</RCC>

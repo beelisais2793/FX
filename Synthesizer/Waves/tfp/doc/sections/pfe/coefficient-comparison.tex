@@ -1,0 +1,183 @@
+\section{Coefficient Comparison}
+
+Given a rational  function  $T(s)$,  the partial fraction expansion problem is
+finding suitable coefficients ${A_1,A_2,\ldots,A_n}$ to  satisfy the equation:
+
+\begin{equation}
+    T(s) = \frac{b_0 + b_1s + b_2s^2 + \ldots + b_ns^n}{(s-p_1)(s-p_2)\ldots(s-p_n)} = \frac{A_1}{s-p_1} + \frac{A_2}{s-p_2} + \ldots + \frac{A_n}{s-p_n}
+\end{equation}
+
+Given that we know the numerator coefficients $b_n$  and  we  know  the  poles
+$p_n$.
+
+One way to achieve this is to bring everything to a common denominator, factor
+in $A_n$ and compare the coefficients $b_n$ with the coefficients $A_n,p_n$ to
+set up a linear system of equations.
+
+
+\subsection{Second Order Example}
+
+To help us understand this,  we  begin  with  an  example  with a second order
+transfer function:
+
+\begin{equation}
+    T(s) = \frac{b_0 + b_1s}{(s-p_1)(s-p_2)} = \frac{A_1}{s-p_1} + \frac{A_2}{s-p_2}
+\end{equation}
+
+First, bring everything to a common denominator:
+
+\begin{equation}
+    \frac{A_1}{(s-p_1)}\cdot\frac{s-p_2}{s-p_2} + \frac{A_2}{(s-p_2)}\cdot\frac{s-p_1}{s-p_1} = \frac{A_1s - A_1p_2 + A_2s - A_2p_1}{(s-p_1)(s-p_2)}
+\end{equation}
+
+Then factor the terms for $s$:
+
+\begin{equation}
+    \frac{A_1s - A_1p_2 + A_2s - A_2p_1}{(s-p_1)(s-p_2)} = \frac{(-A_2p_1 -A_1p_2) + (A_1+A_2)s}{(s-p_1)(s-p_2)}
+\end{equation}
+
+Now we can perform the actual coefficient comparison. We note that the problem
+has been reduced to the following equation:
+
+\begin{equation}
+    b_0 + b_1s = (-A_2p_1-A_1p_2) + (A_1+A_2)s
+\end{equation}
+
+which can be reformulated into a linear system of equations:
+
+\begin{align}
+    s^1: b_1 &= A_1 + A_2 \\
+    s^0: b_0 &= -A_1p_2 -A_2p_1
+\end{align}
+
+or, in matrix form:
+
+\begin{equation}
+    \begin{bmatrix}
+        b_1 \\
+        b_0 \\
+    \end{bmatrix} =
+    \begin{bmatrix}
+        1    & 1    \\
+        -p_2 & -p_1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        A_1 \\
+        A_2 \\
+    \end{bmatrix}
+\end{equation}
+
+
+\subsection{Third Order Example}
+
+Let's  try  the same thing but with a third order transfer  function.  Due  to
+space limitations, the steps will not be presented,  only the resulting linear
+system of equations, but they are the exact  same  as  with  the  second order
+example.
+
+\begin{equation}
+    T(s) = \frac{b_0 + b_1s + b_2s^2}{(s-p_1)(s-p_2)(s-p_3)} = \frac{A_1}{s-p_1} + \frac{A_2}{s-p_2} + \frac{A_3}{s-p_3}
+\end{equation}
+
+Bring  everything  to  a  common  denominator,  factor  out  $s$  and  compare
+coefficients.  This   yields   the   following  linear  system  of  equations:
+
+\begin{align}
+    s^2: b_2 &= A_1+A_2+A_3 \\
+    s^1: b_1 &= A_1(-p_2-p_3) + A_2(-p_1-p_3) + A_3(-p_1-p_2) \\
+    s^0: b_0 &= A_1p_2p_3 + A_2p_1p_3 + A_3p_1p_2
+\end{align}
+
+or, in matrix form:
+
+\begin{equation}
+    \begin{bmatrix}
+        b_2 \\
+        b_1 \\
+        b_0 \\
+    \end{bmatrix} =
+    \begin{bmatrix}
+        1        & 1        & 1 \\
+        -p_2-p_3 & -p_1-p_3 & -p_1-p_2 \\
+        p_2p_3   & p_1p_3   & p_1p_2 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        A_1 \\
+        A_2 \\
+        A_3 \\
+    \end{bmatrix}
+\end{equation}
+
+
+\subsection{Fourth Order Example}
+
+It  is  still  not  quite  clear yet what the pattern is, so let's do one more
+example with a fourth order transfer function:
+
+\begin{align}
+    T(s) &= \frac{b_0 + b_1s + b_2s^2 + b_3s^3}{(s-p_1)(s-p_2)(s-p_3)(s-p_4)} \\
+         &= \frac{A_1}{s-p_1} + \frac{A_2}{s-p_2} + \frac{A_3}{s-p_3} + \frac{A_4}{s-p_4}
+\end{align}
+
+This produces the following system of equations:
+
+\begin{align*}
+    s^3: b_3 &= A_1 + A_2 + A_3 + A_4 \\
+    s^2: b_2 &= A_1(-p_2-p_3-p_4) + A_2(-p_1-p_3-p_4) \\
+             &= + A_3(-p_1-p_2-p_4) + A_4(-p_1-p_2-p_3) \\
+    s^1: b_1 &= A_1(p_2p_3+p_2p_4+p_3p_4) + A_2(p_1p_3+p_1p_4+p_3p_4) \\
+             &= + A_3(p_1p_2+p_1p_4+p_2p_4) + A_4(p_1p_2+p_1p_3+p_2p_3) \\
+    s^0: b_0 &= A_1(-p_2p_3p_4) + A_2(-p_1p_3p_4) + A_3(-p_1p_2p_4) + A_4(-p_1p_2p_3)
+\end{align*}
+
+Which is now more readable in matrix form:
+
+\begin{equation}
+    \begin{bmatrix}
+        b_3 \\
+        b_2 \\
+        b_1 \\
+        b_0 \\
+    \end{bmatrix} =
+    \begin{bmatrix}
+        1                    & 1                    & 1                    & 1 \\
+        -p_2-p_3-p_4         & -p_1-p_3-p_4         & -p_1-p_2-p_4         & -p_1-p_2-p_3 \\
+        p_2p_3+p_2p_4+p_3p_4 & p_1p_3+p_1p_4+p_3p_4 & p_1p_2+p_1p_4+p_2p_4 & p_1p_2+p_1p_3+p_2p_3 \\
+        -p_2p_3p_4           & -p_1p_3p_4           & -p_1p_2p_4           & -p_2p_3p_4 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        A_1 \\
+        A_2 \\
+        A_3 \\
+        A_4 \\
+    \end{bmatrix}
+\end{equation}
+
+
+\subsection{Multi-Roots}
+
+\begin{equation}
+    \frac{b_0 + b_1s + b_2s^2 + b_3s^3}{(s-p_1)^4} = \frac{A_1}{(s-p_1)^4} + \frac{A_2}{(s-p_1)^3} + \frac{A_3}{(s-p_1)^2} + \frac{A_4}{s-p_1}
+\end{equation}
+
+\begin{equation}
+    \begin{bmatrix}
+        b_3 \\
+        b_2 \\
+        b_1 \\
+        b_0 \\
+    \end{bmatrix} =
+    \begin{bmatrix}
+        1            & 0     & 0    & 0 \\
+        -3p_1        & 1     & 0    & 0 \\
+        p_1 + 2p_1^2 & -2p_1 & 1    & 0 \\
+        -p_1^3       & p_1^2 & -p_1 & 1 \\
+    \end{bmatrix}
+    \begin{bmatrix}
+        A_1 \\
+        A_2 \\
+        A_3 \\
+        A_4 \\
+    \end{bmatrix}
+\end{equation}
+

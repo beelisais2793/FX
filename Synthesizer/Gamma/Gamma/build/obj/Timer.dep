@@ -1,0 +1,1 @@
+build/obj/Timer.o: src/Timer.cpp Gamma/Timer.h Gamma/Config.h

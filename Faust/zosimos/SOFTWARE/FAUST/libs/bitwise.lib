@@ -1,0 +1,41 @@
+//-----------------BITWISE----------------//
+//Bitwise operations based engine for hard kicks and weird digital percs
+//--------------PARAMETERS:
+//  1 - Pitch : Main osc pitch
+//  2 - Pitch Mod Depth : Main osc pitch modulation amount
+//  3 - Pitch Decay : Main osc pitch modulation exponential envelope decay in seconds
+//  4 - Modulator Offset : Modulator osc offset from main pitch
+//  5 - Modulator Pitch Mod Depth : Modulator osc pitch modulation amount
+//  6 - Modulator Pitch Mod Decay : Modulator osc pitch modulation exponential envelope decay in seconds
+//  7 - PMW1 : Main osc square wave PMW
+//  8 - PMW2 : Modulator osc offset
+
+import("stdfaust.lib");
+import("volenvUI.dsp");
+import("utilities.lib");
+wt = library("wavetables.lib");
+
+//bitwise's first osc with clipping amount and pwm
+osc1(pitch, pwm1, pitchDepth, pitchDecay, t) = wt.hssquarePWM(freq1,pwm1,t)
+with{
+  freq1 = pitch + (t:pitchEnv)*pitchDepth;
+  pitchEnv = en.are(0,pitchDecay);
+};
+
+//bitwise's second osc
+osc2(pitch, pwm2, offset, offsetDepth, offsetDecay, t) = wt.hssquarePWM(freq2,pwm2,t)
+with{
+  freq2 = pitch+offset+((t):offsetEnv*offsetDepth);
+  offsetEnv = en.are(0,offsetDecay);
+};
+
+//bitwise's full engine
+bitwise(pitch, pitchDepth, pitchDecay,
+        offset, offsetDepth, offsetDecay,
+        pwm1, pwm2, t) = ((compare >= maxOsc)-0.5) : * (t:volEnv) : clickSmooth
+with{
+  compare = (osc1(pitch, pwm1, pitchDepth, pitchDecay, t),
+            osc2(pitch, pwm2, offset, offsetDepth, offsetDecay, t)) <: &;
+  maxOsc = max(osc1(pitch, pwm1, pitchDepth, pitchDecay, t),
+                osc2(pitch, pwm2, offset, offsetDepth, offsetDecay, t));
+};

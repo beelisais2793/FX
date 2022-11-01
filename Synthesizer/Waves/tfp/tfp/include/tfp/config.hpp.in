@@ -1,0 +1,28 @@
+/* --------------------------------------------------------------
+ * Configures prerequisits for this library
+ * --------------------------------------------------------------*/
+
+#ifndef TFP_CONFIG_HPP
+#   define TFP_CONFIG_HPP
+
+#   include "tfp/export.hpp"
+
+namespace tfp {
+	typedef @REAL_TYPE@ Real;
+}
+
+#	define HAVE_SINH @HAVE_SINH@
+#	define HAVE_COSH @HAVE_COSH@
+#	define HAVE_TANH @HAVE_TANH@
+#	define HAVE_ASINH @HAVE_ASINH@
+#	define HAVE_ACOSH @HAVE_ACOSH@
+#	define HAVE_ATANH @HAVE_ATANH@
+
+#	define SINH @SINH_SYMBOL@
+#	define COSH @COSH_SYMBOL@
+#	define TANH @TANH_SYMBOL@
+#	define ASINH @ASINH_SYMBOL@
+#	define ACOSH @ACOSH_SYMBOL@
+#	define ATANH @ATANH_SYMBOL@
+
+#endif /* TFP_CONFIG_HPP */

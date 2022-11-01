@@ -1,0 +1,7 @@
+-isystem/usr/include/
+-isystem/usr/include/x86_64-linux-gnu/qt5/
+-Ilib/
+-Ilib/Analyzer/
+-Ilib/Synthesizer/
+-std=c++11
+-fPIC

@@ -1,0 +1,38 @@
+/* Example implementation of digital oscillator with FM, PM, & AM */
+
+#define PI 3.14159265358979
+#define RADIANS_TO_INDEX (512.0 / (2.0 * PI))
+
+typedef struct{     /* oscillator data */
+    double freq;   /* oscillator frequency in radians per sample */
+    double phase;  /* accumulated oscillator phase in radians */
+    double wavetable[512]; /* waveform lookup table */
+} OscilRec;
+
+
+/* oscil - compute 1 sample of oscillator output whose freq. phase and
+*    wavetable are in the OscilRec structure pointed to by orec.
+*/
+double oscil(orec, fm, pm, am)
+    OscilRec *orec;  /* pointer to the oscil's data */
+    double fm; /* frequency modulation input  in radians per sample */
+    double pm; /* phase modulation input      in radians */
+    double am; /* amplitude modulation input  in any units you want */
+{
+    long tableindex;            /* index into wavetable */
+    double instantaneous_freq;  /* oscillator freq  + freq  modulation */
+    double instantaneous_phase; /* oscillator phase + phase modulation */
+    double output;              /* oscillator output */
+
+    instantaneous_freq  = orec->freq  + fm; /* get instantaneous freq */
+    orec->phase += instantaneous_freq;      /* accumulate phase */
+    instantaneous_phase = orec->phase + pm; /* get instantaneous phase */
+
+    /* convert to lookup table index */
+    tableindex = RADIANS_TO_INDEX * instantaneous_phase;
+    tableindex &= 511; /* make it mod 512 === eliminate multiples of 2*k*PI */
+
+    output = orec->wavetable[tableindex] * am; /* lookup and mult by am input */
+
+    return (output);  /* return oscillator output */
+}

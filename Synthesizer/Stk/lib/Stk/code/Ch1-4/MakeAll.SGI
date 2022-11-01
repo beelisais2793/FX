@@ -1,0 +1,18 @@
+gcc -o adpcmcod adpcmcod.c -lm
+gcc -o adpcmdec adpcmdec.c -lm
+gcc -o decimate decimate.c -lm
+gcc -o demulaw demulaw.c -lm
+gcc -o mulaw mulaw.c -lm
+gcc -o quantize quantize.c -lm
+gcc -o srconvrt srconvrt.c -lm
+gcc -o timeshif timeshif.c -lm
+
+adpcmcod Trumps22.snd test.adp
+adpcmdec test.adp testADP.snd
+mulaw Trumps22.snd test.mu
+demulaw test.mu testMU.snd
+decimate 4 Trumps22.snd testDEC.snd
+quantize 5 Trumps22.snd testQUAN.snd
+srconvrt 0.5 -f 2.0 Trumps22.snd testSRC.snd
+timeshif 0.4 Trumps22.snd testTIME.snd
+

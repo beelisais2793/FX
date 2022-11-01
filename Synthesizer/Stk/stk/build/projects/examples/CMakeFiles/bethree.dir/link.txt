@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -O3 -DNDEBUG -O3 -DNDEBUG -rdynamic CMakeFiles/bethree.dir/bethree.cpp.o -o /home/quake/Projects/TStk/stk/projects/examples/bethree  -ljack -lasound ../../libstk.a -ljack -pthread -lasound 

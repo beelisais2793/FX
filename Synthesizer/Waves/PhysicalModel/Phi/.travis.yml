@@ -1,0 +1,23 @@
+branches:
+  only:
+    - master
+
+addons:
+  apt:
+    packages:
+      - doxygen
+      - graphviz
+
+script:
+  - cd Doxygen
+  - doxygen Doxyfile
+  - touch docs/html/.nojekyll
+
+deploy:
+  strategy: git
+  provider: pages
+  skip_cleanup: true
+  local_dir: Doxygen/docs/html
+  token: $GH_REPO_TOKEN
+  on:
+    branch: master

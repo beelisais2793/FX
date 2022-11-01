@@ -1,0 +1,1 @@
+cmd='/usr/local/bin/cmake;-DCMAKE_VERBOSE_MAKEFILE=FALSE;-G;Unix Makefiles;-B;/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables;/home/quake/Projects/fluidsynth/fluidsynth/src/gentables'

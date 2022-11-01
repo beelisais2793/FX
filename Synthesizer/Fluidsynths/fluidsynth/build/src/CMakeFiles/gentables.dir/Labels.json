@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/CMakeFiles/gentables"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/CMakeFiles/gentables.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/CMakeFiles/gentables-complete.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables-prefix/src/gentables-stamp/gentables-build.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables-prefix/src/gentables-stamp/gentables-configure.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables-prefix/src/gentables-stamp/gentables-download.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables-prefix/src/gentables-stamp/gentables-install.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables-prefix/src/gentables-stamp/gentables-mkdir.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables-prefix/src/gentables-stamp/gentables-patch.rule"
+		},
+		{
+			"file" : "/home/quake/Projects/fluidsynth/fluidsynth/build/src/gentables-prefix/src/gentables-stamp/gentables-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"gentables"
+		],
+		"name" : "gentables"
+	}
+}

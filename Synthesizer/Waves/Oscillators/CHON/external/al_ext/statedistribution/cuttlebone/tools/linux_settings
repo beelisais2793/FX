@@ -1,0 +1,7 @@
+$!/bin/sh
+
+sysctl net.core.rmem_max
+sysctl net.core.wmem_max
+sysctl net.ipv4.tcp_rmem
+sysctl net.ipv4.tcp_wmem
+sysctl net.core.netdev_max_backlog

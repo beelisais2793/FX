@@ -1,0 +1,3 @@
+.SUBCKT OPAMP 1 2 3
+E_X 3 0 1 2 _inf
+.ENDS

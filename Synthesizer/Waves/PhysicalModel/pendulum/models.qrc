@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/meshes">
+        <file>mNt/lowershell.obj</file>
+        <file>mNt/plank.obj</file>
+        <file>mNt/shaft.obj</file>
+        <file>mNt/stand.obj</file>
+        <file>mNt/swingnoball.obj</file>
+        <file>mNt/swingwithball.obj</file>
+        <file>mNt/uppershell.obj</file>
+    </qresource>
+    <qresource prefix="/textures">
+        <file>mNt/aluminium.png</file>
+        <file>mNt/metal.jpg</file>
+        <file>mNt/plastic.jpg</file>
+        <file>mNt/wood.jpg</file>
+    </qresource>
+    <qresource prefix="/shaders">
+        <file>mNt/f_shader.glsl</file>
+        <file>mNt/v_shader.glsl</file>
+    </qresource>
+</RCC>

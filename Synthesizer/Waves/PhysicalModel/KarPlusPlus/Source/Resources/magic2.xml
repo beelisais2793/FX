@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<magic>
+  <Styles>
+    <Style name="default">
+      <Nodes/>
+      <Classes>
+        <plot-view border="2" background-color="black" border-color="silver" display="contents"/>
+        <nomargin margin="0" padding="0" border="0"/>
+        <group margin="5" padding="5" border="2" flex-direction="column">
+          <media/>
+        </group>
+        <transparent background-color="transparentblack"/>
+        <newClass/>
+      </Classes>
+      <Types>
+        <Slider border="0" slider-textbox="textbox-below" slider-type="auto"/>
+        <ToggleButton border="0" max-height="50" caption-size="0" text="Active"/>
+        <TextButton border="0" max-height="50" caption-size="0"/>
+        <ComboBox border="0" max-height="50" caption-size="0"/>
+        <Plot border="0" margin="0" padding="0" background-color="00000000"
+              radius="0"/>
+        <XYDragComponent border="0" margin="0" padding="0" background-color="00000000"
+                         radius="0"/>
+      </Types>
+      <Palettes>
+        <default/>
+      </Palettes>
+    </Style>
+  </Styles>
+  <View id="root" resizable="1" resize-corner="1" flex-direction="row">
+    <View flex-direction="column" flex-grow="5" class="nomargin group"
+          border="0" margin="0">
+      <View class="nomargin">
+        <View flex-direction="column" class="group">
+          <View class="nomargin" flex-grow="2.0" flex-shrink="1.0" padding=""
+                margin="" border="">
+            <Slider caption="Dampen Excitation" parameter="DAMPEXCITATION" class="nomargin"
+                    slider-textbox="textbox-below" slider-type="linear-vertical"/>
+            <Slider caption="Sustain Excitation" parameter="SUSTAIN" class="nomargin"
+                    slider-type="linear-vertical"/>
+          </View>
+          <View flex-shrink="1.0" flex-grow="0.5">
+            <Slider caption="Vel -&gt; Damp Ex" parameter="VELTODAMPEX" slider-textbox="no-textbox"
+                    slider-type="linear-horizontal"/>
+            <Slider caption="Vel -&gt; Sustain Ex" parameter="VELTOSUSTAINEX" slider-type="linear-horizontal"
+                    slider-textbox="no-textbox"/>
+          </View>
+        </View>
+        <View flex-direction="column" class="group">
+          <View class="nomargin" flex-grow="2.0" flex-shrink="1.0" padding=""
+                margin="" border="">
+            <Slider caption="Formant Width" parameter="FORMANTSCALING" class="nomargin"
+                    slider-type="linear-vertical"/>
+            <Slider caption="Formant Q" parameter="FORMANTQ" class="nomargin" slider-type="linear-vertical"/>
+          </View>
+          <View flex-shrink="1.0" flex-grow="0.5">
+            <Slider caption="Vel -&gt; Formant W" parameter="VELTOFORMANTWIDTH" slider-type="linear-horizontal"
+                    slider-textbox="no-textbox"/>
+            <Slider caption="Vel -&gt; Feedback" parameter="VELTOFEEDBACK" slider-type="linear-horizontal"
+                    slider-textbox="no-textbox"/>
+          </View>
+        </View>
+        <View flex-direction="column" class="group">
+          <View class="nomargin" flex-grow="2.0" flex-shrink="1.0" padding=""
+                margin="" border="">
+            <Slider caption="Dampen String" parameter="DAMPSTRING" class="nomargin"
+                    slider-type="linear-vertical"/>
+            <Slider caption="Feedback" parameter="FEEDBACK" class="nomargin" border="0"
+                    slider-type="linear-vertical"/>
+          </View>
+          <View flex-shrink="1.0" flex-grow="0.5">
+            <Slider caption="Vel -&gt; Formant Q" parameter="VELTOFORMANTQ" slider-type="linear-horizontal"
+                    slider-textbox="no-textbox"/>
+            <Slider caption="Vel -&gt; Dampen St" parameter="VELTODAMPENSTRING" slider-type="linear-horizontal"
+                    slider-textbox="no-textbox"/>
+          </View>
+        </View>
+      </View>
+      <KeyboardComponent flex-grow="0.7" class="group"/>
+    </View>
+    <View flex-direction="column" class="group">
+      <View flex-direction="column" class="group">
+        <View/>
+        <Plot class="group" source="input"/>
+      </View>
+      <Slider caption="Volume" parameter="VOLUME" class="group" caption-color="FFC6C6C6"
+              flex-grow="0.7" slider-type="rotary-horizontal-vertical"/>
+    </View>
+  </View>
+</magic>

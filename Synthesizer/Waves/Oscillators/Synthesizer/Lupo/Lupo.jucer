@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="M3MHKq" name="Lupo" projectType="audioplug" pluginVST3Category="Instrument"
+              pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn"
+              companyName="Matthias Pueski" pluginFormats="buildStandalone,buildUnity,buildVST3"
+              pluginChannelConfigs="{2,2}" jucerFormatVersion="1">
+  <MAINGROUP id="GthNfL" name="Lupo">
+    <GROUP id="{7D68CE24-8E1B-AC85-29D1-30E03A9479D6}" name="Images">
+      <FILE id="cw2qUT" name="DSEG14Classic-Regular.ttf" compile="0" resource="1"
+            file="Images/DSEG14Classic-Regular.ttf"/>
+      <FILE id="ISE3Pl" name="Knob_32.png" compile="0" resource="1" file="Images/Knob_32.png"/>
+      <FILE id="HLPRSK" name="Knob_48.png" compile="0" resource="1" file="Images/Knob_48.png"/>
+      <FILE id="e9enOd" name="Knob_64.png" compile="0" resource="1" file="Images/Knob_64.png"/>
+      <FILE id="dLLdn7" name="Knob_128.png" compile="0" resource="1" file="Images/Knob_128.png"/>
+      <FILE id="LQzskC" name="knob_shadow_64.png" compile="0" resource="1"
+            file="Images/knob_shadow_64.png"/>
+      <FILE id="wCxM6Q" name="logo.png" compile="0" resource="1" file="Images/logo.png"/>
+      <FILE id="op0Ayv" name="oscillator_noise_48.png" compile="0" resource="1"
+            file="Images/oscillator_noise_48.png"/>
+      <FILE id="On0Q26" name="oscillator_saw_48.png" compile="0" resource="1"
+            file="Images/oscillator_saw_48.png"/>
+      <FILE id="Mepzpy" name="oscillator_sine_48.png" compile="0" resource="1"
+            file="Images/oscillator_sine_48.png"/>
+      <FILE id="Rb9UNB" name="oscillator_square_48.png" compile="0" resource="1"
+            file="Images/oscillator_square_48.png"/>
+    </GROUP>
+    <GROUP id="{172FB074-0DA4-14B0-F615-01D1F806371C}" name="Source">
+      <GROUP id="{5373EDDD-05FE-A031-89BE-4A1C92AD4090}" name="SpeedTrig">
+        <FILE id="dG4drC" name="SpeedTrig.cpp" compile="1" resource="0" file="Source/SpeedTrig/SpeedTrig.cpp"/>
+        <FILE id="ymGJFz" name="SpeedTrig.h" compile="0" resource="0" file="Source/SpeedTrig/SpeedTrig.h"/>
+      </GROUP>
+      <FILE id="NJH6XE" name="ModSlotConfig.cpp" compile="1" resource="0"
+            file="Source/ModSlotConfig.cpp"/>
+      <FILE id="Cb5p9a" name="ModSlotConfig.h" compile="0" resource="0" file="Source/ModSlotConfig.h"/>
+      <FILE id="wTmIeK" name="DummyModulator.h" compile="0" resource="0"
+            file="Source/DummyModulator.h"/>
+      <FILE id="U7rILB" name="ModMatrix.cpp" compile="1" resource="0" file="Source/ModMatrix.cpp"/>
+      <FILE id="yTC21j" name="ModMatrix.h" compile="0" resource="0" file="Source/ModMatrix.h"/>
+      <FILE id="YxjX7b" name="ModMatrixConfig.cpp" compile="1" resource="0"
+            file="Source/ModMatrixConfig.cpp"/>
+      <FILE id="rPMGLd" name="ModMatrixConfig.h" compile="0" resource="0"
+            file="Source/ModMatrixConfig.h"/>
+      <FILE id="XiFEss" name="BlitSquare.cpp" compile="1" resource="0" file="Source/BlitSquare.cpp"/>
+      <FILE id="U30oV1" name="BlitSquare.h" compile="0" resource="0" file="Source/BlitSquare.h"/>
+      <FILE id="ZvSdSy" name="Stk.cpp" compile="1" resource="0" file="Source/Stk.cpp"/>
+      <FILE id="y6xNhl" name="BlitSaw.cpp" compile="1" resource="0" file="Source/BlitSaw.cpp"/>
+      <FILE id="YPVnrX" name="BlitSaw.h" compile="0" resource="0" file="Source/BlitSaw.h"/>
+      <FILE id="SnBbSX" name="Generator.h" compile="0" resource="0" file="Source/Generator.h"/>
+      <FILE id="dETlEa" name="Stk.h" compile="0" resource="0" file="Source/Stk.h"/>
+      <FILE id="IqemcJ" name="TrioLookAndFeel.cpp" compile="1" resource="0"
+            file="Source/TrioLookAndFeel.cpp"/>
+      <FILE id="cZg5di" name="TrioLookAndFeel.h" compile="0" resource="0"
+            file="Source/TrioLookAndFeel.h"/>
+      <GROUP id="{3341771E-643B-2160-B9CA-0DC24E0A8B9F}" name="MessageBus">
+        <FILE id="m9XYpZ" name="BusListener.h" compile="0" resource="0" file="Source/MessageBus/BusListener.h"/>
+        <FILE id="IJjLN4" name="MessageBus.cpp" compile="1" resource="0" file="Source/MessageBus/MessageBus.cpp"/>
+        <FILE id="gVc2GB" name="MessageBus.h" compile="0" resource="0" file="Source/MessageBus/MessageBus.h"/>
+        <FILE id="hbjxAO" name="Topic.cpp" compile="1" resource="0" file="Source/MessageBus/Topic.cpp"/>
+        <FILE id="aOdW8A" name="Topic.h" compile="0" resource="0" file="Source/MessageBus/Topic.h"/>
+      </GROUP>
+      <GROUP id="{73B48C3D-9605-CFBE-4AA4-97CEABC11729}" name="UI">
+        <FILE id="eve0WY" name="ArpPanel.cpp" compile="1" resource="0" file="Source/ArpPanel.cpp"/>
+        <FILE id="ey2qwJ" name="ArpPanel.h" compile="0" resource="0" file="Source/ArpPanel.h"/>
+        <FILE id="oN5BfN" name="AttachmentFactory.h" compile="0" resource="0"
+              file="Source/AttachmentFactory.h"/>
+        <FILE id="fzdpsu" name="ChorusPanel.cpp" compile="1" resource="0" file="Source/ChorusPanel.cpp"/>
+        <FILE id="v0hFu3" name="ChorusPanel.h" compile="0" resource="0" file="Source/ChorusPanel.h"/>
+        <FILE id="SzCDGd" name="DelayPanel.cpp" compile="1" resource="0" file="Source/DelayPanel.cpp"/>
+        <FILE id="lgwdag" name="DelayPanel.h" compile="0" resource="0" file="Source/DelayPanel.h"/>
+        <FILE id="UjFMe0" name="DistortionPanel.cpp" compile="1" resource="0"
+              file="Source/DistortionPanel.cpp"/>
+        <FILE id="SUc1HO" name="DistortionPanel.h" compile="0" resource="0"
+              file="Source/DistortionPanel.h"/>
+        <FILE id="ftY232" name="EnvelopePanel.cpp" compile="1" resource="0"
+              file="Source/EnvelopePanel.cpp"/>
+        <FILE id="bOOBt5" name="EnvelopePanel.h" compile="0" resource="0" file="Source/EnvelopePanel.h"/>
+        <FILE id="wqTKFZ" name="FilterPanel.cpp" compile="1" resource="0" file="Source/FilterPanel.cpp"/>
+        <FILE id="HMi8DE" name="FilterPanel.h" compile="0" resource="0" file="Source/FilterPanel.h"/>
+        <FILE id="JwbnYu" name="GraphicalEnvelope.cpp" compile="1" resource="0"
+              file="Source/GraphicalEnvelope.cpp"/>
+        <FILE id="VRvyh7" name="GraphicalEnvelope.h" compile="0" resource="0"
+              file="Source/GraphicalEnvelope.h"/>
+        <FILE id="y1fTKh" name="LFOPanel.cpp" compile="1" resource="0" file="Source/LFOPanel.cpp"/>
+        <FILE id="YFPMBu" name="LFOPanel.h" compile="0" resource="0" file="Source/LFOPanel.h"/>
+        <FILE id="EqhpA2" name="MainUI.cpp" compile="1" resource="0" file="Source/MainUI.cpp"/>
+        <FILE id="udnadm" name="MainUI.h" compile="0" resource="0" file="Source/MainUI.h"/>
+        <FILE id="lMfmCB" name="MixerChannelPanel.cpp" compile="1" resource="0"
+              file="Source/MixerChannelPanel.cpp"/>
+        <FILE id="WEYxFH" name="MixerChannelPanel.h" compile="0" resource="0"
+              file="Source/MixerChannelPanel.h"/>
+        <FILE id="HGJwq9" name="Model.h" compile="0" resource="0" file="Source/Model.h"/>
+        <FILE id="JQtF3C" name="ModMatrixPanel.cpp" compile="1" resource="0"
+              file="Source/ModMatrixPanel.cpp"/>
+        <FILE id="bj5OQM" name="ModMatrixPanel.h" compile="0" resource="0"
+              file="Source/ModMatrixPanel.h"/>
+        <FILE id="V3WVib" name="ModMatrixTable.cpp" compile="1" resource="0"
+              file="Source/ModMatrixTable.cpp"/>
+        <FILE id="G6G2Wk" name="ModMatrixTable.h" compile="0" resource="0"
+              file="Source/ModMatrixTable.h"/>
+        <FILE id="LAEuJx" name="ModPanel.cpp" compile="1" resource="0" file="Source/ModPanel.cpp"/>
+        <FILE id="K6mSnx" name="ModPanel.h" compile="0" resource="0" file="Source/ModPanel.h"/>
+        <FILE id="BN6bBt" name="OscillatorPanel.cpp" compile="1" resource="0"
+              file="Source/OscillatorPanel.cpp"/>
+        <FILE id="f1U1bO" name="OscillatorPanel.h" compile="0" resource="0"
+              file="Source/OscillatorPanel.h"/>
+        <FILE id="Ro2aP8" name="Panel.cpp" compile="1" resource="0" file="Source/Panel.cpp"/>
+        <FILE id="WVo6H1" name="Panel.h" compile="0" resource="0" file="Source/Panel.h"/>
+        <FILE id="JY1OHb" name="PresetDialog.cpp" compile="1" resource="0"
+              file="Source/PresetDialog.cpp"/>
+        <FILE id="aKKnxp" name="PresetDialog.h" compile="0" resource="0" file="Source/PresetDialog.h"/>
+        <FILE id="B6a3Em" name="ReverbPanel.cpp" compile="1" resource="0" file="Source/ReverbPanel.cpp"/>
+        <FILE id="GQWj1X" name="ReverbPanel.h" compile="0" resource="0" file="Source/ReverbPanel.h"/>
+        <FILE id="jUOTPO" name="SamplerPanel.cpp" compile="1" resource="0"
+              file="Source/SamplerPanel.cpp"/>
+        <FILE id="CjiGWH" name="SamplerPanel.h" compile="0" resource="0" file="Source/SamplerPanel.h"/>
+      </GROUP>
+      <GROUP id="{E619D4C1-110E-416E-055B-B61301338B21}" name="AudioEngine">
+        <FILE id="sGv9jB" name="ADSR.cpp" compile="1" resource="0" file="Source/AudioEngine/ADSR.cpp"/>
+        <FILE id="eKShKB" name="ADSR.h" compile="0" resource="0" file="Source/AudioEngine/ADSR.h"/>
+        <FILE id="giZTPK" name="Arpeggiator.cpp" compile="1" resource="0" file="Source/AudioEngine/Arpeggiator.cpp"/>
+        <FILE id="BZcCQd" name="Arpeggiator.h" compile="0" resource="0" file="Source/AudioEngine/Arpeggiator.h"/>
+        <FILE id="qEI9sy" name="AudioProcessorModule.h" compile="0" resource="0"
+              file="Source/AudioEngine/AudioProcessorModule.h"/>
+        <FILE id="ob2Wl8" name="BasicDelayLine.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/BasicDelayLine.cpp"/>
+        <FILE id="fKSPhf" name="BasicDelayLine.h" compile="0" resource="0"
+              file="Source/AudioEngine/BasicDelayLine.h"/>
+        <FILE id="rNebCZ" name="Distortion.cpp" compile="1" resource="0" file="Source/AudioEngine/Distortion.cpp"/>
+        <FILE id="lfFZwL" name="Distortion.h" compile="0" resource="0" file="Source/AudioEngine/Distortion.h"/>
+        <FILE id="rpvTAm" name="Event.cpp" compile="1" resource="0" file="Source/AudioEngine/Event.cpp"/>
+        <FILE id="XTM01z" name="Event.h" compile="0" resource="0" file="Source/AudioEngine/Event.h"/>
+        <FILE id="KpThBk" name="EventListener.h" compile="0" resource="0" file="Source/AudioEngine/EventListener.h"/>
+        <FILE id="ZgGIni" name="Filter.cpp" compile="1" resource="0" file="Source/AudioEngine/Filter.cpp"/>
+        <FILE id="niS7o8" name="Filter.h" compile="0" resource="0" file="Source/AudioEngine/Filter.h"/>
+        <FILE id="lM854r" name="FractionalDelayBuffer.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/FractionalDelayBuffer.cpp"/>
+        <FILE id="YrMHgf" name="FractionalDelayBuffer.h" compile="0" resource="0"
+              file="Source/AudioEngine/FractionalDelayBuffer.h"/>
+        <FILE id="fV8frd" name="HighPassFilter.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/HighPassFilter.cpp"/>
+        <FILE id="mSMOWJ" name="HighPassFilter.h" compile="0" resource="0"
+              file="Source/AudioEngine/HighPassFilter.h"/>
+        <FILE id="lJyVGJ" name="LowPassFilter.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/LowPassFilter.cpp"/>
+        <FILE id="GZA2CB" name="LowPassFilter.h" compile="0" resource="0" file="Source/AudioEngine/LowPassFilter.h"/>
+        <FILE id="S1e2CO" name="LupoSynth.cpp" compile="1" resource="0" file="Source/AudioEngine/LupoSynth.cpp"/>
+        <FILE id="jmeD3M" name="LupoSynth.h" compile="0" resource="0" file="Source/AudioEngine/LupoSynth.h"/>
+        <FILE id="PkZ20i" name="ModTarget.cpp" compile="1" resource="0" file="Source/AudioEngine/ModTarget.cpp"/>
+        <FILE id="W4xhBq" name="ModTarget.h" compile="0" resource="0" file="Source/AudioEngine/ModTarget.h"/>
+        <FILE id="omjvDY" name="Modulation.cpp" compile="1" resource="0" file="Source/AudioEngine/Modulation.cpp"/>
+        <FILE id="r6E06B" name="Modulation.h" compile="0" resource="0" file="Source/AudioEngine/Modulation.h"/>
+        <FILE id="uB9uqF" name="Modulator.h" compile="0" resource="0" file="Source/AudioEngine/Modulator.h"/>
+        <FILE id="JKvZyw" name="MonoEffect.h" compile="0" resource="0" file="Source/AudioEngine/MonoEffect.h"/>
+        <FILE id="eT8Dcg" name="MultimodeFilter.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/MultimodeFilter.cpp"/>
+        <FILE id="cV9cxO" name="MultimodeFilter.h" compile="0" resource="0"
+              file="Source/AudioEngine/MultimodeFilter.h"/>
+        <FILE id="YQczCT" name="MultimodeOscillator.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/MultimodeOscillator.cpp"/>
+        <FILE id="qhpHlT" name="MultimodeOscillator.h" compile="0" resource="0"
+              file="Source/AudioEngine/MultimodeOscillator.h"/>
+        <FILE id="blVDBf" name="Note.cpp" compile="1" resource="0" file="Source/AudioEngine/Note.cpp"/>
+        <FILE id="XHsQPg" name="Note.h" compile="0" resource="0" file="Source/AudioEngine/Note.h"/>
+        <FILE id="Ox4jkV" name="OscGroup.cpp" compile="1" resource="0" file="Source/AudioEngine/OscGroup.cpp"/>
+        <FILE id="ZKrP4b" name="OscGroup.h" compile="0" resource="0" file="Source/AudioEngine/OscGroup.h"/>
+        <FILE id="I2EApX" name="Oszillator.cpp" compile="1" resource="0" file="Source/AudioEngine/Oszillator.cpp"/>
+        <FILE id="xlb4st" name="Oszillator.h" compile="0" resource="0" file="Source/AudioEngine/Oszillator.h"/>
+        <FILE id="XdqchG" name="Pulse.cpp" compile="1" resource="0" file="Source/AudioEngine/Pulse.cpp"/>
+        <FILE id="kfX76j" name="Pulse.h" compile="0" resource="0" file="Source/AudioEngine/Pulse.h"/>
+        <FILE id="ZzaGWR" name="Random.cpp" compile="1" resource="0" file="Source/AudioEngine/Random.cpp"/>
+        <FILE id="wobyGb" name="Random.h" compile="0" resource="0" file="Source/AudioEngine/Random.h"/>
+        <FILE id="XFYU0X" name="SampleAndHold.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/SampleAndHold.cpp"/>
+        <FILE id="BB9c3y" name="SampleAndHold.h" compile="0" resource="0" file="Source/AudioEngine/SampleAndHold.h"/>
+        <FILE id="Ekevo5" name="Sampler.cpp" compile="1" resource="0" file="Source/AudioEngine/Sampler.cpp"/>
+        <FILE id="OE64o2" name="Sampler.h" compile="0" resource="0" file="Source/AudioEngine/Sampler.h"/>
+        <FILE id="OBN49G" name="Sawtooth.cpp" compile="1" resource="0" file="Source/AudioEngine/Sawtooth.cpp"/>
+        <FILE id="ux5YiP" name="Sawtooth.h" compile="0" resource="0" file="Source/AudioEngine/Sawtooth.h"/>
+        <FILE id="VbGn8R" name="Sine.cpp" compile="1" resource="0" file="Source/AudioEngine/Sine.cpp"/>
+        <FILE id="AbMRQ4" name="Sine.h" compile="0" resource="0" file="Source/AudioEngine/Sine.h"/>
+        <FILE id="YqHtFU" name="StereoChorus.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/StereoChorus.cpp"/>
+        <FILE id="f7Eiaw" name="StereoChorus.h" compile="0" resource="0" file="Source/AudioEngine/StereoChorus.h"/>
+        <FILE id="n002OZ" name="StereoDelay.cpp" compile="1" resource="0" file="Source/AudioEngine/StereoDelay.cpp"/>
+        <FILE id="eC0OvM" name="StereoDelay.h" compile="0" resource="0" file="Source/AudioEngine/StereoDelay.h"/>
+        <FILE id="g5EXYU" name="StereoEffect.h" compile="0" resource="0" file="Source/AudioEngine/StereoEffect.h"/>
+        <FILE id="wbyD1t" name="StereoReverb.cpp" compile="1" resource="0"
+              file="Source/AudioEngine/StereoReverb.cpp"/>
+        <FILE id="mH5cvX" name="StereoReverb.h" compile="0" resource="0" file="Source/AudioEngine/StereoReverb.h"/>
+        <FILE id="Qm4aQA" name="Voice.cpp" compile="1" resource="0" file="Source/AudioEngine/Voice.cpp"/>
+        <FILE id="TJFC5r" name="Voice.h" compile="0" resource="0" file="Source/AudioEngine/Voice.h"/>
+        <FILE id="zW797p" name="WaveTable.cpp" compile="1" resource="0" file="Source/AudioEngine/WaveTable.cpp"/>
+        <FILE id="Ij9PXs" name="WaveTable.h" compile="0" resource="0" file="Source/AudioEngine/WaveTable.h"/>
+        <FILE id="DKQlTI" name="WhiteNoise.cpp" compile="1" resource="0" file="Source/AudioEngine/WhiteNoise.cpp"/>
+        <FILE id="IkBTTo" name="WhiteNoise.h" compile="0" resource="0" file="Source/AudioEngine/WhiteNoise.h"/>
+      </GROUP>
+      <FILE id="KxpK4I" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="fH27kn" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="J4b20V" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="qVggQy" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="d:\devel\ASIOSDK2.3.2\common\"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="d:\devel\ASIOSDK2.3\common\"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2017>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" headerPath="d:\devel\ASIOSDK2.3\common\"/>
+        <CONFIGURATION isDebug="0" name="Release" headerPath="d:\devel\ASIOSDK2.3\common\"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_osc"/>
+        <MODULEPATH id="juce_opengl"/>
+        <MODULEPATH id="juce_gui_extra"/>
+        <MODULEPATH id="juce_gui_basics"/>
+        <MODULEPATH id="juce_graphics"/>
+        <MODULEPATH id="juce_events"/>
+        <MODULEPATH id="juce_dsp"/>
+        <MODULEPATH id="juce_data_structures"/>
+        <MODULEPATH id="juce_cryptography"/>
+        <MODULEPATH id="juce_core"/>
+        <MODULEPATH id="juce_audio_utils"/>
+        <MODULEPATH id="juce_audio_processors"/>
+        <MODULEPATH id="juce_audio_plugin_client"/>
+        <MODULEPATH id="juce_audio_formats"/>
+        <MODULEPATH id="juce_audio_devices"/>
+        <MODULEPATH id="juce_audio_basics"/>
+        <MODULEPATH id="juce_video" path="../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_VST3_CAN_REPLACE_VST2="0" JUCE_STRICT_REFCOUNTEDPOINTER="1"
+               JUCE_PLUGINHOST_VST="0" JUCE_PLUGINHOST_VST3="1" JUCE_PLUGINHOST_LADSPA="0"
+               JUCE_CUSTOM_VST3_SDK="0" JUCE_ASIO="1"/>
+</JUCERPROJECT>

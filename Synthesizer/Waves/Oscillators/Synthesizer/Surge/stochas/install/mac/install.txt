@@ -1,0 +1,2 @@
+Welcome to the Mac installer for Stochas.
+Please refer to https://surge-synth-team.org/stochas/ for latest information and documentation.

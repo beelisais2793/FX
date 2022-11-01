@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<SwarmSim>
+	<Simulation seed="-1" length="180000" sampling="90" fft_lng="128"/>
+	<Environment type="2" amplitude="0.05" offset="0.0">
+		<src_1 file="/home/manu/repo/simulator/mufco/cnf/single_cmp.xml"/>
+		<src_2 file="/home/manu/repo/simulator/mufco/cnf/DEMR_2013"/>
+	</Environment>
+	<Oscilators number="0" distribution="-1" ff="2" N="10.0" hist="512" offset="0.0">
+		<coupling  type="3" K="-0.01"/>
+		<switching type="2" P="4.0"/>
+	</Oscilators>
+	<Visualization active="1" rf_rate="100">
+		<scr type="00" title="Aggregated Consumption"     x_lng="10000" y_ini="-3000" y_end="3000"/>
+		<!--<scr type="01" title="Coherence"                  y_ini="0"     y_end="2"/>-->	
+		<scr type="10" title="Aggregated Consumption FFT" y_ini="0"     y_end="1500"/>	
+		<scr type="11" title="NC Consumption FFT"         y_ini="0"     y_end="1500"/>		
+		<scr type="12" title="C Consumption FFT"          y_ini="0"     y_end="1500"/>
+		<scr type="13" title="Oscillators Distribution"   y_ini="0"     y_end="1500"/>		
+	</Visualization>
+	<Writer active="0">
+		<components number="4"/>
+		<output folder="/home/manu/repo/simulator/mufco"/>
+	</Writer>
+</SwarmSim>

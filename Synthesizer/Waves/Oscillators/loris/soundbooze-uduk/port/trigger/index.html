@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+    <script src="midi.js"></script>
+    <title>MIDI Trigger</title>
+  </head>
+  <body bgcolor="#000" style="overflow:hidden;">
+
+  <script>
+    
+p5.disableFriendlyErrors = true;
+
+var pi5 = { "canvas" : null, "mic" : null, "fft" : null, "sr" : 44100 };
+
+function setup() {
+  pi5.canvas = createCanvas(window.innerWidth, window.innerHeight);
+  pi5.mic = new p5.AudioIn();
+  pi5.mic.start();
+  pi5.fft = new p5.FFT();
+  pi5.fft.setInput(pi5.mic);
+  pi5.sr = sampleRate();
+
+  UdukMIDI.initialize();
+}
+
+var img;
+var xpoint = 0;
+
+function draw() {
+  getPitch(pi5.sr, pi5.fft.waveform().length, pi5.fft.waveform());
+  
+  if(xpoint > height) {
+    xpoint = 0;
+    background(0);
+  }
+}
+
+/*
+
+ Based on Joren\s Yin:
+  
+ [1] https://github.com/JorenSix/TarsosDSP
+ 
+*/
+
+var DEFAULT_THRESHOLD = 0.20;
+var DEFAULT_BUFFER_SIZE = 2048;
+var DEFAULT_OVERLAP = 1536;
+var threshold;
+var sampleRate;
+
+var yinBuffer;
+var probability = [];
+
+function getPitch(audioSampleRate, bufferSize, audioBuffer) {
+
+  sampleRate = audioSampleRate;
+  yinBuffer = new Float32Array(bufferSize / 2);
+  threshold = DEFAULT_THRESHOLD;
+
+  var tauEstimate;
+  var pitchInHertz;
+
+  difference(audioBuffer);
+  cumulativeMeanNormalizedDifference();
+  tauEstimate = absoluteThreshold();
+
+  if (tauEstimate != -1) {
+    var betterTau = parabolicInterpolation(tauEstimate);
+    pitchInHertz = sampleRate / betterTau;
+
+    var f = freq2note(pitchInHertz)
+    console.log(f);
+    var sequence = [ f ];
+
+    UdukMIDI.playSequence(sequence, 0.3121);
+
+  } 
+  else {
+    pitchInHertz = -1;
+  }
+
+}
+
+function difference(audioBuffer) {
+  var index, tau;
+  var delta;
+  
+  for (tau = 0; tau < yinBuffer.length; tau++) {
+    yinBuffer[tau] = 0;
+  }
+  
+  for (tau = 1; tau < yinBuffer.length; tau++) {
+    for (index = 0; index < yinBuffer.length; index++) {
+      delta = audioBuffer[index] - audioBuffer[index + tau];
+       yinBuffer[tau] += delta * delta;
+    }
+  }
+}
+
+function cumulativeMeanNormalizedDifference() {
+  var tau;
+  yinBuffer[0] = 1;
+  var runningSum = 0;
+  
+  for (tau = 1; tau < yinBuffer.length; tau++) {
+    runningSum += yinBuffer[tau];
+    yinBuffer[tau] *= tau / runningSum;
+  }
+}
+
+function absoluteThreshold() {
+  var tau;
+
+  for (tau = 2; tau < yinBuffer.length; tau++) {
+    if (yinBuffer[tau] < threshold) {
+      while (tau + 1 < yinBuffer.length && yinBuffer[tau + 1] < yinBuffer[tau]) {
+        tau++;
+      }
+      probability.push(1 - yinBuffer[tau]);
+      break;
+    }
+  }
+
+  if (tau == yinBuffer.length || yinBuffer[tau] >= threshold) {
+    tau = -1;
+    probability.push(0);
+  } 
+
+  return tau;
+}
+
+function parabolicInterpolation(tauEstimate) {
+  var betterTau;
+  var x0;
+  var x2;
+
+  if (tauEstimate < 1) {
+    x0 = tauEstimate;
+  } else {
+    x0 = tauEstimate - 1;
+  }
+  
+  if (tauEstimate + 1 < yinBuffer.length) {
+    x2 = tauEstimate + 1;
+  } else {
+    x2 = tauEstimate;
+  }
+  
+  if (x0 == tauEstimate) {
+    if (yinBuffer[tauEstimate] <= yinBuffer[x2]) {
+      betterTau = tauEstimate;
+    } else {
+      betterTau = x2;
+    }
+  } else if (x2 == tauEstimate) {
+    if (yinBuffer[tauEstimate] <= yinBuffer[x0]) {
+      betterTau = tauEstimate;
+    } else {
+      betterTau = x0;
+    }
+  } else {
+    var s0, s1, s2;
+    s0 = yinBuffer[x0];
+    s1 = yinBuffer[tauEstimate];
+    s2 = yinBuffer[x2];
+    betterTau = tauEstimate + (s2 - s0) / (2 * (2 * s1 - s2 - s0));
+  }
+  
+  return betterTau;
+}
+
+function freq2note (frequency)
+{
+   var noteNum = 12 * (Math.log(frequency / 440) / Math.log(2));
+   return Math.round(noteNum) + 69;
+}
+      
+function ToneJSFreqtoMIDInote(freq) {
+
+  var scaleIndexToNote = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+
+  var log = Math.log2(freq / 440.0);
+  var noteNumber = Math.round(12 * log) + 57;
+  var octave = Math.floor(noteNumber/12);
+
+  if (octave < 0){
+    noteNumber += -12 * octave;
+  }
+
+  var noteName = scaleIndexToNote[noteNumber % 12];
+  return noteName + octave.toString();
+
+}
+
+  </script>
+    
+  </body>
+
+</html>
+

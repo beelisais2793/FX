@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Title of the document</title>
+<script type="text/javascript" src="qrc:///qtwebchannel/qwebchannel.js"></script>
+<script type="text/javascript" src="MathJax/MathJax.js?config=AM_HTMLorMML"></script>
+</head>
+
+<body>
+    <div id="main_window">
+        <div id="div_tf_display">
+			The control system tf
+		</div>
+		<div id="div_tf_roots">
+			roots of the control system
+		</div>
+		<div id="div_tf_root_locus">
+			root locus of characrestic equation
+		</div>
+    </div>    
+</body>
+<script type="text/javascript">
+    (function () {
+        //var script = document.createElement("script");
+        //script.type = "text/javascript";
+        //script.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+        //script.src  = "MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+        //document.getElementsByTagName("head")[0].appendChild(script);
+        //<script type="text/javascript" src="MathJax/MathJax.js?config=AM_HTMLorMML">
+        
+
+        //<!-- it's a good idea to initialize webchannel after DOM ready, if your code is going to manipulate the DOM -->
+        document.addEventListener("DOMContentLoaded", function () {
+			//if QWebChannel === undefined return;
+            new QWebChannel(qt.webChannelTransport, function (channel) {
+                var jshelper = channel.objects.jshelper;
+                // do what you gotta do
+                
+            });
+        });
+        
+    })();
+</script>
+</html>

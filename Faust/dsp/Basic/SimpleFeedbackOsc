@@ -1,0 +1,11 @@
+import("stdfaust.lib");
+
+fdbk = hslider("fdbk", 0, 0, 1, 0.01);
+
+phasor(freq) = os.phasor(10000, freq)*0.0001;
+siner(phase) = _*ma.PI*2 : aa.sine : _;
+
+pmOsc(freq,mod) = _+mod+(phasor(freq)) : siner(_) : _;
+fdbkOsc(freq,mod) = pmOsc(freq, mod) ~ (_*fdbk);
+
+process = fdbkOsc(220, os.osc(100));

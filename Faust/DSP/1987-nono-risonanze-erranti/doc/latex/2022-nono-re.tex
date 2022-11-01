@@ -1,0 +1,216 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%!TEX root = 2022-nono-re.tex
+%----------------------------------------------------------------- LANGUAGES ---
+\newcommand{\mylanguages}{italian} % in reverse order
+%---------------------------------------------------------- TITLE & SUBTITLE ---
+\newcommand{\mytitle}{Risonanze Erranti - Luigi Nono}
+\newcommand{\mysubtitle}{Appunti AECLE}
+%----------------------------------------------------------------- AUTHOR(s) ---
+\newcommand{\authorone}{Giuseppe SILVI}
+\newcommand{\institutione}{Accademia S. Cecilia di Roma}
+\newcommand{\emailone}{grammaton @ me.com}
+%-------------------------------------------------------------------------------
+% \newcommand{\authortwo}{Wikio Orgopedio}
+% \newcommand{\institutiontwo}{Conservatorio S. Cecilia di Roma}
+% \newcommand{\emailtwo}{wikio @ orgopedio.com} % duplicate these 3 lines if more
+%-------------------------------------------------------------- STYLE GS2020 ---
+\AtBeginDocument{\renewcommand\contentsname{\normalfont{MAPPA}}}
+\input{gs2020.tex}
+%------------------------------------------------------------ BEGIN DOCUMENT ---
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+%-------------------------------------------------------------------- ABSTRACT -
+% The abstract is an external txt file inside the includes folder
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------------- SECTION ---
+%-------------------------------------------------------------------------------
+\section*{NOTE DI PROGRAMMA}
+
+Il testo si apre con “\emph{… la durata induce alla poesia. | Voglio interrogarmi con
+un canto, | voglio ricordare con un canto, | dire e affidare a un canto | cos'è
+la durata.}”
+
+\newpage
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%La mappatura della membrana del timpano.
+%https://en.wikipedia.org/wiki/Lune_of_Hippocrates
+\begin{figure}[h]
+\centering
+\resizebox{0.47\textwidth}{!}{%
+\begin{tikzpicture}%[scale=0.93]
+    \path[draw] (0,4) coordinate (Q)
+                (4,0) coordinate [label=right:$B$] (B)
+             -- (-4,0) coordinate [label=left:$A$] (A)
+             -- (0,-4) coordinate (K)
+            ($(A)!0.5!(K)$) coordinate[label=below:$D$](D);
+    \foreach \point in {A,B,K,D} \fill [black] (\point) circle (2pt);
+    \draw [color=black] circle(4cm);
+    \scoped[on background layer]
+    {
+    \draw[name path=arc1,color=purple]
+         let \p1 = ($ (B) - (K) $),
+             \n1 = {veclen(\x1,\y1)} in
+         (B) arc (-45:-135:\n1);
+    \draw[name path=arc2,color=green,rotate=90]
+         let \p1 = ($ (B) - (K) $),
+             \n1 = {veclen(\x1,\y1)} in
+         (Q) arc (-45:-135:\n1);
+    \path [name intersections={of=arc1 and arc2,by=C}];
+    \fill [black] (C) circle (2pt);
+    \node[label=below:$C$] at (C) {};
+    }
+\end{tikzpicture}
+}
+\caption{Due lune, Ippocrate su pelle. 2022.}
+\label{tikz:duelune}
+\end{figure}
+
+\vfill
+\tableofcontents
+\clearpage
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+% \begin{figure*}[t]
+% \centering
+% \includegraphics[width=.97\textwidth]{img/messainscena.jpeg}
+% \caption{Luogo e messa in scena}
+% \label{luogo}
+% \end{figure*}
+%-------------------------------------------------------------------------------
+%------------------------------------------------------------------- SECTION ---
+%-------------------------------------------------------------------------------
+\section{LUOGO SONORO}
+
+\begin{warn}[ellisse]
+s. f. [dal lat. scient. ellipsis, e questo dal gr. ἔλλειψις «mancanza»]. – In
+geometria, curva piana chiusa appartenente alla famiglia delle coniche [\ldots]
+In astronomia, è un’ellisse l’orbita descritta da un pianeta intorno al Sole
+(che ne occupa un fuoco), quella di un satellite intorno a un pianeta, ecc. \\
+- \url{treccani.it}.
+\end{warn}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=.47\textwidth]{img/image1.png}
+\caption{Luogo e messa in scena.}
+\label{luogo}
+\end{figure}
+
+Il complesso risultante è quello di un sistema ottofonico, otto elementi che
+costruiscono l'organismo sensibile e sensiente, voce e ascolto, suono quindi
+luogo. Otto voci, rivolte verso il centro su cui sovrasta un diffusore
+omnidirezionale a banda larga \emph{S.T.ON3L}, come sul vertice di una piramide
+a base ottogonale inclinata, dal più basso al più alto: $ P-III-S-II-V $ scendendo
+$ I-E-II-[P] $. [fig. \ref{luogo}] Il luogo acustico che si crea
+in questa configurazione è interno al suono interpretato, all'attività musicale,
+luogo geometrico, ritmico, poetico. Il canto di quattro volte infinite voci in
+uno spazio in risonanza. Non una proiezione esterna quindi, come accade nella
+tradizionale diffusione frontale. Non c'è un fronte. Nella messa in scena ideale
+il pubblico dovrebbe circondare il luogo sonoro, meglio, attraversarlo. Nel caso
+in cui questo non fosse possibile, il luogo può essere arbitrariamente osservato
+dall'esterno, in maniera circolare o da una prospettiva; tra le prospettive
+esterne la più indicata si ottiene posizionando il pubblico rivolto verso la
+terna $ P-III-S $.
+
+\begin{quote}
+Ogni volto fotografato\\
+è un'immagine bellica,\\
+il punto di tangenza\\
+tra l'aereo nemico e la nave\\
+nell'attimo che precede l'esplosione.\\
+Fermo nell'istantanea,\\
+nel contatto flagrante tra due sguardi\\
+immolato, ripreso\\
+mentre le fiamme covano già\\
+nella fusoliera crescendo\\
+dentro i suoi tratti, vive\\
+soltatno il tempo necessario\\
+a compiere la missione del ricordo. \footcite{Magrelli2018}
+\end{quote}
+
+\begin{equation}
+\left\{ \begin{aligned}
+x & = \left(r + \cos\frac{\theta}{2}\sin v - \sin\frac{\theta}{2}\sin 2v\right) \cos \theta\\
+y & = \left(r + \cos\frac{\theta}{2}\sin v - \sin\frac{\theta}{2}\sin 2v\right) \sin \theta\\
+z & = \sin\frac{\theta}{2}\sin v + \cos\frac{\theta}{2}\sin 2v
+\end{aligned} \right.
+\end{equation}
+
+%------------------------------------------------------
+%------------------------- larghezza massima del codice
+\begin{lstlisting}
+//-----------------------------------------------------
+//------- FIGURE OF 8 IMMERSION OF THE KLEIN BOTTLE ---
+//-----------------------------------------------------
+import("stdfaust.lib");
+//------------------------------ DEGREES TO RADIANS ---
+d2r = *(ma.PI/180);
+//--------------------------------------- VARIABLES ---
+a = hslider("angle", 0,0,360,0.1);
+v = hslider("v", 0,0,360,0.1);
+//-------------------------------------------- MATH ---
+x(a,r,v) = (r + (cos(a/2) * sin(v)) -
+           (sin(a/2) * sin(2*v))) * cos(a) :
+           si.smoo;
+y(a,r,v) = (r + (cos(a/2) * sin(v)) -
+           (sin(a/2) * sin(2*v))) * sin(a) :
+           si.smoo;
+z(a,v) = (sin(a/2) * sin(v)) +
+         (cos(a/2) * sin(2*v)) :
+         si.smoo;
+fig8immersion(a,r,v) = _,
+                       *(x(d2r(a),2,d2r(v))),
+                       *(y(d2r(a),2,d2r(v))),
+                       *(z(d2r(a),d2r(v)));
+//----------------------------- BAND-FILTERED NOISE ---
+bandnoise(f) = no.noise :
+               fi.highpass(64,f) :
+               fi.lowpass(64,f);
+//------------------------- AMBISONIC B to A-FORMAT ---
+bamodule(W,X,Y,Z) = LFU,RFD,RBU,LBD
+  with{
+	  LFU = 0.5 * (W + X + Y + Z);
+	  RFD = 0.5 * (W + X - Y - Z);
+	  RBU = 0.5 * (W - X - Y + Z);
+    LBD = 0.5 * (W - X + Y - Z);
+};
+//-------------------------------------------- SPAT ---
+spat(n,a)	= par(z,n,*(scaler(z,n,a) : si.smoo)),
+            par(z,n,*(scaler(z,n,a) : si.smoo)),
+            par(z,n,*(scaler(z,n,a) : si.smoo)),
+            par(z,n,*(scaler(z,n,a) : si.smoo))
+            with {
+              scaler(z,n,a) = sqrt(max(0.0, 1.0 -
+                abs(fmod(a+0.5+float(n-z)/n, 1.0) -
+                0.5) * n));
+};
+stspat(n,a) = spat(n,a) : ro.interleave(n,n);
+//----------------------------------------- EXAMPLE ---
+process = 0, bandnoise(1000), bandnoise(1002),0 <:
+          par(i,4, fig8immersion((i/4)*2*ma.PI,2,v) :
+          bamodule) :
+          stspat(4,a/360);
+\end{lstlisting}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2020 GIUSEPPE SILVI ARTICLE TEMPLATE BASED ON
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

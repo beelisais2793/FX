@@ -1,0 +1,1 @@
+build/obj/Domain.o: src/Domain.cpp Gamma/Domain.h Gamma/Node.h

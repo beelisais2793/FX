@@ -1,0 +1,20 @@
+﻿  main.cpp
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(113): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(122): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(137): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(138): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(155): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(166): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(171): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(182): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(183): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(208): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(216): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(228): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(229): warning C4244: '*=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(245): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(301): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(306): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\barth\documents\git\wavetableosc\source\main.cpp(362): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  WaveTableOsc.vcxproj -> C:\Users\barth\Documents\git\WaveTableOsc\WaveTableosc\Debug\WaveTableOsc.exe
+  WaveTableOsc.vcxproj -> C:\Users\barth\Documents\git\WaveTableOsc\WaveTableosc\Debug\WaveTableOsc.pdb (Partial PDB)

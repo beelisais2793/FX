@@ -1,0 +1,3 @@
+build/obj/arr.o: src/arr.cpp Gamma/arr.h Gamma/scl.h Gamma/Config.h \
+ Gamma/Conversion.h Gamma/Constants.h Gamma/pstdint.h Gamma/std_swap.h \
+ Gamma/mem.h Gamma/Access.h

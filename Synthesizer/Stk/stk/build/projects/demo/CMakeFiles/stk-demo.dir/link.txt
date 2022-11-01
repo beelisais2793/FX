@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -O3 -DNDEBUG -O3 -DNDEBUG -rdynamic "CMakeFiles/stk-demo.dir/demo.cpp.o" "CMakeFiles/stk-demo.dir/utilities.cpp.o" -o /home/quake/Projects/TStk/stk/projects/demo/stk-demo  -ljack -lasound ../../libstk.a -ljack -pthread -lasound 

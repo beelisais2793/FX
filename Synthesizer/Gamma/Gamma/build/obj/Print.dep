@@ -1,0 +1,2 @@
+build/obj/Print.o: src/Print.cpp Gamma/Print.h Gamma/Constants.h \
+ Gamma/pstdint.h Gamma/scl.h Gamma/Config.h Gamma/Conversion.h

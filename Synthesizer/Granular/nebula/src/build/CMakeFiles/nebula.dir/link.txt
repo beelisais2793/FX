@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -g -O2 -std=c++17 -I . -Wno-return-type-c-linkage -rdynamic CMakeFiles/nebula.dir/nebula.cpp.o -o nebula 

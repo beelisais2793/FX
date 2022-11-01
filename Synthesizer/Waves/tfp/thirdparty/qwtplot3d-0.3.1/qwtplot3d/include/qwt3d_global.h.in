@@ -1,0 +1,13 @@
+#pragma once
+#ifndef qwt3d_global_h__2009_10_11_14_19_14_begin_guarded_code
+#define qwt3d_global_h__2009_10_11_14_19_14_begin_guarded_code
+
+//#include <qglobal.h>
+#include "qwt3d_export.h"
+
+#define QWT3D_MAJOR_VERSION @QWT3D_MAJOR_VERSION@
+#define QWT3D_MINOR_VERSION @QWT3D_MINOR_VERSION@
+#define QWT3D_PATCH_VERSION @QWT3D_PATCH_VERSION@
+#define QWT3D_VERSION "@QWT3D_VERSION@"
+
+#endif /* include guard */

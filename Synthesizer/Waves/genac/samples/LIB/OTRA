@@ -1,0 +1,8 @@
+.SUBCKT OTRA 1 2 3
+V_X 1 0 0
+V_Y 2 0 0
+F_X 0 hidden V_X 1
+F_Y 0 hidden V_Y -1
+R_Z hidden 0 _inf
+E_Z 3 0 hidden 0 1
+.ENDS

@@ -1,0 +1,9 @@
+﻿  Source.cpp
+c:\users\sai3097ganesh\documents\visual studio 2015\projects\particle_fire_saiganesh\particle_fire_saiganesh\source.cpp(16): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\sai3097ganesh\documents\visual studio 2015\projects\particle_fire_saiganesh\particle_fire_saiganesh\source.cpp(37): warning C4244: 'initializing': conversion from 'double' to 'unsigned char', possible loss of data
+c:\users\sai3097ganesh\documents\visual studio 2015\projects\particle_fire_saiganesh\particle_fire_saiganesh\source.cpp(38): warning C4244: 'initializing': conversion from 'double' to 'unsigned char', possible loss of data
+c:\users\sai3097ganesh\documents\visual studio 2015\projects\particle_fire_saiganesh\particle_fire_saiganesh\source.cpp(39): warning C4244: 'initializing': conversion from 'double' to 'unsigned char', possible loss of data
+c:\users\sai3097ganesh\documents\visual studio 2015\projects\particle_fire_saiganesh\particle_fire_saiganesh\source.cpp(47): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+c:\users\sai3097ganesh\documents\visual studio 2015\projects\particle_fire_saiganesh\particle_fire_saiganesh\source.cpp(48): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Particle_fire_SaiGanesh.vcxproj -> C:\Users\sai3097ganesh\Documents\Visual Studio 2015\Projects\Particle_fire_SaiGanesh\Debug\Particle_fire_SaiGanesh.exe
+  Particle_fire_SaiGanesh.vcxproj -> C:\Users\sai3097ganesh\Documents\Visual Studio 2015\Projects\Particle_fire_SaiGanesh\Debug\Particle_fire_SaiGanesh.pdb (Partial PDB)

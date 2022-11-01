@@ -1,0 +1,113 @@
+/* ----------------------------------------------------------------
+ * Export and visibility macros
+ * ----------------------------------------------------------------
+ * Substitution variables:
+ *  - LIBRARY_NAME          : All-caps variable identifying the
+ *                            name of the project being built.
+ *  - PLATFORM              : Set to WINDOWS, MAC, or LINUX.
+ *  - BUILD_TYPE            : Set to either SHARED or STATIC.
+ * Global definitions (non substitution)
+ *  - LIBRARY_NAME_BUILDING : Define this if the library is being
+ *                            built.
+ * ------------------------------------------------------------- */
+
+#ifndef @LIBRARY_NAME@_EXPORT_H
+#   define @LIBRARY_NAME@_EXPORT_H
+
+    /* set @PLATFORM@ to WINDOWS, MAC, or LINUX */
+#   define @LIBRARY_NAME@_PLATFORM_@PLATFORM@
+
+    /* set @BUILD_TYPE@ to SHARED or STATIC */
+#   define @LIBRARY_NAME@_@BUILD_TYPE@
+
+    /* --------------------------------------------------------------
+     * define visibility macros
+     * --------------------------------------------------------------*/
+
+    /* define platform dependent and build dependent visibility macro helpers */
+#   if defined(@LIBRARY_NAME@_SHARED)
+#       if defined(@LIBRARY_NAME@_PLATFORM_WINDOWS)
+#           if defined(__GNUC__)
+                /* cygwin visbibility */
+#               define @LIBRARY_NAME@_HELPER_API_EXPORT __attribute__ ((dllexport))
+#               define @LIBRARY_NAME@_HELPER_API_IMPORT __attribute__ ((dllimport))
+#           else
+                /* msvc visibility */
+#               define @LIBRARY_NAME@_HELPER_API_EXPORT __declspec(dllexport)
+#               define @LIBRARY_NAME@_HELPER_API_IMPORT __declspec(dllimport)
+                /* disable warnings */
+#               pragma warning(disable: 4996) /* 'strcpy': This function or variable may be unsafe */
+#               pragma warning(disable: 4251) /* class Y needs to have dll-interface to be used by clients of class X */
+#           endif
+#           define @LIBRARY_NAME@_HELPER_API_PRIVATE
+#       else
+#           if __GNUC__ >= 4
+                /* gcc 4+ visibility */
+#               define @LIBRARY_NAME@_HELPER_API_EXPORT __attribute__ ((visibility ("default")))
+#               define @LIBRARY_NAME@_HELPER_API_IMPORT __attribute__ ((visibility ("default")))
+#               define @LIBRARY_NAME@_HELPER_API_PRIVATE  __attribute__ ((visibility ("hidden")))
+#           else
+                /* gcc lower than 4 doesn't have any explicit visibility, everything is exported */
+#               define @LIBRARY_NAME@_HELPER_API_EXPORT
+#               define @LIBRARY_NAME@_HELPER_API_IMPORT
+#               define @LIBRARY_NAME@_HELPER_API_PRIVATE
+#           endif
+#       endif
+#   elif defined(@LIBRARY_NAME@_STATIC)
+        /* static build */
+#       define @LIBRARY_NAME@_HELPER_API_EXPORT
+#       define @LIBRARY_NAME@_HELPER_API_IMPORT
+#       define @LIBRARY_NAME@_HELPER_API_PRIVATE
+#   else
+#       error Please define @LIBRARY_NAME@_SHARED or @LIBRARY_NAME@_STATIC
+#   endif
+
+    /*
+     * define public API macro, depending on whether the library is being
+     * built or being linked against.
+     */
+#   if defined(@LIBRARY_NAME@_BUILDING) /* defined by CMake when library is being compiled */
+#       define @LIBRARY_NAME@_PUBLIC_API @LIBRARY_NAME@_HELPER_API_EXPORT
+#   else
+#       define @LIBRARY_NAME@_PUBLIC_API @LIBRARY_NAME@_HELPER_API_IMPORT
+#   endif
+
+    /*
+     * define local visibility macro. If we're testing, everything
+     * is visible
+     */
+#   if defined(TESTING)
+#       define @LIBRARY_NAME@_PRIVATE_API @LIBRARY_NAME@_PUBLIC_API
+#   else
+#       define @LIBRARY_NAME@_PRIVATE_API @LIBRARY_NAME@_HELPER_API_PRIVATE
+#   endif
+
+    /* --------------------------------------------------------------
+     * C++11 stuff
+     * --------------------------------------------------------------*/
+
+#   if __cplusplus < 201103L
+#       define OVERRIDE override
+#       define FINAL final
+#   else
+#       define OVERRIDE
+#       define FINAL
+#   endif
+
+    /* --------------------------------------------------------------
+     * C linkage
+     * --------------------------------------------------------------*/
+
+#   ifdef __cplusplus
+#       define C_HEADER_BEGIN extern "C" {
+#   else
+#       define C_HEADER_BEGIN
+#   endif
+
+#   ifdef __cplusplus
+#       define C_HEADER_END }
+#   else
+#       define C_HEADER_END
+#   endif
+
+#endif /* @LIBRARY_NAME@_EXPORT_H */

@@ -1,0 +1,1175 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60148B9F2839369500B21DBC /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148B9E2839369500B21DBC /* Tests_iOS.swift */; };
+		60148BA12839369500B21DBC /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148BA02839369500B21DBC /* Tests_iOSLaunchTests.swift */; };
+		60148BAB2839369500B21DBC /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148BAA2839369500B21DBC /* Tests_macOS.swift */; };
+		60148BAD2839369500B21DBC /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148BAC2839369500B21DBC /* Tests_macOSLaunchTests.swift */; };
+		60148BAE2839369500B21DBC /* OscillatorBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148B862839369400B21DBC /* OscillatorBankApp.swift */; };
+		60148BAF2839369500B21DBC /* OscillatorBankApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148B862839369400B21DBC /* OscillatorBankApp.swift */; };
+		60148BB02839369500B21DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148B872839369400B21DBC /* ContentView.swift */; };
+		60148BB12839369500B21DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148B872839369400B21DBC /* ContentView.swift */; };
+		60148BB22839369500B21DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60148B882839369500B21DBC /* Assets.xcassets */; };
+		60148BB32839369500B21DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60148B882839369500B21DBC /* Assets.xcassets */; };
+		60148BCB2839374E00B21DBC /* OscillatorBank_AU_macOSAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 60148BCA2839374E00B21DBC /* OscillatorBank_AU_macOSAudioUnit.m */; };
+		60148BCF2839374E00B21DBC /* DSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 60148BCE2839374E00B21DBC /* DSPKernel.hpp */; };
+		60148BD12839374E00B21DBC /* DSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60148BD02839374E00B21DBC /* DSPKernel.mm */; };
+		60148BD32839374E00B21DBC /* BufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 60148BD22839374E00B21DBC /* BufferedAudioBus.hpp */; };
+		60148BD62839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 60148BD52839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.hpp */; };
+		60148BD82839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60148BD72839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.mm */; };
+		60148BDB2839374E00B21DBC /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148BDA2839374E00B21DBC /* AudioUnitViewController.swift */; };
+		60148BDF2839374E00B21DBC /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60148BDD2839374E00B21DBC /* AudioUnitViewController.xib */; };
+		60148BE42839374E00B21DBC /* OscillatorBank-AU-macOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 60148BC62839374E00B21DBC /* OscillatorBank-AU-macOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		60148BF22839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 60148BF12839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.m */; };
+		60148BF62839376B00B21DBC /* DSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 60148BF52839376B00B21DBC /* DSPKernel.hpp */; };
+		60148BF82839376B00B21DBC /* DSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60148BF72839376B00B21DBC /* DSPKernel.mm */; };
+		60148BFA2839376B00B21DBC /* BufferedAudioBus.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 60148BF92839376B00B21DBC /* BufferedAudioBus.hpp */; };
+		60148BFD2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 60148BFC2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.hpp */; };
+		60148BFF2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 60148BFE2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.mm */; };
+		60148C022839376B00B21DBC /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148C012839376B00B21DBC /* AudioUnitViewController.swift */; };
+		60148C042839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148C032839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.swift */; };
+		60148C062839376B00B21DBC /* OscillatorBank_AU_iOSParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60148C052839376B00B21DBC /* OscillatorBank_AU_iOSParameters.swift */; };
+		60148C0A2839376B00B21DBC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60148C082839376B00B21DBC /* MainInterface.storyboard */; };
+		60148C0E2839376B00B21DBC /* OscillatorBank-AU-iOS.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 60148BED2839376B00B21DBC /* OscillatorBank-AU-iOS.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60148B9B2839369500B21DBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60148B812839369400B21DBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60148B8C2839369500B21DBC;
+			remoteInfo = "OscillatorBank (iOS)";
+		};
+		60148BA72839369500B21DBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60148B812839369400B21DBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60148B922839369500B21DBC;
+			remoteInfo = "OscillatorBank (macOS)";
+		};
+		60148BE22839374E00B21DBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60148B812839369400B21DBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60148BC52839374E00B21DBC;
+			remoteInfo = "OscillatorBank-AU-macOS";
+		};
+		60148C0C2839376B00B21DBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60148B812839369400B21DBC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60148BEC2839376B00B21DBC;
+			remoteInfo = "OscillatorBank-AU-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60148BE82839374E00B21DBC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				60148BE42839374E00B21DBC /* OscillatorBank-AU-macOS.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148C122839376B00B21DBC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				60148C0E2839376B00B21DBC /* OscillatorBank-AU-iOS.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60148B862839369400B21DBC /* OscillatorBankApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OscillatorBankApp.swift; sourceTree = "<group>"; };
+		60148B872839369400B21DBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		60148B882839369500B21DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		60148B8D2839369500B21DBC /* Oscillator Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oscillator Bank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60148B932839369500B21DBC /* OscillatorBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OscillatorBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60148B952839369500B21DBC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		60148B9A2839369500B21DBC /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60148B9E2839369500B21DBC /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		60148BA02839369500B21DBC /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		60148BA62839369500B21DBC /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60148BAA2839369500B21DBC /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		60148BAC2839369500B21DBC /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		60148BC62839374E00B21DBC /* OscillatorBank-AU-macOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OscillatorBank-AU-macOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60148BC92839374E00B21DBC /* OscillatorBank_AU_macOSAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscillatorBank_AU_macOSAudioUnit.h; sourceTree = "<group>"; };
+		60148BCA2839374E00B21DBC /* OscillatorBank_AU_macOSAudioUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OscillatorBank_AU_macOSAudioUnit.m; sourceTree = "<group>"; };
+		60148BCE2839374E00B21DBC /* DSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSPKernel.hpp; sourceTree = "<group>"; };
+		60148BD02839374E00B21DBC /* DSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DSPKernel.mm; sourceTree = "<group>"; };
+		60148BD22839374E00B21DBC /* BufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BufferedAudioBus.hpp; sourceTree = "<group>"; };
+		60148BD42839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscillatorBank_AU_macOSDSPKernelAdapter.h; sourceTree = "<group>"; };
+		60148BD52839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OscillatorBank_AU_macOSDSPKernel.hpp; sourceTree = "<group>"; };
+		60148BD72839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OscillatorBank_AU_macOSDSPKernel.mm; sourceTree = "<group>"; };
+		60148BDA2839374E00B21DBC /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		60148BDC2839374E00B21DBC /* OscillatorBank_AU_macOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OscillatorBank_AU_macOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		60148BDE2839374E00B21DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AudioUnitViewController.xib; sourceTree = "<group>"; };
+		60148BE02839374E00B21DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60148BE12839374E00B21DBC /* OscillatorBank_AU_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OscillatorBank_AU_macOS.entitlements; sourceTree = "<group>"; };
+		60148BED2839376B00B21DBC /* OscillatorBank-AU-iOS.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OscillatorBank-AU-iOS.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60148BF02839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscillatorBank_AU_iOSAudioUnit.h; sourceTree = "<group>"; };
+		60148BF12839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OscillatorBank_AU_iOSAudioUnit.m; sourceTree = "<group>"; };
+		60148BF52839376B00B21DBC /* DSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DSPKernel.hpp; sourceTree = "<group>"; };
+		60148BF72839376B00B21DBC /* DSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DSPKernel.mm; sourceTree = "<group>"; };
+		60148BF92839376B00B21DBC /* BufferedAudioBus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BufferedAudioBus.hpp; sourceTree = "<group>"; };
+		60148BFB2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OscillatorBank_AU_iOSDSPKernelAdapter.h; sourceTree = "<group>"; };
+		60148BFC2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OscillatorBank_AU_iOSDSPKernel.hpp; sourceTree = "<group>"; };
+		60148BFE2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OscillatorBank_AU_iOSDSPKernel.mm; sourceTree = "<group>"; };
+		60148C012839376B00B21DBC /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		60148C032839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OscillatorBank_AU_iOSAudioUnit.swift; path = "Audio Unit/OscillatorBank_AU_iOSAudioUnit.swift"; sourceTree = "<group>"; };
+		60148C052839376B00B21DBC /* OscillatorBank_AU_iOSParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OscillatorBank_AU_iOSParameters.swift; path = "Audio Unit/OscillatorBank_AU_iOSParameters.swift"; sourceTree = "<group>"; };
+		60148C072839376B00B21DBC /* OscillatorBank_AU_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OscillatorBank_AU_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		60148C092839376B00B21DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		60148C0B2839376B00B21DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60148B8A2839369500B21DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148B902839369500B21DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148B972839369500B21DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BA32839369500B21DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BC32839374E00B21DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BEA2839376B00B21DBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60148B802839369400B21DBC = {
+			isa = PBXGroup;
+			children = (
+				60148B852839369400B21DBC /* Shared */,
+				60148B942839369500B21DBC /* macOS */,
+				60148B9D2839369500B21DBC /* Tests iOS */,
+				60148BA92839369500B21DBC /* Tests macOS */,
+				60148BC72839374E00B21DBC /* OscillatorBank-AU-macOS */,
+				60148BEE2839376B00B21DBC /* OscillatorBank-AU-iOS */,
+				60148B8E2839369500B21DBC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60148B852839369400B21DBC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				60148B862839369400B21DBC /* OscillatorBankApp.swift */,
+				60148B872839369400B21DBC /* ContentView.swift */,
+				60148B882839369500B21DBC /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		60148B8E2839369500B21DBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60148B8D2839369500B21DBC /* Oscillator Bank.app */,
+				60148B932839369500B21DBC /* OscillatorBank.app */,
+				60148B9A2839369500B21DBC /* Tests iOS.xctest */,
+				60148BA62839369500B21DBC /* Tests macOS.xctest */,
+				60148BC62839374E00B21DBC /* OscillatorBank-AU-macOS.appex */,
+				60148BED2839376B00B21DBC /* OscillatorBank-AU-iOS.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60148B942839369500B21DBC /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				60148B952839369500B21DBC /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		60148B9D2839369500B21DBC /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				60148B9E2839369500B21DBC /* Tests_iOS.swift */,
+				60148BA02839369500B21DBC /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		60148BA92839369500B21DBC /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				60148BAA2839369500B21DBC /* Tests_macOS.swift */,
+				60148BAC2839369500B21DBC /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		60148BC72839374E00B21DBC /* OscillatorBank-AU-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				60148BDC2839374E00B21DBC /* OscillatorBank_AU_macOS-Bridging-Header.h */,
+				60148BDD2839374E00B21DBC /* AudioUnitViewController.xib */,
+				60148BE02839374E00B21DBC /* Info.plist */,
+				60148BE12839374E00B21DBC /* OscillatorBank_AU_macOS.entitlements */,
+				60148BC82839374E00B21DBC /* Audio Unit */,
+				60148BCC2839374E00B21DBC /* DSP */,
+				60148BD92839374E00B21DBC /* UI */,
+			);
+			path = "OscillatorBank-AU-macOS";
+			sourceTree = "<group>";
+		};
+		60148BC82839374E00B21DBC /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				60148BC92839374E00B21DBC /* OscillatorBank_AU_macOSAudioUnit.h */,
+				60148BCA2839374E00B21DBC /* OscillatorBank_AU_macOSAudioUnit.m */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		60148BCC2839374E00B21DBC /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				60148BD52839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.hpp */,
+				60148BD72839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.mm */,
+				60148BCD2839374E00B21DBC /* Helpers */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		60148BCD2839374E00B21DBC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				60148BCE2839374E00B21DBC /* DSPKernel.hpp */,
+				60148BD02839374E00B21DBC /* DSPKernel.mm */,
+				60148BD22839374E00B21DBC /* BufferedAudioBus.hpp */,
+				60148BD42839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernelAdapter.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		60148BD92839374E00B21DBC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				60148BDA2839374E00B21DBC /* AudioUnitViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		60148BEE2839376B00B21DBC /* OscillatorBank-AU-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				60148C032839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.swift */,
+				60148C052839376B00B21DBC /* OscillatorBank_AU_iOSParameters.swift */,
+				60148C072839376B00B21DBC /* OscillatorBank_AU_iOS-Bridging-Header.h */,
+				60148C082839376B00B21DBC /* MainInterface.storyboard */,
+				60148C0B2839376B00B21DBC /* Info.plist */,
+				60148BEF2839376B00B21DBC /* Audio Unit */,
+				60148BF32839376B00B21DBC /* DSP */,
+				60148C002839376B00B21DBC /* UI */,
+			);
+			path = "OscillatorBank-AU-iOS";
+			sourceTree = "<group>";
+		};
+		60148BEF2839376B00B21DBC /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				60148BF02839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.h */,
+				60148BF12839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.m */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		60148BF32839376B00B21DBC /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				60148BFC2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.hpp */,
+				60148BFE2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.mm */,
+				60148BF42839376B00B21DBC /* Helpers */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		60148BF42839376B00B21DBC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				60148BF52839376B00B21DBC /* DSPKernel.hpp */,
+				60148BF72839376B00B21DBC /* DSPKernel.mm */,
+				60148BF92839376B00B21DBC /* BufferedAudioBus.hpp */,
+				60148BFB2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernelAdapter.h */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		60148C002839376B00B21DBC /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				60148C012839376B00B21DBC /* AudioUnitViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60148B8C2839369500B21DBC /* OscillatorBank (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60148BB62839369500B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank (iOS)" */;
+			buildPhases = (
+				60148B892839369500B21DBC /* Sources */,
+				60148B8A2839369500B21DBC /* Frameworks */,
+				60148B8B2839369500B21DBC /* Resources */,
+				60148C122839376B00B21DBC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60148C0D2839376B00B21DBC /* PBXTargetDependency */,
+			);
+			name = "OscillatorBank (iOS)";
+			productName = "OscillatorBank (iOS)";
+			productReference = 60148B8D2839369500B21DBC /* Oscillator Bank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60148B922839369500B21DBC /* OscillatorBank (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60148BB92839369500B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank (macOS)" */;
+			buildPhases = (
+				60148B8F2839369500B21DBC /* Sources */,
+				60148B902839369500B21DBC /* Frameworks */,
+				60148B912839369500B21DBC /* Resources */,
+				60148BE82839374E00B21DBC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60148BE32839374E00B21DBC /* PBXTargetDependency */,
+			);
+			name = "OscillatorBank (macOS)";
+			productName = "OscillatorBank (macOS)";
+			productReference = 60148B932839369500B21DBC /* OscillatorBank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60148B992839369500B21DBC /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60148BBC2839369500B21DBC /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				60148B962839369500B21DBC /* Sources */,
+				60148B972839369500B21DBC /* Frameworks */,
+				60148B982839369500B21DBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60148B9C2839369500B21DBC /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 60148B9A2839369500B21DBC /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		60148BA52839369500B21DBC /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60148BBF2839369500B21DBC /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				60148BA22839369500B21DBC /* Sources */,
+				60148BA32839369500B21DBC /* Frameworks */,
+				60148BA42839369500B21DBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60148BA82839369500B21DBC /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 60148BA62839369500B21DBC /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		60148BC52839374E00B21DBC /* OscillatorBank-AU-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60148BE52839374E00B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank-AU-macOS" */;
+			buildPhases = (
+				60148BC22839374E00B21DBC /* Sources */,
+				60148BC32839374E00B21DBC /* Frameworks */,
+				60148BC42839374E00B21DBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OscillatorBank-AU-macOS";
+			productName = "OscillatorBank-AU-macOS";
+			productReference = 60148BC62839374E00B21DBC /* OscillatorBank-AU-macOS.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		60148BEC2839376B00B21DBC /* OscillatorBank-AU-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60148C0F2839376B00B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank-AU-iOS" */;
+			buildPhases = (
+				60148BE92839376B00B21DBC /* Sources */,
+				60148BEA2839376B00B21DBC /* Frameworks */,
+				60148BEB2839376B00B21DBC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OscillatorBank-AU-iOS";
+			productName = "OscillatorBank-AU-iOS";
+			productReference = 60148BED2839376B00B21DBC /* OscillatorBank-AU-iOS.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60148B812839369400B21DBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					60148B8C2839369500B21DBC = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					60148B922839369500B21DBC = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					60148B992839369500B21DBC = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 60148B8C2839369500B21DBC;
+					};
+					60148BA52839369500B21DBC = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 60148B922839369500B21DBC;
+					};
+					60148BC52839374E00B21DBC = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					60148BEC2839376B00B21DBC = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 60148B842839369400B21DBC /* Build configuration list for PBXProject "OscillatorBank" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60148B802839369400B21DBC;
+			productRefGroup = 60148B8E2839369500B21DBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60148B8C2839369500B21DBC /* OscillatorBank (iOS) */,
+				60148B922839369500B21DBC /* OscillatorBank (macOS) */,
+				60148B992839369500B21DBC /* Tests iOS */,
+				60148BA52839369500B21DBC /* Tests macOS */,
+				60148BC52839374E00B21DBC /* OscillatorBank-AU-macOS */,
+				60148BEC2839376B00B21DBC /* OscillatorBank-AU-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60148B8B2839369500B21DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BB22839369500B21DBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148B912839369500B21DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BB32839369500B21DBC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148B982839369500B21DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BA42839369500B21DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BC42839374E00B21DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BCF2839374E00B21DBC /* DSPKernel.hpp in Resources */,
+				60148BDF2839374E00B21DBC /* AudioUnitViewController.xib in Resources */,
+				60148BD32839374E00B21DBC /* BufferedAudioBus.hpp in Resources */,
+				60148BD62839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BEB2839376B00B21DBC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BF62839376B00B21DBC /* DSPKernel.hpp in Resources */,
+				60148C0A2839376B00B21DBC /* MainInterface.storyboard in Resources */,
+				60148BFD2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.hpp in Resources */,
+				60148BFA2839376B00B21DBC /* BufferedAudioBus.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60148B892839369500B21DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BB02839369500B21DBC /* ContentView.swift in Sources */,
+				60148BAE2839369500B21DBC /* OscillatorBankApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148B8F2839369500B21DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BB12839369500B21DBC /* ContentView.swift in Sources */,
+				60148BAF2839369500B21DBC /* OscillatorBankApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148B962839369500B21DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BA12839369500B21DBC /* Tests_iOSLaunchTests.swift in Sources */,
+				60148B9F2839369500B21DBC /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BA22839369500B21DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BAD2839369500B21DBC /* Tests_macOSLaunchTests.swift in Sources */,
+				60148BAB2839369500B21DBC /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BC22839374E00B21DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BD12839374E00B21DBC /* DSPKernel.mm in Sources */,
+				60148BDB2839374E00B21DBC /* AudioUnitViewController.swift in Sources */,
+				60148BD82839374E00B21DBC /* OscillatorBank_AU_macOSDSPKernel.mm in Sources */,
+				60148BCB2839374E00B21DBC /* OscillatorBank_AU_macOSAudioUnit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60148BE92839376B00B21DBC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60148BFF2839376B00B21DBC /* OscillatorBank_AU_iOSDSPKernel.mm in Sources */,
+				60148C062839376B00B21DBC /* OscillatorBank_AU_iOSParameters.swift in Sources */,
+				60148C022839376B00B21DBC /* AudioUnitViewController.swift in Sources */,
+				60148BF82839376B00B21DBC /* DSPKernel.mm in Sources */,
+				60148C042839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.swift in Sources */,
+				60148BF22839376B00B21DBC /* OscillatorBank_AU_iOSAudioUnit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60148B9C2839369500B21DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60148B8C2839369500B21DBC /* OscillatorBank (iOS) */;
+			targetProxy = 60148B9B2839369500B21DBC /* PBXContainerItemProxy */;
+		};
+		60148BA82839369500B21DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60148B922839369500B21DBC /* OscillatorBank (macOS) */;
+			targetProxy = 60148BA72839369500B21DBC /* PBXContainerItemProxy */;
+		};
+		60148BE32839374E00B21DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60148BC52839374E00B21DBC /* OscillatorBank-AU-macOS */;
+			targetProxy = 60148BE22839374E00B21DBC /* PBXContainerItemProxy */;
+		};
+		60148C0D2839376B00B21DBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60148BEC2839376B00B21DBC /* OscillatorBank-AU-iOS */;
+			targetProxy = 60148C0C2839376B00B21DBC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60148BDD2839374E00B21DBC /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60148BDE2839374E00B21DBC /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+		60148C082839376B00B21DBC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60148C092839376B00B21DBC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60148BB42839369500B21DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		60148BB52839369500B21DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		60148BB72839369500B21DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.auraaudio.OscillatorBank;
+				PRODUCT_NAME = "Oscillator Bank";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60148BB82839369500B21DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.auraaudio.OscillatorBank;
+				PRODUCT_NAME = "Oscillator Bank";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60148BBA2839369500B21DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.auraaudio.OscillatorBank;
+				PRODUCT_NAME = OscillatorBank;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		60148BBB2839369500B21DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.auraaudio.OscillatorBank;
+				PRODUCT_NAME = OscillatorBank;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		60148BBD2839369500B21DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OscillatorBank (iOS)";
+			};
+			name = Debug;
+		};
+		60148BBE2839369500B21DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "OscillatorBank (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60148BC02839369500B21DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "OscillatorBank (macOS)";
+			};
+			name = Debug;
+		};
+		60148BC12839369500B21DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "OscillatorBank (macOS)";
+			};
+			name = Release;
+		};
+		60148BE62839374E00B21DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "OscillatorBank-AU-macOS/OscillatorBank_AU_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OscillatorBank-AU-macOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OscillatorBank-AU-macOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.OscillatorBank.OscillatorBank-AU-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OscillatorBank-AU-macOS/OscillatorBank_AU_macOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		60148BE72839374E00B21DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "OscillatorBank-AU-macOS/OscillatorBank_AU_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OscillatorBank-AU-macOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OscillatorBank-AU-macOS";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.OscillatorBank.OscillatorBank-AU-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OscillatorBank-AU-macOS/OscillatorBank_AU_macOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		60148C102839376B00B21DBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OscillatorBank-AU-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Oscillator Bank";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.OscillatorBank.OscillatorBank-AU-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OscillatorBank-AU-iOS/OscillatorBank_AU_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60148C112839376B00B21DBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6CV59M265C;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "OscillatorBank-AU-iOS/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Oscillator Bank";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.auraaudio.OscillatorBank.OscillatorBank-AU-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OscillatorBank-AU-iOS/OscillatorBank_AU_iOS-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60148B842839369400B21DBC /* Build configuration list for PBXProject "OscillatorBank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60148BB42839369500B21DBC /* Debug */,
+				60148BB52839369500B21DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60148BB62839369500B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60148BB72839369500B21DBC /* Debug */,
+				60148BB82839369500B21DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60148BB92839369500B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60148BBA2839369500B21DBC /* Debug */,
+				60148BBB2839369500B21DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60148BBC2839369500B21DBC /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60148BBD2839369500B21DBC /* Debug */,
+				60148BBE2839369500B21DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60148BBF2839369500B21DBC /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60148BC02839369500B21DBC /* Debug */,
+				60148BC12839369500B21DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60148BE52839374E00B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank-AU-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60148BE62839374E00B21DBC /* Debug */,
+				60148BE72839374E00B21DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60148C0F2839376B00B21DBC /* Build configuration list for PBXNativeTarget "OscillatorBank-AU-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60148C102839376B00B21DBC /* Debug */,
+				60148C112839376B00B21DBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60148B812839369400B21DBC /* Project object */;
+}

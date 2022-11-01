@@ -1,0 +1,130 @@
+#N canvas -3 71 1437 726 12;
+#X obj 86 414 dsf~ 300 1 100 0.8;
+#X obj 87 580 dac~;
+#X obj 30 414 / 127;
+#X obj 30 268 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array dsf-left 882 float 0;
+#X array dsf-right 882 float 0;
+#X coords 0 1 882 -1 300 170 1 0 0;
+#X restore 690 428 graph;
+#X obj 328 579 tabwrite~ dsf-right;
+#X obj 180 579 tabwrite~ dsf-left;
+#X msg 374 491 bang \; pd dsp 1;
+#X msg 91 80 fundamental \$1;
+#X floatatom 91 58 5 0 0 0 - - -;
+#X obj 94 15 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 91 35 * 15;
+#X floatatom 236 57 5 0 0 0 - - -;
+#X obj 238 15 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 236 79 distance \$1;
+#X floatatom 236 154 5 0 0 0 - - -;
+#X obj 239 111 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 236 130 * 15;
+#X msg 236 179 frequency \$1;
+#X floatatom 386 154 5 0 0 0 - - -;
+#X obj 389 111 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 386 179 ratio \$1;
+#X obj 386 131 / 64;
+#X floatatom 390 262 5 0 0 0 - - -;
+#X obj 393 217 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X floatatom 536 262 5 0 0 0 - - -;
+#X obj 539 219 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X msg 536 287 weight \$1;
+#X msg 390 287 partials \$1;
+#X text 16 233 Volume;
+#X obj 85 506 *~ 0.5;
+#X obj 206 508 *~ 0.5;
+#X obj 390 239 * 1;
+#X obj 236 34 * 15;
+#X obj 536 239 / 64;
+#X text 284 411 Initialize dsf~ object with up to 4 parameters:;
+#X text 283 430 * Fundamental Frequency;
+#X text 283 446 * Ratio;
+#X text 283 461 * Partials;
+#X text 283 476 * Weight;
+#X text 466 487 Click to see a snapshot;
+#X text 466 502 of the generated waveforms.;
+#X text 465 519 Right outlet is real part \,;
+#X text 463 535 left outlet is imaginary part.;
+#X text 392 15 Basic Controls:;
+#X text 391 29 * fundamental: Set fundamental frequency in Hz;
+#X text 392 43 * distance: Set spacing between overtones in Hz;
+#X text 391 59 Those controls are independent of each other.;
+#X text 550 107 Pitch Controls:;
+#X text 549 124 * frequency: Set fundamental and overtones to;
+#X text 563 137 new frequency in Hz while preserving ratio;
+#X text 549 150 * ratio: Set new ratio between fundamental and overtones
+;
+#X text 689 216 Spectral Controls:;
+#X text 709 265 0.1 silent overtones;
+#X text 709 279 0.9 loud overtones;
+#X text 690 234 * partials: number of partials to produce;
+#X text 690 248 * weight: roll-of factor for overtones:;
+#X text 708 306 1.1 overtones louder than fundamental;
+#X text 708 321 1.2+ might become unstable;
+#X text 708 293 1 all overtones equal power;
+#X text 1000 27 dsf~ creates sounds based on discrete summation formula.
+By calculating an arbitrary number of overtones in a closed form \,
+DSF synthesis can create rich spectra without aliasing and with near-constant
+computation complexity. The DSF parameters enable the user to set a
+fundamental frequency as well as the number of overtones that are to
+be created \, the spacing between the overtones and the rolloff-factor
+\, by which the spectrum tails off.;
+#X text 1001 163 The dsf~ module provides the user with a DSF synthesis
+unit that provides control over crucial DSF parameters via pd messages.
+Pitch is controlled by setting the corresponding frequency. To produce
+the note A3 \, send a "frequency \$1"-message with value 440 to the
+module. Depending on the ratio setting \, the note might sound nothing
+like an A3. This is due to the so-called "missing fundamental"-effect
+\, where the human ear interpolates a series of equally spaced overtones
+downwards to an expected (but not necessarily provided) base note.
+To get a natural-sounding note \, send a message "ratio \$1" with value
+1 This sets the spacing between the overtones to 1 times the fundamental
+frequency (this is a natural overtone series).;
+#X text 1004 376 The left and right outputs of dsf~ provide the real
+and the imaginary part of the synthesis. They are in quadrature \,
+so they can be used to create pleasing stereo sounds or to draw mesmerizing
+patterns on a scope~-object (from cyclone-package).;
+#X connect 0 0 6 0;
+#X connect 0 0 30 0;
+#X connect 0 1 5 0;
+#X connect 0 1 31 0;
+#X connect 2 0 30 1;
+#X connect 2 0 31 1;
+#X connect 3 0 2 0;
+#X connect 7 0 6 0;
+#X connect 7 0 5 0;
+#X connect 8 0 0 0;
+#X connect 9 0 8 0;
+#X connect 10 0 11 0;
+#X connect 11 0 9 0;
+#X connect 12 0 14 0;
+#X connect 13 0 33 0;
+#X connect 14 0 0 0;
+#X connect 15 0 18 0;
+#X connect 16 0 17 0;
+#X connect 17 0 15 0;
+#X connect 18 0 0 0;
+#X connect 19 0 21 0;
+#X connect 20 0 22 0;
+#X connect 21 0 0 0;
+#X connect 22 0 19 0;
+#X connect 23 0 28 0;
+#X connect 24 0 32 0;
+#X connect 25 0 27 0;
+#X connect 26 0 34 0;
+#X connect 27 0 0 0;
+#X connect 28 0 0 0;
+#X connect 30 0 1 0;
+#X connect 31 0 1 1;
+#X connect 32 0 23 0;
+#X connect 33 0 12 0;
+#X connect 34 0 25 0;

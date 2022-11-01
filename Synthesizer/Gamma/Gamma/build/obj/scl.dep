@@ -1,0 +1,2 @@
+build/obj/scl.o: src/scl.cpp Gamma/scl.h Gamma/Config.h \
+ Gamma/Conversion.h Gamma/Constants.h Gamma/pstdint.h

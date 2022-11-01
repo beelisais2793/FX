@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<parallelConf>
+	<output file="/home/manu/repo/simulator/mufco/output" />
+	<exp_conf file="/home/manu/repo/simulator/mufco/cnf/common_exp.xml" />
+	<seed number="10" />
+	<prm length="1000" offset="-0.5"    step="0.001"/>
+	<!--<prm length="100"  offset="0.00001" step="0.00001"/>-->
+	<!--<env length="1" offset="1.8" step="0.1"/>-->
+	<result length="2" type="1"/>		
+</parallelConf>

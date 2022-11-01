@@ -1,0 +1,15 @@
+#pragma once
+
+#include "DaisySPAutoWah.hpp"
+#include "DaisySPBitCrush.hpp"
+#include "DaisySPChorus.hpp"
+#include "DaisySPDecimator.hpp"
+#include "DaisySPFlanger.hpp"
+#include "DaisySPFold.hpp"
+#include "DaisySPOverDrive.hpp"
+#include "DaisySPPhaser.hpp"
+#include "DaisySPPitchShifter.hpp"
+#include "DaisySPReverbSC.hpp"
+#include "DaisySPSampleRateReducer.hpp"
+#include "DaisySPTremolo.hpp"
+#include "DaisySPWaveFolder.hpp"

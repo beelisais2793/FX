@@ -1,0 +1,3285 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs24 \cf0 Filename: 001\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1   (IT)    	 (0)\
+ 2   @?=#$&&:	 (1)\
+ 3   Jaco!2  	 (2)\
+ 4   LIQUIX  	 (3)\
+ 5   VIBES 2 	 (4)\
+ 6  *Chikish*	 (5)\
+ 7  *Oboe3*  	 (6)\
+ 8  *Rimba*  	 (7)\
+ 9  16 Bass  	 (8)\
+10  7:00<PM> 	 (9)\
+11  7:01<Pad>	 (10)\
+12  7:03<PM> 	 (11)\
+13  AGITATO 1	 (12)\
+14  AGITATO!2	 (13)\
+15  BS  Synth	 (14)\
+16  CLAVINET 	 (15)\
+17  D FX     	 (16)\
+18  DONT CARE	 (17)\
+19  ELA      	 (18)\
+20  Ensemble2	 (19)\
+21  FACEvalue	 (20)\
+22  Fm*Piano1	 (21)\
+23  GAMELONG 	 (22)\
+24  Hornz*II 	 (23)\
+25  ICARUS   	 (24)\
+26  ICARUS   	 (25)\
+27  ICARUS 3 	 (26)\
+28  LEVITAT. 	 (27)\
+29  Love 4 U*	 (28)\
+30  LUV4USOLO	 (29)\
+31  ON       	 (30)\
+32  PLUTO    	 (31)\
+\
+\
+Filename: 002\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1  SAMBAY   	 (0)\
+ 2  Shaker1! 	 (1)\
+ 3  SKARO    	 (2)\
+ 4  Space ...	 (3)\
+ 5  Tangerine	 (4)\
+ 6  The ALIEN	 (5)\
+ 7  timeless 	 (6)\
+ 8  Timpani2 	 (7)\
+ 9  TWINKLE  	 (8)\
+10  VICE     	 (9)\
+11  VIOLINS  	 (10)\
+12  Wendy  : 	 (11)\
+13  Zenith~  	 (12)\
+14  \\ ISAO \\ 	 (13)\
+15  \\ ISAO \\ 	 (14)\
+16  ~\}~QXZYJ 	 (15)\
+17 !*)$%@!!  	 (16)\
+18 "Air"imba 	 (17)\
+19 "Air"imba 	 (18)\
+20 "Hi!" Hat!	 (19)\
+21 "The Bard"	 (20)\
+22 &so it was	 (21)\
+23 * SNARF * 	 (22)\
+24 *INVASION*	 (23)\
+25 *Miasolo* 	 (24)\
+26 .007 Organ	 (25)\
+27 000PULSE  	 (26)\
+28 10.99     	 (27)\
+29 11th Earl 	 (28)\
+30 12 String1	 (29)\
+31 12 String2	 (30)\
+32 120 VAC   	 (31)\
+\
+\
+Filename: 003\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 16 8 4 2 F	 (0)\
+ 2 16BIT PIPE	 (1)\
+ 3 1700 Synth	 (2)\
+ 4 1999      	 (3)\
+ 5 1MoreGrand	 (4)\
+ 6 2 CHIMES  	 (5)\
+ 7 2001      	 (6)\
+ 8 2492 A.D. 	 (7)\
+ 9 28 8 18   	 (8)\
+10 2:58 A.M. 	 (9)\
+11 2Dee      	 (10)\
+12 2Dee2     	 (11)\
+13 2HAND LEAD	 (12)\
+14 2nd VICTIM	 (13)\
+15 2OctavePn.	 (14)\
+16 3 CHIMES  	 (15)\
+17 4-OP FLUTE	 (16)\
+18 4-POLE RES	 (17)\
+19 4/6STRING 	 (18)\
+20 4opBsDlux2	 (19)\
+21 5th Lead.1	 (20)\
+22 5th Lead.2	 (21)\
+23 5th String	 (22)\
+24 6 STRING  	 (23)\
+25 60's SciFi	 (24)\
+26 7th Doctor	 (25)\
+27 8 Stringer	 (26)\
+28 8-BIT SAMP	 (27)\
+29 8-BITSAMP2	 (28)\
+30 81z!Conga1	 (29)\
+31 81z!Conga2	 (30)\
+32 81z!Conga3	 (31)\
+\
+\
+Filename: 004\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 81ZExprsv5	 (0)\
+ 2 8BIT PIPE 	 (1)\
+ 3 8\\HPZD?QF_	 (2)\
+ 4 90125     	 (3)\
+ 5 989 RHODES	 (4)\
+ 6 9FOOTGRAND	 (5)\
+ 7 :G:I:Z:M:O	 (6)\
+ 8 < DS 11 > 	 (7)\
+ 9 <6 Tease> 	 (8)\
+10 << Tuba >>	 (9)\
+11 <<Bass.0>>	 (10)\
+12 <<Bass.1>>	 (11)\
+13 <<Bass.1>>	 (12)\
+14 <<Bass.2>>	 (13)\
+15 <<Bass.3>>	 (14)\
+16 <<Bass.4>>	 (15)\
+17 <<Bass.5>>	 (16)\
+18 <<Bass.6>>	 (17)\
+19 <<Bass.7>>	 (18)\
+20 <<Bass.8>>	 (19)\
+21 <<Bass.9>>	 (20)\
+22 <<Smash>> 	 (21)\
+23 <> DS 1 <>	 (22)\
+24 <> OB 1 <>	 (23)\
+25 <Aco*Toms>	 (24)\
+26 <BC1> Sax 	 (25)\
+27 <Ensemble>	 (26)\
+28 <String>P1	 (27)\
+29 <Vocalize>	 (28)\
+30 ==========	 (29)\
+31 > Voices <	 (30)\
+32 >>WOW<<   	 (31)\
+\
+\
+Filename: 005\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 >>WOW<<   	 (0)\
+ 2 ?? WHO ?? 	 (1)\
+ 3 ?? WHO ?? 	 (2)\
+ 4 @AlienBird	 (3)\
+ 5 A Hrpsicrd	 (4)\
+ 6 A.Guitar  	 (5)\
+ 7 ABACAB    	 (6)\
+ 8 ABACAB    	 (7)\
+ 9 ABACABFX  	 (8)\
+10 ABACABUS  	 (9)\
+11 ABES,BASS2	 (10)\
+12 Absolute 0	 (11)\
+13 AC Guitar1	 (12)\
+14 AC Guitar2	 (13)\
+15 AC Guitar3	 (14)\
+16 AC Guitar4	 (15)\
+17 AC Piano.1	 (16)\
+18 AC Piano.2	 (17)\
+19 AC Piano.3	 (18)\
+20 AC Piano.4	 (19)\
+21 AC Piano.5	 (20)\
+22 AC Piano.6	 (21)\
+23 AC Piano.7	 (22)\
+24 AC Piano.8	 (23)\
+25 AC Piano.9	 (24)\
+26 AC Piano10	 (25)\
+27 AC Piano11	 (26)\
+28 AC Piano12	 (27)\
+29 AC Piano13	 (28)\
+30 AC Piano14	 (29)\
+31 AC Piano15	 (30)\
+32 AC Piano16	 (31)\
+\
+\
+Filename: 006\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 AC Piano17	 (0)\
+ 2 AC Piano18	 (1)\
+ 3 AC Piano19	 (2)\
+ 4 AC Piano20	 (3)\
+ 5 AC Piano21	 (4)\
+ 6 ACCORDIAN 	 (5)\
+ 7 ACCORDIAN2	 (6)\
+ 8 Accordion 	 (7)\
+ 9 Accordion1	 (8)\
+10 Accordion2	 (9)\
+11 Accordion3	 (10)\
+12 Accordion4	 (11)\
+13 Ace      2	 (12)\
+14 ACEOF BASS	 (13)\
+15 ACEOFBASS2	 (14)\
+16 AceOfSword	 (15)\
+17 ACID RAIN 	 (16)\
+18 AcouBass 2	 (17)\
+19 Acous Elec	 (18)\
+20 ACOUSTIC  	 (19)\
+21 ADDITPIANO	 (20)\
+22 ADDY SWEEP	 (21)\
+23 Adrenaline	 (22)\
+24 Affaglosia	 (23)\
+25 AFTERGLOW 	 (24)\
+26 Agent 007 	 (25)\
+27 Agogo Bell	 (26)\
+28 Air Along!	 (27)\
+29 AIR GUITAR	 (28)\
+30 Air Raid  	 (29)\
+31 Airplane.1	 (30)\
+32 Airplane.2	 (31)\
+\
+\
+Filename: 007\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Airwaves  	 (0)\
+ 2 Alarm Call	 (1)\
+ 3 Alarm Call	 (2)\
+ 4 AlarmXXWXY	 (3)\
+ 5 ALBEDO    	 (4)\
+ 6 Algo  Bass	 (5)\
+ 7 ALGO.DANCE	 (6)\
+ 8 ALIEN HIT 	 (7)\
+ 9 AlienBass 	 (8)\
+10 AlienPerc 	 (9)\
+11 ALIENSHORE	 (10)\
+12 AlienStorm	 (11)\
+13 Alienvader	 (12)\
+14 AllThatJaz	 (13)\
+15 ALT BASS  	 (14)\
+16 ALT BASS 2	 (15)\
+17 Altered If	 (16)\
+18 ANA BASS  	 (17)\
+19 ANA PAD   	 (18)\
+20 Ana Synth 	 (19)\
+21 ANA.BRASS 	 (20)\
+22 AnaBass 2 	 (21)\
+23 AnalogBass	 (22)\
+24 ANALOGLEAD	 (23)\
+25 ANDES     	 (24)\
+26 Andromeda 	 (25)\
+27 ANGELHARP 	 (26)\
+28 ANGELHARP2	 (27)\
+29 ANGELHARP3	 (28)\
+30 ANGELtears	 (29)\
+31 AnlgBass.3	 (30)\
+32 AnlgBass10	 (31)\
+\
+\
+Filename: 008\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 AnlgFunkBS	 (0)\
+ 2 AnlgStr..4	 (1)\
+ 3 AnlgStr..5	 (2)\
+ 4 AnlgStr..6	 (3)\
+ 5 AnlgStr..7	 (4)\
+ 6 AnlgStr..8	 (5)\
+ 7 AnlgStr..9	 (6)\
+ 8 AnlgStr.10	 (7)\
+ 9 AnlgStr.11	 (8)\
+10 AnlgSynt.1	 (9)\
+11 AnlgSynt.2	 (10)\
+12 AnlgSynt.3	 (11)\
+13 AnlgSynt.4	 (12)\
+14 AnlgSynt.5	 (13)\
+15 AnlgSynt.6	 (14)\
+16 AnlgSynt.7	 (15)\
+17 AnlgSynt.8	 (16)\
+18 AnlgSynt.8	 (17)\
+19 AnlgSynt.9	 (18)\
+20 AnlgSynt10	 (19)\
+21 AnlgSynt11	 (20)\
+22 AnlgSynt12	 (21)\
+23 AnlgSynt13	 (22)\
+24 AnlgSynt14	 (23)\
+25 AnnaLeead?	 (24)\
+26 Anysynth  	 (25)\
+27 Apocalypse	 (26)\
+28 Archangel 	 (27)\
+29 Ariesynth1	 (28)\
+30 Ariesynth1	 (29)\
+31 Ariesynth2	 (30)\
+32 ARP 2500  	 (31)\
+\
+\
+Filename: 009\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 ARP 2600.1	 (0)\
+ 2 ARP 2600.2	 (1)\
+ 3 ARP Axxe.1	 (2)\
+ 4 ARP Axxe.2	 (3)\
+ 5 ARP ODESSY	 (4)\
+ 6 ARP Omni.1	 (5)\
+ 7 ARP Omni.2	 (6)\
+ 8 Ascent    	 (7)\
+ 9 ASTRAL    	 (8)\
+10 AtackBrass	 (9)\
+11 AutoDecent	 (10)\
+12 AutoDecent	 (11)\
+13 AUTOMATON 	 (12)\
+14 AUTOMATROP	 (13)\
+15 AutoStorm1	 (14)\
+16 AutoStorm2	 (15)\
+17 Autumn    	 (16)\
+18 Aviary    	 (17)\
+19 Axel F.   	 (18)\
+20 Axel F...1	 (19)\
+21 Axel F...2	 (20)\
+22 Axel F...2	 (21)\
+23 Azaxyr    	 (22)\
+24 AZZATION  	 (23)\
+25 B3        	 (24)\
+26 B3 Organ.1	 (25)\
+27 B3 Organ.2	 (26)\
+28 B3 Organ.3	 (27)\
+29 BaadBreath	 (28)\
+30 BABY GRAND	 (29)\
+31 BABY,BABY 	 (30)\
+32 Back Brass	 (31)\
+\
+\
+Filename: 010\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 BACKDROP  	 (0)\
+ 2 BACKER    	 (1)\
+ 3 BACKWARDS 	 (2)\
+ 4 Bad fxBass	 (3)\
+ 5 Bagpipes  	 (4)\
+ 6 BALLPARK  	 (5)\
+ 7 Ballpark  	 (6)\
+ 8 BamboBlock	 (7)\
+ 9 BamboChiff	 (8)\
+10 BamboMar.1	 (9)\
+11 BamboMar.2	 (10)\
+12 BamboMar.3	 (11)\
+13 Banjo     	 (12)\
+14 Banjo....1	 (13)\
+15 Banjo....2	 (14)\
+16 BANJOOB   	 (15)\
+17 BanjoSitar	 (16)\
+18 Bard II   	 (17)\
+19 Base Five 	 (18)\
+20 BASS  Per.	 (19)\
+21 Bass Bells	 (20)\
+22 Bass Clair	 (21)\
+23 Bass Drum 	 (22)\
+24 Bass Drum 	 (23)\
+25 Bass Drum1	 (24)\
+26 Bass Drum2	 (25)\
+27 Bass Flute	 (26)\
+28 BASS PAD  	 (27)\
+29 Bass Pluck	 (28)\
+30 Bass-1    	 (29)\
+31 Bass-2$$$$	 (30)\
+32 Bass-3    	 (31)\
+\
+\
+Filename: 011\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Bass-Power	 (0)\
+ 2 Bass....FM	 (1)\
+ 3 Bass/Snare	 (2)\
+ 4 BASSANERO 	 (3)\
+ 5 BassDrum.1	 (4)\
+ 6 BassDrum.2	 (5)\
+ 7 BassDrum.3	 (6)\
+ 8 Bassist   	 (7)\
+ 9 BASSLIKE  	 (8)\
+10 BASSLIKE2 	 (9)\
+11 BassMarimb	 (10)\
+12 Bassoon   	 (11)\
+13 Bassoon   	 (12)\
+14 Bassoon..1	 (13)\
+15 Bassoon..2	 (14)\
+16 Bassoon..3	 (15)\
+17 Bassoon..4	 (16)\
+18 BassoonSyn	 (17)\
+19 BassPluck2	 (18)\
+20 BassSynth1	 (19)\
+21 BassSynth2	 (20)\
+22 BassSynth3	 (21)\
+23 BASSY     	 (22)\
+24 BC HARP   	 (23)\
+25 BC1 Horn2 	 (24)\
+26 BC1Trumpet	 (25)\
+27 BCSexyPhon	 (26)\
+28 Beam us up	 (27)\
+29 Bell      	 (28)\
+30 BELL AIR  	 (29)\
+31 Bell Pad  	 (30)\
+32 Bell.....1	 (31)\
+\
+\
+Filename: 012\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Bell.....2	 (0)\
+ 2 Bell.....3	 (1)\
+ 3 Bell.....4	 (2)\
+ 4 Bell.....5	 (3)\
+ 5 Bell.....6	 (4)\
+ 6 Bell.....7	 (5)\
+ 7 Bell.....8	 (6)\
+ 8 Bell.....9	 (7)\
+ 9 Bell....10	 (8)\
+10 Bell....11	 (9)\
+11 Bella     	 (10)\
+12 BELLAPHONE	 (11)\
+13 BellDreams	 (12)\
+14 BellDrmsP2	 (13)\
+15 BELLONG   	 (14)\
+16 BellPiano1	 (15)\
+17 BellPiano2	 (16)\
+18 BellsBells	 (17)\
+19 BELLVOICE 	 (18)\
+20 Betelgeuse	 (19)\
+21 Big & Ugly	 (20)\
+22 Big Belch 	 (21)\
+23 Big Bell.1	 (22)\
+24 Big Bell.2	 (23)\
+25 Big Bell.3	 (24)\
+26 Big Ben   	 (25)\
+27 Big Church	 (26)\
+28 Big Pipe  	 (27)\
+29 Big Pipe  	 (28)\
+30 BigHill   	 (29)\
+31 BINARY    	 (30)\
+32 Birds     	 (31)\
+\
+\
+Filename: 013\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 BLASTERSYN	 (0)\
+ 2 BLIND MICE	 (1)\
+ 3 Blitzkrieg	 (2)\
+ 4 BLOW BY   	 (3)\
+ 5 Blow Up   	 (4)\
+ 6 BlowFlute 	 (5)\
+ 7 BlueGuitar	 (6)\
+ 8 BlueMonday	 (7)\
+ 9 Bo Sound \\	 (8)\
+10 BoConga   	 (9)\
+11 Boingggggg	 (10)\
+12 Bolt.Piano	 (11)\
+13 Bolt.Piano	 (12)\
+14 Bombs Away	 (13)\
+15 BombToms  	 (14)\
+16 BONANG    	 (15)\
+17 BONANGERAM	 (16)\
+18 Bongo     	 (17)\
+19 BOTTLE BLO	 (18)\
+20 BottleFlt2	 (19)\
+21 BOTTOMS UP	 (20)\
+22 Boullabass	 (21)\
+23 Bow*Grich 	 (22)\
+24 BowCello  	 (23)\
+25 BOWED FM  	 (24)\
+26 BOWED HELL	 (25)\
+27 BowedBell 	 (26)\
+28 BowedEnsmb	 (27)\
+29 Box Cello 	 (28)\
+30 BoxCello  	 (29)\
+31 BoxCello V	 (30)\
+32 Brass    1	 (31)\
+\
+\
+Filename: 014\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Brass    1	 (0)\
+ 2 Brass    2	 (1)\
+ 3 Brass    2	 (2)\
+ 4 Brass    3	 (3)\
+ 5 Brass    3	 (4)\
+ 6 Brass    4	 (5)\
+ 7 Brass    5	 (6)\
+ 8 Brass    6	 (7)\
+ 9 Brass    7	 (8)\
+10 Brass 5th 	 (9)\
+11 BRASS LEAD	 (10)\
+12 BRASS SEC.	 (11)\
+13 Brass,Back	 (12)\
+14 Brass....1	 (13)\
+15 Brass....2	 (14)\
+16 Brass....3	 (15)\
+17 Brass.Vibe	 (16)\
+18 BRASSBASS 	 (17)\
+19 BRASSBELL 	 (18)\
+20 BRASSBELL2	 (19)\
+21 BrassChime	 (20)\
+22 BrassEns.1	 (21)\
+23 BrassEns.2	 (22)\
+24 BrassEns.3	 (23)\
+25 BrassEns.4	 (24)\
+26 BrassKnuc.	 (25)\
+27 BrassLead+	 (26)\
+28 BRASSWIND 	 (27)\
+29 BRASSY    	 (28)\
+30 BRASTRING 	 (29)\
+31 Breakin   	 (30)\
+32 BreathOrgn	 (31)\
+\
+\
+Filename: 015\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 BreathPad2	 (0)\
+ 2 Breckerish	 (1)\
+ 3 Brit Rodes	 (2)\
+ 4 BRITE EPNO	 (3)\
+ 5 BriteBrass	 (4)\
+ 6 BriteCelst	 (5)\
+ 7 BrokWindow	 (6)\
+ 8 BRONZE    	 (7)\
+ 9 Brt Guitar	 (8)\
+10 Brthbells 	 (9)\
+11 BsDrmWdBlk	 (10)\
+12 Bubbly    	 (11)\
+13 Busy.....1	 (12)\
+14 Busy.....2	 (13)\
+15 BusySignal	 (14)\
+16 Buzz Synth	 (15)\
+17 Buzzard   	 (16)\
+18 BUZZONSOLO	 (17)\
+19 C.A.s:Bass	 (18)\
+20 C2\{d g d\} 	 (19)\
+21 c:Z6NL<VM@	 (20)\
+22 cabala    	 (21)\
+23 cahspa    	 (22)\
+24 Calvary   	 (23)\
+25 CAN DANCE 	 (24)\
+26 Caprica   	 (25)\
+27 CARLOSLEAD	 (26)\
+28 Carnival! 	 (27)\
+29 Carr`nbia 	 (28)\
+30 Casises   	 (29)\
+31 Cassiopeia	 (30)\
+32 Castanet  	 (31)\
+\
+\
+Filename: 016\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Cat--Synth	 (0)\
+ 2 CATHEDRAL 	 (1)\
+ 3 CAVERN    	 (2)\
+ 4 Celeste   	 (3)\
+ 5 Celeste   	 (4)\
+ 6 Celeste..1	 (5)\
+ 7 Celeste..2	 (6)\
+ 8 celestial 	 (7)\
+ 9 Cello    1	 (8)\
+10 Cello    2	 (9)\
+11 Cello....1	 (10)\
+12 Cello....2	 (11)\
+13 Celostoff 	 (12)\
+14 Celostoff2	 (13)\
+15 CELTICHARP	 (14)\
+16 CELTICHARP	 (15)\
+17 Chamelion 	 (16)\
+18 Chamelion2	 (17)\
+19 CHAOSVOICE	 (18)\
+20 Charmer   	 (19)\
+21 Cheeky    	 (20)\
+22 CHIFFER   	 (21)\
+23 CHIKLEADVS	 (22)\
+24 ChildrnVoc	 (23)\
+25 CHILLER   	 (24)\
+26 CHIMER    	 (25)\
+27 CHIMES    	 (26)\
+28 ChimeStrig	 (27)\
+29 CHIMESYNTH	 (28)\
+30 Choir*Prt1	 (29)\
+31 Choir*Prt2	 (30)\
+32 Choir....1	 (31)\
+\
+\
+Filename: 017\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Choir....2	 (0)\
+ 2 Choir....3	 (1)\
+ 3 Choir....4	 (2)\
+ 4 Choir....5	 (3)\
+ 5 Choir....6	 (4)\
+ 6 Choo Choo 	 (5)\
+ 7 Chopper..1	 (6)\
+ 8 Chopper..2	 (7)\
+ 9 CHORDDY   	 (8)\
+10 Chorus...1	 (9)\
+11 Chorus...2	 (10)\
+12 Chorus...3	 (11)\
+13 Chorus...4	 (12)\
+14 Chorus...5	 (13)\
+15 Chorus...6	 (14)\
+16 Chorus...7	 (15)\
+17 Chorus...8	 (16)\
+18 ChorusBras	 (17)\
+19 ChurchBell	 (18)\
+20 CHURCHKEYS	 (19)\
+21 CinemaPno.	 (20)\
+22 CinemaSyn.	 (21)\
+23 Circustime	 (22)\
+24 CITYBRASS 	 (23)\
+25 Clairnet.1	 (24)\
+26 Clairnet.2	 (25)\
+27 Clairnet.3	 (26)\
+28 CLARAFLUTE	 (27)\
+29 Claranette	 (28)\
+30 ClaraPiano	 (29)\
+31 Clarinet  	 (30)\
+32 Clarinet 1	 (31)\
+\
+\
+Filename: 018\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Clarinet 2	 (0)\
+ 2 CLASSICsyn	 (1)\
+ 3 Clav 1    	 (2)\
+ 4 Clav 2    	 (3)\
+ 5 Clav Lead 	 (4)\
+ 6 Clav Perc 	 (5)\
+ 7 Clav Synth	 (6)\
+ 8 Clav.....1	 (7)\
+ 9 Clav.....2	 (8)\
+10 Clav.....3	 (9)\
+11 Clav.....4	 (10)\
+12 Clav.....5	 (11)\
+13 Clav.....6	 (12)\
+14 Clav.....7	 (13)\
+15 Clav.....8	 (14)\
+16 Clav.....9	 (15)\
+17 Clavi     	 (16)\
+18 CLAVIER   	 (17)\
+19 CLEAN BASS	 (18)\
+20 Clear Clav	 (19)\
+21 Clickorgan	 (20)\
+22 Clockwerks	 (21)\
+23 ClsdHi-Hat	 (22)\
+24 Club Organ	 (23)\
+25 COCKTALES 	 (24)\
+26 Coconutz!!	 (25)\
+27 COMBAPHONE	 (26)\
+28 COMBO ORG.	 (27)\
+29 COMBO ORG2	 (28)\
+30 Communion 	 (29)\
+31 COMPU LEAD	 (30)\
+32 Confusion 	 (31)\
+\
+\
+Filename: 019\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 CONGADRUM 	 (0)\
+ 2 Continuum 	 (1)\
+ 3 COOL BASS 	 (2)\
+ 4 COOL KOTO 	 (3)\
+ 5 Cosmos    	 (4)\
+ 6 Cow Bell  	 (5)\
+ 7 COW BELL  	 (6)\
+ 8 COW BELL 2	 (7)\
+ 9 Cowbelle  	 (8)\
+10 Cowbelle 2	 (9)\
+11 Cowbelle 3	 (10)\
+12 Cowbelle 4	 (11)\
+13 CP-70     	 (12)\
+14 Crazy 6502	 (13)\
+15 Crickets  	 (14)\
+16 CROTALES  	 (15)\
+17 CRUNGE    	 (16)\
+18 CRYOGENIS 	 (17)\
+19 Crystal   	 (18)\
+20 CRYSTALINE	 (19)\
+21 CT-656 #5 	 (20)\
+22 Cult.Piano	 (21)\
+23 Cult.Piano	 (22)\
+24 Cult.Piano	 (23)\
+25 Cult.Piano	 (24)\
+26 CutupBass 	 (25)\
+27 CYBERBASS 	 (26)\
+28 CYBERBASS2	 (27)\
+29 Cymbal...1	 (28)\
+30 Cymbal...2	 (29)\
+31 Cymbal...3	 (30)\
+32 CZ LEAD   	 (31)\
+\
+\
+Filename: 020\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 DARK PAD  	 (0)\
+ 2 DARKLEAD  	 (1)\
+ 3 DARKNESS  	 (2)\
+ 4 DAYDREAM  	 (3)\
+ 5 DAYTIME 2 	 (4)\
+ 6 Dbl Harp.1	 (5)\
+ 7 Dbl Harp.2	 (6)\
+ 8 Deep Grand	 (7)\
+ 9 Deep Grand	 (8)\
+10 Deep Grd  	 (9)\
+11 Deep Grd V	 (10)\
+12 Deep Space	 (11)\
+13 DEEP SPACE	 (12)\
+14 DEEP VOICE	 (13)\
+15 DEEPMOOD  	 (14)\
+16 Delta     	 (15)\
+17 DEMO      	 (16)\
+18 Dial Tone 	 (17)\
+19 DiamondLuv	 (18)\
+20 Diesel    	 (19)\
+21 Digi Piano	 (20)\
+22 DIGI RAIN 	 (21)\
+23 DigiAnnie 	 (22)\
+24 Digibell  	 (23)\
+25 DIGITAL   	 (24)\
+26 Digital   	 (25)\
+27 DigtlKybrd	 (26)\
+28 DING DONG 	 (27)\
+29 DINGALLING	 (28)\
+30 DIST.LEAD 	 (29)\
+31 DISTLEAD2 	 (30)\
+32 DISTORTION	 (31)\
+\
+\
+Filename: 021\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 DiversDown	 (0)\
+ 2 Diving Fly	 (1)\
+ 3 Djinni    	 (2)\
+ 4 Doors     	 (3)\
+ 5 Dopplar FX	 (4)\
+ 6 DoubleBass	 (5)\
+ 7 DOWNtheHat	 (6)\
+ 8 DRACOS    	 (7)\
+ 9 Drawbars  	 (8)\
+10 DreamRdsLO	 (9)\
+11 DreamRoad2	 (10)\
+12 DreamRoads	 (11)\
+13 Dreamscape	 (12)\
+14 DRIPPY    	 (13)\
+15 DRIPPY 2  	 (14)\
+16 DrmSpring1	 (15)\
+17 DrmSpring2	 (16)\
+18 DRUM SQUEK	 (17)\
+19 DrumString	 (18)\
+20 DrunkR2-D2	 (19)\
+21 Dscape II 	 (20)\
+22 Dscape III	 (21)\
+23 DscapeOrch	 (22)\
+24 DualStr..1	 (23)\
+25 DualStr..2	 (24)\
+26 DualStr..3	 (25)\
+27 Duane Eddy	 (26)\
+28 DUET      	 (27)\
+29 DX Bass II	 (28)\
+30 DX PIANO  	 (29)\
+31 DX SQUARED	 (30)\
+32 DX TEMPO  	 (31)\
+\
+\
+Filename: 022\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 DX UFO FXn	 (0)\
+ 2 DX----Bass	 (1)\
+ 3 DX-7 KEYS 	 (2)\
+ 4 DX-Kybrd1 	 (3)\
+ 5 DX7 EP    	 (4)\
+ 6 DXED LOWER	 (5)\
+ 7 DXOBERHEIM	 (6)\
+ 8 DyerMaker 	 (7)\
+ 9 Dynamic  2	 (8)\
+10 Dynamite  	 (9)\
+11 Dyno Piano	 (10)\
+12 DynomiteEP	 (11)\
+13 DynoRhodes	 (12)\
+14 DynoWurlie	 (13)\
+15 E Grnd Vel	 (14)\
+16 E Grnd Vel	 (15)\
+17 E Guit    	 (16)\
+18 E Organ..1	 (17)\
+19 E Organ..2	 (18)\
+20 E Organ..3	 (19)\
+21 E Organ..4	 (20)\
+22 E Organ..5	 (21)\
+23 E Organ..6	 (22)\
+24 E Organ..7	 (23)\
+25 E Organ..8	 (24)\
+26 E Organ..9	 (25)\
+27 E Organ.10	 (26)\
+28 E Organ.11	 (27)\
+29 E Organ.12	 (28)\
+30 E Organ.13	 (29)\
+31 E P String	 (30)\
+32 E P String	 (31)\
+\
+\
+Filename: 023\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 E Piano  1	 (0)\
+ 2 E Piano  1	 (1)\
+ 3 E Piano  2	 (2)\
+ 4 E Piano  2	 (3)\
+ 5 E Piano  3	 (4)\
+ 6 E Piano  3	 (5)\
+ 7 E Piano..1	 (6)\
+ 8 E Piano..2	 (7)\
+ 9 E Piano..3	 (8)\
+10 E Piano..4	 (9)\
+11 E Piano..5	 (10)\
+12 E Piano..6	 (11)\
+13 E Piano..7	 (12)\
+14 E Piano..8	 (13)\
+15 E Piano..9	 (14)\
+16 E Piano.10	 (15)\
+17 E Piano.11	 (16)\
+18 E Piano.12	 (17)\
+19 E Piano.13	 (18)\
+20 E Piano.14	 (19)\
+21 E Piano.15	 (20)\
+22 E Piano.16	 (21)\
+23 E Piano.17	 (22)\
+24 E Piano.18	 (23)\
+25 E Piano.19	 (24)\
+26 E Piano.20	 (25)\
+27 E Piano.21	 (26)\
+28 E Piano.22	 (27)\
+29 E. Guit. 3	 (28)\
+30 E. Guit. 4	 (29)\
+31 E.Bass   1	 (30)\
+32 E.Bass   2	 (31)\
+\
+\
+Filename: 024\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 E.Bass   3	 (0)\
+ 2 E.Guitar  	 (1)\
+ 3 E.L.P.    	 (2)\
+ 4 E.Organ  1	 (3)\
+ 5 E.Organ  2	 (4)\
+ 6 E.Organ  3	 (5)\
+ 7 E.Organ  4	 (6)\
+ 8 E.Piano  1	 (7)\
+ 9 E.Piano  2	 (8)\
+10 EarthQuak2	 (9)\
+11 Earthquake	 (10)\
+12 Easy Clav 	 (11)\
+13 Easy Clv V	 (12)\
+14 Easy Synth	 (13)\
+15 Echo Lead 	 (14)\
+16 ECHOVIOLIN	 (15)\
+17 Eclo      	 (16)\
+18 Eclo BASS 	 (17)\
+19 eeker     	 (18)\
+20 Eerie     	 (19)\
+21 Efem Toms 	 (20)\
+22 EJA       	 (21)\
+23 EL.Kybrd*2	 (22)\
+24 Elec Bass 	 (23)\
+25 Elec Bass 	 (24)\
+26 Elec Bs V 	 (25)\
+27 Elec Grand	 (26)\
+28 Elec Grand	 (27)\
+29 Elec Grnd2	 (28)\
+30 Elec Grnd2	 (29)\
+31 Elec organ	 (30)\
+32 Elec organ	 (31)\
+\
+\
+Filename: 025\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Elec Sitar	 (0)\
+ 2 Elec. "So"	 (1)\
+ 3 Elec. Lute	 (2)\
+ 4 ELEC.PIANO	 (3)\
+ 5 ELEC.PNO 1	 (4)\
+ 6 ELEC.PNO 2	 (5)\
+ 7 ELEC.PNO 3	 (6)\
+ 8 ELEC.PNO 4	 (7)\
+ 9 ElecaGrand	 (8)\
+10 ElecBass 1	 (9)\
+11 ElecBass 2	 (10)\
+12 ElecCello2	 (11)\
+13 ElecGuit 2	 (12)\
+14 ElecGuitar	 (13)\
+15 EleChamber	 (14)\
+16 ElecHarpsi	 (15)\
+17 ELECTRICgt	 (16)\
+18 ELECTRICIY	 (17)\
+19 Electro V 	 (18)\
+20 ElectroTom	 (19)\
+21 Elegia    	 (20)\
+22 Elegia II 	 (21)\
+23 ELek Guit 	 (22)\
+24 ELek Guit2	 (23)\
+25 EleOrchtra	 (24)\
+26 EleOrchtra	 (25)\
+27 ELF BELLS 	 (26)\
+28 ELFIN HARP	 (27)\
+29 ElfisPerc.	 (28)\
+30 ELKA Strg1	 (29)\
+31 ELKA Strg1	 (30)\
+32 ELKA Strg2	 (31)\
+\
+\
+Filename: 026\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 ElphantGun	 (0)\
+ 2 Embryo    	 (1)\
+ 3 EML Synth1	 (2)\
+ 4 EML Synth2	 (3)\
+ 5 EMULATOR 1	 (4)\
+ 6 Enc3rdKind	 (5)\
+ 7 Encounter 	 (6)\
+ 8 Energize! 	 (7)\
+ 9 Eng Siren 	 (8)\
+10 English Hn	 (9)\
+11 Enigma    	 (10)\
+12 Ensemble 1	 (11)\
+13 Ensemble 2	 (12)\
+14 EnsmbleSWP	 (13)\
+15 ensoniqua 	 (14)\
+16 Epilogue I	 (15)\
+17 EPno&M.Whl	 (16)\
+18 ESP Synth 	 (17)\
+19 EsperPIANO	 (18)\
+20 ESSENCE   	 (19)\
+21 ESSENCE 2 	 (20)\
+22 Europa    	 (21)\
+23 Eva       	 (22)\
+24 EVENINGBEL	 (23)\
+25 Excuse Me 	 (24)\
+26 exks      	 (25)\
+27 Explorer.1	 (26)\
+28 Explorer.2	 (27)\
+29 Explorer.3	 (28)\
+30 Explorer.3	 (29)\
+31 Explosion 	 (30)\
+32 EXPRMNT199	 (31)\
+\
+\
+Filename: 027\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 EZ Clav   	 (0)\
+ 2 F Voice..1	 (1)\
+ 3 F Voice..2	 (2)\
+ 4 F Voice..3	 (3)\
+ 5 F Voice..4	 (4)\
+ 6 F.Guitar  	 (5)\
+ 7 F2,3Conga1	 (6)\
+ 8 F2,3Conga2	 (7)\
+ 9 F>BASS=01 	 (8)\
+10 f>BASS=02 	 (9)\
+11 Fab Sitar 	 (10)\
+12 FableFloot	 (11)\
+13 Face      	 (12)\
+14 FAIRY DUST	 (13)\
+15 FAIRYFLUTE	 (14)\
+16 FAIRYTALE 	 (15)\
+17 FanfarTpts	 (16)\
+18 FantasBass	 (17)\
+19 FANTASTEEL	 (18)\
+20 Fantasy   	 (19)\
+21 FANTASY 3 	 (20)\
+22 Fantasy 55	 (21)\
+23 fantasy ||	 (22)\
+24 Fantasy*2 	 (23)\
+25 Fantasynth	 (24)\
+26 Fantin    	 (25)\
+27 Farcheeza 	 (26)\
+28 FAREACHES 	 (27)\
+29 Farfeeza \\	 (28)\
+30 Farpoint  	 (29)\
+31 Fat Lead.1	 (30)\
+32 Fat Lead.2	 (31)\
+\
+\
+Filename: 028\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Fat Lead.3	 (0)\
+ 2 Fat Lead.4	 (1)\
+ 3 FaucetDrip	 (2)\
+ 4 Feed Lead 	 (3)\
+ 5 FEEDBAK   	 (4)\
+ 6 FENDERBASS	 (5)\
+ 7 Filmguitas	 (6)\
+ 8 FilmString	 (7)\
+ 9 FILT.BRASS	 (8)\
+10 Finder    	 (9)\
+11 First Base	 (10)\
+12 Flamenco  	 (11)\
+13 FlangeBass	 (12)\
+14 Flap Bass 	 (13)\
+15 Flap Bass 	 (14)\
+16 Flap Bass 	 (15)\
+17 FlapBassII	 (16)\
+18 FLASH     	 (17)\
+19 FLASHBACK 	 (18)\
+20 Flight Sim	 (19)\
+21 FLOOJ     	 (20)\
+22 Flugel Hn.	 (21)\
+23 Flugelhor2	 (22)\
+24 Flugelhorn	 (23)\
+25 FlugelHorn	 (24)\
+26 FLUTE     	 (25)\
+27 Flute     	 (26)\
+28 Flute    1	 (27)\
+29 Flute    2	 (28)\
+30 Flute 1   	 (29)\
+31 Flute 2   	 (30)\
+32 FLUTE 2   	 (31)\
+\
+\
+Filename: 029\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Flute 1   	 (0)\
+ 2 Flute 2   	 (1)\
+ 3 FLUTE 2   	 (2)\
+ 4 FLUTE PAD 	 (3)\
+ 5 FLUTE PAD 	 (4)\
+ 6 Flute)02  	 (5)\
+ 7 Flute....1	 (6)\
+ 8 Flute....2	 (7)\
+ 9 Flute....3	 (8)\
+10 Flute....4	 (9)\
+11 Flute....5	 (10)\
+12 Flutewd V 	 (11)\
+13 Flutewood 	 (12)\
+14 Fluto 2o  	 (13)\
+15 FM   Bells	 (14)\
+16 FM 4STRING	 (15)\
+17 FM BASS   	 (16)\
+18 FM BASS   	 (17)\
+19 FM BELLS  	 (18)\
+20 FM BRASS  	 (19)\
+21 FM BRASS 2	 (20)\
+22 FM BRASS 3	 (21)\
+23 FM Hi-Hats	 (22)\
+24 FM Kybrd. 	 (23)\
+25 FM LEADER 	 (24)\
+26 FM PULSE  	 (25)\
+27 FM SQUARE 	 (26)\
+28 FM SWEEP  	 (27)\
+29 FM SWEEP 2	 (28)\
+30 FM SWEEP 3	 (29)\
+31 FM SWELL  	 (30)\
+32 FMSAWTOOTH	 (31)\
+\
+\
+Filename: 030\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Fntasy5ths	 (0)\
+ 2 Folk Guit 	 (1)\
+ 3 Folklore!!	 (2)\
+ 4 Folloxo   	 (3)\
+ 5 Force Five	 (4)\
+ 6 ForestFire	 (5)\
+ 7 Frag Perc 	 (6)\
+ 8 Frazetta  	 (7)\
+ 9 FRAZETTA2 	 (8)\
+10 FRENCHHORN	 (9)\
+11 FrenchHorn	 (10)\
+12 FrenchLead	 (11)\
+13 FRETED    	 (12)\
+14 FRETLASYN 	 (13)\
+15 Fretless  	 (14)\
+16 FRETLESS  	 (15)\
+17 Fretless V	 (16)\
+18 Fretless.1	 (17)\
+19 Fretless.2	 (18)\
+20 FretlessVS	 (19)\
+21 FretlsSolo	 (20)\
+22 Frills    	 (21)\
+23 FrnchHorn1	 (22)\
+24 FrnchHorn2	 (23)\
+25 FrogDreams	 (24)\
+26 from      	 (25)\
+27 FRONTIER  	 (26)\
+28 Frontios  	 (27)\
+29 Frying Pan	 (28)\
+30 FUJINARO  	 (29)\
+31 Full Brass	 (30)\
+32 Full Ranks	 (31)\
+\
+\
+Filename: 031\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 FullSynth\\	 (0)\
+ 2 FulMetlJkt	 (1)\
+ 3 FUNK LEAD 	 (2)\
+ 4 FunkSynth 	 (3)\
+ 5 FUNKY     	 (4)\
+ 6 Funky Dude	 (5)\
+ 7 Funky Pick	 (6)\
+ 8 FunkyBass1	 (7)\
+ 9 FunkyBass2	 (8)\
+10 FuturSynth	 (9)\
+11 Fuzz Clav 	 (10)\
+12 Fuzz Clavi	 (11)\
+13 Fuzz Guit 	 (12)\
+14 Fuzz Piano	 (13)\
+15 FUZZTAR  1	 (14)\
+16 Fuzzy Koto	 (15)\
+17 FUZZYGRUZZ	 (16)\
+18 FuzzyLead 	 (17)\
+19 FX        	 (18)\
+20 FX   BASS 	 (19)\
+21 FX for DX 	 (20)\
+22 FX-2      	 (21)\
+23 G Bells   	 (22)\
+24 Galaga    	 (23)\
+25 Galaxy 4  	 (24)\
+26 Gallifrey 	 (25)\
+27 Gallifrey2	 (26)\
+28 Gamarimbas	 (27)\
+29 GAMELAN   	 (28)\
+30 Garage    	 (29)\
+31 GateSnare0	 (30)\
+32 Gauntlet  	 (31)\
+\
+\
+Filename: 032\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 GENESIS   	 (0)\
+ 2 GentlePipe	 (1)\
+ 3 GESTALT   	 (2)\
+ 4 Ghastly ~ 	 (3)\
+ 5 Ghost Town	 (4)\
+ 6 Ghosties  	 (5)\
+ 7 Ghosties  	 (6)\
+ 8 GlassHarp 	 (7)\
+ 9 GlassHarp1	 (8)\
+10 GlassHarp2	 (9)\
+11 GlassHarp3	 (10)\
+12 GlassTears	 (11)\
+13 Gleam     	 (12)\
+14 GleeSynth 	 (13)\
+15 Glocken   	 (14)\
+16 Glocken   	 (15)\
+17 Glocken  2	 (16)\
+18 Glocken..1	 (17)\
+19 Glocken..2	 (18)\
+20 GLOOMY    	 (19)\
+21 Glowstring	 (20)\
+22 GOBLINS   	 (21)\
+23 Goldfinger	 (22)\
+24 Gong.....1	 (23)\
+25 Gong.....2	 (24)\
+26 Gong.....2	 (25)\
+27 Gong.....3	 (26)\
+28 GONGWIND  	 (27)\
+29 Good Vibes	 (28)\
+30 GottaLearn	 (29)\
+31 GRADIUS   	 (30)\
+32 GRADIUS 2 	 (31)\
+\
+\
+Filename: 033\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Grand PF  	 (0)\
+ 2 GrandPiano	 (1)\
+ 3 GreatDXled	 (2)\
+ 4 GreatVibes	 (3)\
+ 5 Grendel   	 (4)\
+ 6 GroovCHORD	 (5)\
+ 7 Groucho   	 (6)\
+ 8 GroundZero	 (7)\
+ 9 GRUNGE    	 (8)\
+10 GRUNGE 2  	 (9)\
+11 GRUNGE 3  	 (10)\
+12 GrusinsRds	 (11)\
+13 GuiRoach::	 (12)\
+14 GUIT HARMS	 (13)\
+15 Guit Piano	 (14)\
+16 Guitar   2	 (15)\
+17 Guitar   2	 (16)\
+18 Guitar   2	 (17)\
+19 Guitar #1 	 (18)\
+20 Guitar Arc	 (19)\
+21 GuitarPIPE	 (20)\
+22 GUITARVIBE	 (21)\
+23 Guitarz   	 (22)\
+24 GUITARZAN 	 (23)\
+25 Gurgle    	 (24)\
+26 HALL ORCH.	 (25)\
+27 Ham<n>Eggs	 (26)\
+28 Hamarimba 	 (27)\
+29 Hammond   	 (28)\
+30 HAMMOND B3	 (29)\
+31 HAMMOND-B3	 (30)\
+32 Hammond..1	 (31)\
+\
+\
+Filename: 034\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Hammond..2	 (0)\
+ 2 Hammond..3	 (1)\
+ 3 Hammond..4	 (2)\
+ 4 Hammond..5	 (3)\
+ 5 Hammond..6	 (4)\
+ 6 Hammond..7	 (5)\
+ 7 HAMMONDVOX	 (6)\
+ 8 HamondLead	 (7)\
+ 9 Hand Drum 	 (8)\
+10 Hand Drum 	 (9)\
+11 Hand Drum1	 (10)\
+12 Hand Drum2	 (11)\
+13 Handclap  	 (12)\
+14 Hard Brass	 (13)\
+15 Hard Rain 	 (14)\
+16 Hard Tines	 (15)\
+17 HardHabits	 (16)\
+18 Harley Hog	 (17)\
+19 HARM ATTAK	 (18)\
+20 Harmonic.1	 (19)\
+21 Harmonic.2	 (20)\
+22 Harmonica 	 (21)\
+23 Harmonica 	 (22)\
+24 Harmonica1	 (23)\
+25 Harmonica1	 (24)\
+26 Harmonica2	 (25)\
+27 Harmonica2	 (26)\
+28 Harmonica3	 (27)\
+29 Harmonizer	 (28)\
+30 HarmoPad  	 (29)\
+31 Harmosolo 	 (30)\
+32 HARMOVOC. 	 (31)\
+\
+\
+Filename: 035\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Harp      	 (0)\
+ 2 Harp     1	 (1)\
+ 3 Harp     2	 (2)\
+ 4 Harp 1    	 (3)\
+ 5 HARP 1    	 (4)\
+ 6 Harp.....1	 (5)\
+ 7 Harp.....2	 (6)\
+ 8 Harp....FM	 (7)\
+ 9 Harpsi 100	 (8)\
+10 Harpsi 101	 (9)\
+11 Harpsi Hi 	 (10)\
+12 Harpsi low	 (11)\
+13 Harpsiano 	 (12)\
+14 Harpsichrd	 (13)\
+15 Harpsicrd1	 (14)\
+16 Harpsicrd2	 (15)\
+17 Harpsicrd3	 (16)\
+18 Harpsicrd4	 (17)\
+19 Harpspiano	 (18)\
+20 Harpsynth 	 (19)\
+21 HAUNTASIA 	 (20)\
+22 Hawaiian  	 (21)\
+23 Heart Beat	 (22)\
+24 HEAVEN77  	 (23)\
+25 HEAVY PAD 	 (24)\
+26 Heavy Solo	 (25)\
+27 HeavyLead 	 (26)\
+28 HeavyMetal	 (27)\
+29 HEAVYPAD2 	 (28)\
+30 HEAVYPAD3 	 (29)\
+31 Heavysynth	 (30)\
+32 heesor    	 (31)\
+\
+\
+Filename: 036\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 HeiferBell	 (0)\
+ 2 Helicopter	 (1)\
+ 3 Helicopter	 (2)\
+ 4 Helisynth 	 (3)\
+ 5 Helix....1	 (4)\
+ 6 Helix....2	 (5)\
+ 7 HellRaiser	 (6)\
+ 8 HellsBells	 (7)\
+ 9 Hi Alarm  	 (8)\
+10 HI FMBRASS	 (9)\
+11 HI PASS   	 (10)\
+12 Hi-hat 1  	 (11)\
+13 HI/LOWPASS	 (12)\
+14 Hide&Seek 	 (13)\
+15 HIGH HELI 	 (14)\
+16 High Tines	 (15)\
+17 Highlander	 (16)\
+18 HIMALAYA  	 (17)\
+19 Hindu     	 (18)\
+20 HIPASSFILT	 (19)\
+21 HiString 1	 (20)\
+22 HiString 2	 (21)\
+23 HiTekDrum 	 (22)\
+24 HiTine81Z 	 (23)\
+25 Hmnd LS f1	 (24)\
+26 Hmnd LS f2	 (25)\
+27 Hmnd LS s1	 (26)\
+28 Hole in 1 	 (27)\
+29 Hole in 1 	 (28)\
+30 HollowLead	 (29)\
+31 Hollowlead	 (30)\
+32 Hollowlead	 (31)\
+\
+\
+Filename: 037\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 HolowClair	 (0)\
+ 2 HOLY ARCH 	 (1)\
+ 3 HONKEY 2  	 (2)\
+ 4 Honkeyton2	 (3)\
+ 5 Honkeyton2	 (4)\
+ 6 HonkeyTonk	 (5)\
+ 7 HonkeyTonk	 (6)\
+ 8 Hoot Glock	 (7)\
+ 9 Horn      	 (8)\
+10 Horn      	 (9)\
+11 HORN)O1   	 (10)\
+12 Horn.....1	 (11)\
+13 Horn.....2	 (12)\
+14 Horn.....3	 (13)\
+15 Horn.....4	 (14)\
+16 Horn.....5	 (15)\
+17 Horn.....6	 (16)\
+18 Horn.....7	 (17)\
+19 HORNBLOCK 	 (18)\
+20 Horns     	 (19)\
+21 Horns BC  	 (20)\
+22 HornTouch 	 (21)\
+23 Hornz*V2.1	 (22)\
+24 Hornz*V2.2	 (23)\
+25 HorsingFX 	 (24)\
+26 House Fly 	 (25)\
+27 House Org 	 (26)\
+28 HowlAtMoon	 (27)\
+29 HrnGtrCHRD	 (28)\
+30 Hrpsicord1	 (29)\
+31 Hrpsicord2	 (30)\
+32 Hrpsicord3	 (31)\
+\
+\
+Filename: 038\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 HRPSIWAVE 	 (0)\
+ 2 HT-BASS   	 (1)\
+ 3 HT-BASS 2 	 (2)\
+ 4 Huff Talk 	 (3)\
+ 5 Huff Talk 	 (4)\
+ 6 HUMAN+    	 (5)\
+ 7 HumorBells	 (6)\
+ 8 Hurricane 	 (7)\
+ 9 hyperbole 	 (8)\
+10 Hyperion  	 (9)\
+11 IBLVEFLUTE	 (10)\
+12 ICARUS II 	 (11)\
+13 ICU       	 (12)\
+14 iffeq     	 (13)\
+15 IMP.PAD   	 (14)\
+16 IMP.PAD2  	 (15)\
+17 IMP.PAD3  	 (16)\
+18 IMPENDING 	 (17)\
+19 Impression	 (18)\
+20 Impulse   	 (19)\
+21 INDIA     	 (20)\
+22 INDUSBASS2	 (21)\
+23 INDUSTBASS	 (22)\
+24 INIT VOICE	 (23)\
+25 INIT VOICE	 (24)\
+26 Invisible!	 (25)\
+27 InvisibTch	 (26)\
+28 INYOURFACE	 (27)\
+29 IRON      	 (28)\
+30 IRON AGE  	 (29)\
+31 IRON FIST 	 (30)\
+32 IS        	 (31)\
+\
+\
+Filename: 039\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Isixy     	 (0)\
+ 2 Islander  	 (1)\
+ 3 IvoryEbo.2	 (2)\
+ 4 IvoryEbony	 (3)\
+ 5 Jaco Bass 	 (4)\
+ 6 JACO LEAD1	 (5)\
+ 7 Jam Synth 	 (6)\
+ 8 Jamaican  	 (7)\
+ 9 James Bond	 (8)\
+10 Japarimba 	 (9)\
+11 JASTOR    	 (10)\
+12 JAY'S Wind	 (11)\
+13 JAYS,BASS2	 (12)\
+14 Jays,Bass3	 (13)\
+15 Jaz2*Flute	 (14)\
+16 JAZZ BASS 	 (15)\
+17 Jazz Gtr V	 (16)\
+18 Jazz Guit 	 (17)\
+19 Jazz Guit1	 (18)\
+20 Jazz Guit2	 (19)\
+21 Jazz Guit3	 (20)\
+22 Jazz Guit4	 (21)\
+23 JAZZ LEAD 	 (22)\
+24 Jazz Organ	 (23)\
+25 Jazz*Flute	 (24)\
+26 JazzGuit 2	 (25)\
+27 JazzMeBraz	 (26)\
+28 Jellosynth	 (27)\
+29 JonesBrass	 (28)\
+30 JonesLead 	 (29)\
+31 JP 4      	 (30)\
+32 JP 4.....1	 (31)\
+\
+\
+Filename: 040\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 JP 4.....2	 (0)\
+ 2 Juggermaut	 (1)\
+ 3 Jump.....1	 (2)\
+ 4 Jump.....2	 (3)\
+ 5 jungle    	 (4)\
+ 6 Juno      	 (5)\
+ 7 K1 BRASS  	 (6)\
+ 8 K1-BASS   	 (7)\
+ 9 Kamikazi  	 (8)\
+10 Kashmir   	 (9)\
+11 Kawasaki  	 (10)\
+12 KAZOO !!! 	 (11)\
+13 KENONG    	 (12)\
+14 Kettledrum	 (13)\
+15 KEYZER    	 (14)\
+16 KickDrum3 	 (15)\
+17 KickLead  	 (16)\
+18 KILROY    	 (17)\
+19 KILROY    	 (18)\
+20 KILSMO    	 (19)\
+21 KIMONO    	 (20)\
+22 KITARO    	 (21)\
+23 klnksicrd1	 (22)\
+24 KORDZ     	 (23)\
+25 Korg 770.1	 (24)\
+26 Korg 770.2	 (25)\
+27 Korg 770.3	 (26)\
+28 Koto      	 (27)\
+29 KOTO      	 (28)\
+30 KOTO 2    	 (29)\
+31 KOTO BASS 	 (30)\
+32 Koto.....1	 (31)\
+\
+\
+Filename: 041\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Koto.....2	 (0)\
+ 2 Koto.....3	 (1)\
+ 3 Kotokoto  	 (2)\
+ 4 KrstlChoir	 (3)\
+ 5 L. Perc. 2	 (4)\
+ 6 L. Perc. 3	 (5)\
+ 7 L. Perc. 4	 (6)\
+ 8 L. Perc. 5	 (7)\
+ 9 L/4U~Solo2	 (8)\
+10 Lacapia   	 (9)\
+11 Lambda...1	 (10)\
+12 Lambda...2	 (11)\
+13 Lambda...3	 (12)\
+14 Lambda...4	 (13)\
+15 Lambda...5	 (14)\
+16 Lamia     	 (15)\
+17 Large Ben 	 (16)\
+18 LASERBLAST	 (17)\
+19 LaserSynth	 (18)\
+20 Last Bass 	 (19)\
+21 Last Bass2	 (20)\
+22 Last Bass3	 (21)\
+23 Last Bass4	 (22)\
+24 Last Bass4	 (23)\
+25 LastChance	 (24)\
+26 LastTwango	 (25)\
+27 LastTwango	 (26)\
+28 LatelyBass	 (27)\
+29 Latin Perc	 (28)\
+30 LEAD AXE  	 (29)\
+31 LEAD GUITR	 (30)\
+32 Lead Reed 	 (31)\
+\
+\
+Filename: 042\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 LEAD SYNTH	 (0)\
+ 2 LEADBEAMER	 (1)\
+ 3 LEADGUITAR	 (2)\
+ 4 LeadSynth1	 (3)\
+ 5 LeadSynth1	 (4)\
+ 6 LeadSynth2	 (5)\
+ 7 LeadSynth3	 (6)\
+ 8 LeadSynth4	 (7)\
+ 9 LeadSynth5	 (8)\
+10 LeadSynth6	 (9)\
+11 LeadSynth7	 (10)\
+12 LeadSynth8	 (11)\
+13 LEEBADO   	 (12)\
+14 Left Hand 	 (13)\
+15 Left Hand 	 (14)\
+16 Lefty     	 (15)\
+17 Let About 	 (16)\
+18 LFO NOISE 	 (17)\
+19 Light Lead	 (18)\
+20 LightBrass	 (19)\
+21 LIKEMBE   	 (20)\
+22 LIKEMBE 2 	 (21)\
+23 Liq.Libido	 (22)\
+24 Liq.Notes 	 (23)\
+25 LiteHarpsi	 (24)\
+26 Lo Alarm  	 (25)\
+27 Log 1     	 (26)\
+28 Log Drum.1	 (27)\
+29 Log Drum.2	 (28)\
+30 London PD 	 (29)\
+31 LondonCall	 (30)\
+32 LOOK OUT!!	 (31)\
+\
+\
+Filename: 043\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Looming   	 (0)\
+ 2 LORP      	 (1)\
+ 3 LOS ENDOS 	 (2)\
+ 4 LOS ENDOS2	 (3)\
+ 5 LoTine81Z 	 (4)\
+ 6 Love Drums	 (5)\
+ 7 LoveIsAll 	 (6)\
+ 8 LoveMatter	 (7)\
+ 9 LoveVICTIM	 (8)\
+10 LOW LEAD  	 (9)\
+11 LOW ORCH. 	 (10)\
+12 Low-Life  	 (11)\
+13 LOWEND    	 (12)\
+14 LOWEND 2  	 (13)\
+15 LOWEND 3  	 (14)\
+16 LOWFMBRASS	 (15)\
+17 LOWLEAD  2	 (16)\
+18 LOWPASBAS2	 (17)\
+19 LOWPASBASS	 (18)\
+20 LowString 	 (19)\
+21 Low~Strngs	 (20)\
+22 Lucky Man 	 (21)\
+23 Lucky Man 	 (22)\
+24 Lucky Man 	 (23)\
+25 Lute      	 (24)\
+26 Lute      	 (25)\
+27 Lutee     	 (26)\
+28 Lyrisyn   	 (27)\
+29 Lyrisyn   	 (28)\
+30 M  6  B   	 (29)\
+31 M Voice..1	 (30)\
+32 M Voice..2	 (31)\
+\
+\
+Filename: 044\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 M Voice..3	 (0)\
+ 2 M Voice..4	 (1)\
+ 3 M-F*Voices	 (2)\
+ 4 M/A/R/R/S 	 (3)\
+ 5 MACHINE FX	 (4)\
+ 6 MachineGun	 (5)\
+ 7 Madelyne  	 (6)\
+ 8 MAHLER    	 (7)\
+ 9 Majestical	 (8)\
+10 MalibuNite	 (9)\
+11 Mallet81z2	 (10)\
+12 Mallet81z3	 (11)\
+13 Malomar+Ld	 (12)\
+14 Mama      	 (13)\
+15 Mama Perc 	 (14)\
+16 Mamarimba 	 (15)\
+17 Mandolin.1	 (16)\
+18 Mandolin.2	 (17)\
+19 ManyPeople	 (18)\
+20 Marimba   	 (19)\
+21 Marimba   	 (20)\
+22 Marimba   	 (21)\
+23 MARIMBA   	 (22)\
+24 Marimba 3 	 (23)\
+25 Marimba..1	 (24)\
+26 Marimba..2	 (25)\
+27 Marimba..3	 (26)\
+28 Marimba..4	 (27)\
+29 Marimba..5	 (28)\
+30 Marimba..6	 (29)\
+31 Marimba..7	 (30)\
+32 MarimbHorn	 (31)\
+\
+\
+Filename: 045\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 MarimbLead	 (0)\
+ 2 MARINE PAD	 (1)\
+ 3 Mark VII  	 (2)\
+ 4 Mars to ??	 (3)\
+ 5 MarsBass  	 (4)\
+ 6 MarsGossa.	 (5)\
+ 7 MarsPerct.	 (6)\
+ 8 MasterBlas	 (7)\
+ 9 MATRIX PAD	 (8)\
+10 MATTA     	 (9)\
+11 MaxiKorg.1	 (10)\
+12 MaxiKorg.2	 (11)\
+13 MelloBrass	 (12)\
+14 MelloTenor	 (13)\
+15 Mellow    	 (14)\
+16 MellowSqar	 (15)\
+17 MEMORIES..	 (16)\
+18 Mercury   	 (17)\
+19 METAL BASS	 (18)\
+20 METAL HEAD	 (19)\
+21 Metal Keys	 (20)\
+22 Metalimba 	 (21)\
+23 METALPHONE	 (22)\
+24 MetalSitar	 (23)\
+25 METALSWELL	 (24)\
+26 Metasmorph	 (25)\
+27 Miami Timp	 (26)\
+28 MicroMoog2	 (27)\
+29 Mid Pipe  	 (28)\
+30 Mid Pipe  	 (29)\
+31 Mike.1    	 (30)\
+32 Mike.2    	 (31)\
+\
+\
+Filename: 046\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 MILDTONE  	 (0)\
+ 2 milgrams37	 (1)\
+ 3 Mind's Eye	 (2)\
+ 4 MiniMoog 3	 (3)\
+ 5 MiniMoog.1	 (4)\
+ 6 MiniMoog.2	 (5)\
+ 7 MiniMoog.3	 (6)\
+ 8 Minuet    	 (7)\
+ 9 Minuet II 	 (8)\
+10 MIRAGE    	 (9)\
+11 MIRAGESAMP	 (10)\
+12 Mod Chime 	 (11)\
+13 MODULEMODE	 (12)\
+14 Mono Bass 	 (13)\
+15 Mono Ld V 	 (14)\
+16 Mono Lead 	 (15)\
+17 MONOLOG   	 (16)\
+18 MonophBass	 (17)\
+19 MOODestra 	 (18)\
+20 MoodyBluu 	 (19)\
+21 MOOG 2    	 (20)\
+22 MOOG BASS 	 (21)\
+23 MOOG BASS2	 (22)\
+24 MOOG BASS3	 (23)\
+25 MOOG BASS4	 (24)\
+26 MOOG PULSE	 (25)\
+27 MOOG SAW  	 (26)\
+28 MOOG-FBass	 (27)\
+29 MoonFall  	 (28)\
+30 Moongosh  	 (29)\
+31 MOONWATER 	 (30)\
+32 Moooo Bell	 (31)\
+\
+\
+Filename: 047\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 MORe ALIEN	 (0)\
+ 2 Morpheus  	 (1)\
+ 3 MOURZWAK  	 (2)\
+ 4 Mouse-Tom 	 (3)\
+ 5 Movement.1	 (4)\
+ 6 Movement.2	 (5)\
+ 7 MOVIE PAD 	 (6)\
+ 8 MR.SANDMAN	 (7)\
+ 9 Muddle    	 (8)\
+10 MULT-FORM 	 (9)\
+11 MultiMoog1	 (10)\
+12 MultiMoog2	 (11)\
+13 MUTANT    	 (12)\
+14 Mute Cbell	 (13)\
+15 Mute Clav 	 (14)\
+16 Mute Clav1	 (15)\
+17 Mute Gtr  	 (16)\
+18 Mute Trmbn	 (17)\
+19 Mute Trmpt	 (18)\
+20 Muted*Horn	 (19)\
+21 MUTETRUMP 	 (20)\
+22 MYSIC HORN	 (21)\
+23 N*Y*M*P*H 	 (22)\
+24 N/E/E/D/S 	 (23)\
+25 N/E/E/D/S 	 (24)\
+26 Narcissus 	 (25)\
+27 Narcissus 	 (26)\
+28 NASAL LEAD	 (27)\
+29 Nasty Syn 	 (28)\
+30 NastyLead1	 (29)\
+31 NastyLead2	 (30)\
+32 Nebula    	 (31)\
+\
+\
+Filename: 048\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 neo-piano 	 (0)\
+ 2 neo-piano2	 (1)\
+ 3 NEW AGE   	 (2)\
+ 4 New/Conga1	 (3)\
+ 5 NewElectro	 (4)\
+ 6 NINTENDO  	 (5)\
+ 7 No Regrets	 (6)\
+ 8 Noise Shot	 (7)\
+ 9 Noname    	 (8)\
+10 Nor. Wood 	 (9)\
+11 NORTHERNER	 (10)\
+12 noteslide 	 (11)\
+13 Nova      	 (12)\
+14 Nuero     	 (13)\
+15 Nuln Guit3	 (14)\
+16 Nyln Guit1	 (15)\
+17 Nyln Guit2	 (16)\
+18 Nylon*Pluk	 (17)\
+19 OB FLUTE  	 (18)\
+20 OB-1 PAD  	 (19)\
+21 Oberheim.1	 (20)\
+22 Oberheim.2	 (21)\
+23 Oberheim.3	 (22)\
+24 OBERHIEM  	 (23)\
+25 Oboe      	 (24)\
+26 Oboe      	 (25)\
+27 OBOE      	 (26)\
+28 Oboe      	 (27)\
+29 Oboe-2    	 (28)\
+30 Oboe.....1	 (29)\
+31 Oboe.....2	 (30)\
+32 Oboe.....3	 (31)\
+\
+\
+Filename: 049\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 OCARINA   	 (0)\
+ 2 Ocarina   	 (1)\
+ 3 OCEAN SURF	 (2)\
+ 4 Odds      	 (3)\
+ 5 Odyssey   	 (4)\
+ 6 Odyssey..1	 (5)\
+ 7 Odyssey..2	 (6)\
+ 8 Odyssey..3	 (7)\
+ 9 of MAR    	 (8)\
+10 OffTheHook	 (9)\
+11 Oh Lord   	 (10)\
+12 OhB1Kanobe	 (11)\
+13 OKTOBEFEST	 (12)\
+14 Old Banjo 	 (13)\
+15 Old Banjo 	 (14)\
+16 OLD PERC. 	 (15)\
+17 Old Rose  	 (16)\
+18 OldElectro	 (17)\
+19 OMEGA     	 (18)\
+20 OmegaBass 	 (19)\
+21 Omni      	 (20)\
+22 Omnistra  	 (21)\
+23 Onlooker  	 (22)\
+24 OON       	 (23)\
+25 OON       	 (24)\
+26 OONo      	 (25)\
+27 Operator  	 (26)\
+28 Opus 2000 	 (27)\
+29 ORCH.PAD  	 (28)\
+30 ORCH.PAD2 	 (29)\
+31 ORCH.PERC 	 (30)\
+32 Orchestra 	 (31)\
+\
+\
+Filename: 050\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Orchestra\\	 (0)\
+ 2 Orchy     	 (1)\
+ 3 Organ    1	 (2)\
+ 4 Organ    1	 (3)\
+ 5 Organ    2	 (4)\
+ 6 Organ    2	 (5)\
+ 7 ORGANDREAM	 (6)\
+ 8 ORGANICAL 	 (7)\
+ 9 Organiser 	 (8)\
+10 ORGANISM  	 (9)\
+11 Organism  	 (10)\
+12 Organism 1	 (11)\
+13 Ornt Block	 (12)\
+14 Ornt Brass	 (13)\
+15 Ornt Clav 	 (14)\
+16 Ornt E.T. 	 (15)\
+17 Ornt Oboe 	 (16)\
+18 Ornt Organ	 (17)\
+19 Ornt Piano	 (18)\
+20 Ornt Quest	 (19)\
+21 Ornt Trmpt	 (20)\
+22 OrntBass.1	 (21)\
+23 OrntBass.2	 (22)\
+24 OrntCowBel	 (23)\
+25 OrntDrm..1	 (24)\
+26 OrntDrm..2	 (25)\
+27 OrntDrm..3	 (26)\
+28 OrntDrm..4	 (27)\
+29 OrntDrm..5	 (28)\
+30 OrntDrm..6	 (29)\
+31 OrntDrm..7	 (30)\
+32 OrntDrm..8	 (31)\
+\
+\
+Filename: 051\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 OrntDrm..9	 (0)\
+ 2 OrntDrm.10	 (1)\
+ 3 OrntEchoDr	 (2)\
+ 4 OrntFlight	 (3)\
+ 5 OrntGuitar	 (4)\
+ 6 OrntInst.1	 (5)\
+ 7 OrntInst.2	 (6)\
+ 8 OrntInst.2	 (7)\
+ 9 OrntInst.3	 (8)\
+10 OrntInst.4	 (9)\
+11 OrntInst.5	 (10)\
+12 OrntInst.6	 (11)\
+13 OrntInst.7	 (12)\
+14 OrntInst.8	 (13)\
+15 OrntInst.9	 (14)\
+16 OrntInst10	 (15)\
+17 OrntInst11	 (16)\
+18 OrntLute.1	 (17)\
+19 OrntLute.2	 (18)\
+20 OrntOrkest	 (19)\
+21 OrntPluck1	 (20)\
+22 OrntPluck2	 (21)\
+23 OrntRecord	 (22)\
+24 OrntSound1	 (23)\
+25 OrntSound2	 (24)\
+26 OSC.SYNC  	 (25)\
+27 OSC.SYNC 2	 (26)\
+28 OSC.SYNC 3	 (27)\
+29 OSC.SYNC 4	 (28)\
+30 OtherSynth	 (29)\
+31 Outland   	 (30)\
+32 OutOfTune 	 (31)\
+\
+\
+Filename: 052\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 OUTofWACK 	 (0)\
+ 2 OutOnALimb	 (1)\
+ 3 OVATION 4S	 (2)\
+ 4 Overtures 	 (3)\
+ 5 P Organ..1	 (4)\
+ 6 P Organ..2	 (5)\
+ 7 P Organ..3	 (6)\
+ 8 P Organ..4	 (7)\
+ 9 P Organ..5	 (8)\
+10 P Organ..6	 (9)\
+11 P Organ..7	 (10)\
+12 P Organ..8	 (11)\
+13 P Organ..9	 (12)\
+14 P Organ.10	 (13)\
+15 P Organ.11	 (14)\
+16 P Organ.12	 (15)\
+17 P Organ.13	 (16)\
+18 P Organ.14	 (17)\
+19 P Organ.15	 (18)\
+20 P Organ.16	 (19)\
+21 P Organ.17	 (20)\
+22 P.Organ  1	 (21)\
+23 P.Organ  2	 (22)\
+24 Pac - Man 	 (23)\
+25 PAC-MAN FX	 (24)\
+26 Pan Floot 	 (25)\
+27 Pan Floot 	 (26)\
+28 Pan Flute1	 (27)\
+29 Pan Flute2	 (28)\
+30 PAN PIPE  	 (29)\
+31 Pan Pipes 	 (30)\
+32 PANAFLOOA 	 (31)\
+\
+\
+Filename: 053\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 PanfFlooto	 (0)\
+ 2 PANINARO  	 (1)\
+ 3 Paramedic 	 (2)\
+ 4 PARRALAX  	 (3)\
+ 5 PARRALAXIS	 (4)\
+ 6 PARRALAXOO	 (5)\
+ 7 Passing By	 (6)\
+ 8 PEACE!!!!!	 (7)\
+ 9 PearlHarbr	 (8)\
+10 PEAVY     	 (9)\
+11 Ped Stl..1	 (10)\
+12 Ped Stl..2	 (11)\
+13 Ped Stl..3	 (12)\
+14 Peladon   	 (13)\
+15 Perc Flute	 (14)\
+16 Perc Lead 	 (15)\
+17 Perc.Bass 	 (16)\
+18 PERC.BRASS	 (17)\
+19 PERC.BRASS	 (18)\
+20 PERC.FX 2 	 (19)\
+21 PERC.FX 3 	 (20)\
+22 PERC.FX 4 	 (21)\
+23 PERC.LEAD 	 (22)\
+24 PercFlute 	 (23)\
+25 PercLead.1	 (24)\
+26 PercLead.2	 (25)\
+27 PercoPiano	 (26)\
+28 PercOrgan 	 (27)\
+29 PercSYNTH 	 (28)\
+30 Percussive	 (29)\
+31 PERU      	 (30)\
+32 Peter Gunn	 (31)\
+\
+\
+Filename: 054\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 PharoPIAN2	 (0)\
+ 2 PharoPIANO	 (1)\
+ 3 PHASE LEAD	 (2)\
+ 4 PhaseGrand	 (3)\
+ 5 Phasetine 	 (4)\
+ 6 PHAZEDBUZZ	 (5)\
+ 7 PHOENIX   	 (6)\
+ 8 Phone 2   	 (7)\
+ 9 pianestra 	 (8)\
+10 Pianist   	 (9)\
+11 Piano    1	 (10)\
+12 Piano    1	 (11)\
+13 Piano    2	 (12)\
+14 Piano    3	 (13)\
+15 Piano    3	 (14)\
+16 PIANO PAD 	 (15)\
+17 Piano Vel 	 (16)\
+18 Piano Vel 	 (17)\
+19 Piano,Tres	 (18)\
+20 Piano,Uno!	 (19)\
+21 Pianobells	 (20)\
+22 PianoBras2	 (21)\
+23 Pianobrass	 (22)\
+24 PianoBrass	 (23)\
+25 PianoMan  	 (24)\
+26 PianoPiano	 (25)\
+27 Pianostra 	 (26)\
+28 PianoSynth	 (27)\
+29 PianoSynth	 (28)\
+30 PianoVoice	 (29)\
+31 Pianum    	 (30)\
+32 PICCILO   	 (31)\
+\
+Filename: 055\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Piccolo..1	 (0)\
+ 2 Piccolo..2	 (1)\
+ 3 Piccolo..3	 (2)\
+ 4 PickPluck 	 (3)\
+ 5 Piffy     	 (4)\
+ 6 PINK NOISE	 (5)\
+ 7 Pipe Man  	 (6)\
+ 8 PIPE ORGAN	 (7)\
+ 9 Pipes     	 (8)\
+10 Pizz.    1	 (9)\
+11 Pizz.    2	 (10)\
+12 Pizzicato 	 (11)\
+13 Pizzicato 	 (12)\
+14 planePIANO	 (13)\
+15 PlasticHit	 (14)\
+16 Play Ball!	 (15)\
+17 PLAYitLOW 	 (16)\
+18 PLAYitLOW2	 (17)\
+19 Pleiades  	 (18)\
+20 PLEXISLAP 	 (19)\
+21 PLEXITONE 	 (20)\
+22 PLEXITONE 	 (21)\
+23 Pluck Bass	 (22)\
+24 Plukd*Harp	 (23)\
+25 PlukdKybrd	 (24)\
+26 Plukguitar	 (25)\
+27 Pno String	 (26)\
+28 POLKA!!!!!	 (27)\
+29 Poly 61   	 (28)\
+30 POLY PAD  	 (29)\
+31 Poly/Synth	 (30)\
+32 PolyMoog.1	 (31)\
+\
+\
+Filename: 056\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 PolyMoog.2	 (0)\
+ 2 Pop Bass  	 (1)\
+ 3 portaSine 	 (2)\
+ 4 PortaSynth	 (3)\
+ 5 Poseidon  	 (4)\
+ 6 Power Lead	 (5)\
+ 7 PowerBrass	 (6)\
+ 8 PowerPLAY!	 (7)\
+ 9 PpG-1     	 (8)\
+10 Ppg-3     	 (9)\
+11 PpG-5     	 (10)\
+12 Predator  	 (11)\
+13 PROPHET 1 	 (12)\
+14 Prophet II	 (13)\
+15 Prophet..1	 (14)\
+16 Prophet..2	 (15)\
+17 Prophet..3	 (16)\
+18 ProphetIII	 (17)\
+19 PROTEUPLEX	 (18)\
+20 PS 3100..1	 (19)\
+21 PS 3100..2	 (20)\
+22 PS 3300..1	 (21)\
+23 PS 3300..2	 (22)\
+24 PS 3300..2	 (23)\
+25 PSS       	 (24)\
+26 PSS-170   	 (25)\
+27 PSS-170 2 	 (26)\
+28 PSS-470   	 (27)\
+29 PSS-47O   	 (28)\
+30 Psyche    	 (29)\
+31 Psyche II 	 (30)\
+32 Psycho    	 (31)\
+\
+\
+Filename: 057\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Pull Over 	 (0)\
+ 2 Pulse     	 (1)\
+ 3 PULSECODE 	 (2)\
+ 4 PULSEWIDTH	 (3)\
+ 5 PumpOrgan 	 (4)\
+ 6 Punchy    	 (5)\
+ 7 Punk funk 	 (6)\
+ 8 PureEnergy	 (7)\
+ 9 QuantumFX 	 (8)\
+10 Quarks!!! 	 (9)\
+11 QUARTET   	 (10)\
+12 Quartet..1	 (11)\
+13 Quartet..2	 (12)\
+14 QUASARS   	 (13)\
+15 R2Cym<dbl>	 (14)\
+16 Racing Car	 (15)\
+17 RADIATION?	 (16)\
+18 Ragged Sun	 (17)\
+19 Rain Storm	 (18)\
+20 Rainbow FX	 (19)\
+21 Raindrops 	 (20)\
+22 RAINFOREST	 (21)\
+23 RainForest	 (22)\
+24 Randomizer	 (23)\
+25 Randomizer	 (24)\
+26 RAPorSOLO 	 (25)\
+27 RaspAlto  	 (26)\
+28 RaspAlto  	 (27)\
+29 Raspy Time	 (28)\
+30 Rassilon  	 (29)\
+31 RATUIG    	 (30)\
+32 Ravolox   	 (31)\
+\
+\
+Filename: 058\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 RdCym<dbl>	 (0)\
+ 2 Real Snare	 (1)\
+ 3 RealPiano 	 (2)\
+ 4 RealPiano2	 (3)\
+ 5 RecLead   	 (4)\
+ 6 Recorder  	 (5)\
+ 7 Recorder.1	 (6)\
+ 8 Recorder.2	 (7)\
+ 9 Recorder.3	 (8)\
+10 Recorder.4	 (9)\
+11 REED      	 (10)\
+12 Reed Piano	 (11)\
+13 Repeater.1	 (12)\
+14 Repeater.2	 (13)\
+15 Repeater.3	 (14)\
+16 Repeater.4	 (15)\
+17 Repeater.5	 (16)\
+18 RESO BASS 	 (17)\
+19 RESO BELL 	 (18)\
+20 RESONANCE 	 (19)\
+21 ReverbStrg	 (20)\
+22 REZNORANDA	 (21)\
+23 Rg        	 (22)\
+24 RHODES 1  	 (23)\
+25 RHODES 2  	 (24)\
+26 RHODES 3  	 (25)\
+27 Rhodes...1	 (26)\
+28 Rhodes...2	 (27)\
+29 Rhodes...3	 (28)\
+30 Rhodes...4	 (29)\
+31 Rhodes...5	 (30)\
+32 Rhodes...6	 (31)\
+\
+\
+Filename: 059\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Rhodes...7	 (0)\
+ 2 Rhodes...8	 (1)\
+ 3 Rhodes...9	 (2)\
+ 4 Rhodes..10	 (3)\
+ 5 Rhodes..11	 (4)\
+ 6 Rhodes..12	 (5)\
+ 7 Rhodes..13	 (6)\
+ 8 RHODES=VS4	 (7)\
+ 9 Rialto    	 (8)\
+10 Rich Strg1	 (9)\
+11 Rich Strg2	 (10)\
+12 Rich Strg3	 (11)\
+13 RichHarpsi	 (12)\
+14 Richstrg V	 (13)\
+15 Richstring	 (14)\
+16 Rifle Shot	 (15)\
+17 Rim       	 (16)\
+18 Ringing   	 (17)\
+19 Ringing..1	 (18)\
+20 Ringing..2	 (19)\
+21 RiseDecent	 (20)\
+22 Rock Guit1	 (21)\
+23 Rock Guit2	 (22)\
+24 Rock Guit3	 (23)\
+25 Rock Guit4	 (24)\
+26 Rock Guit5	 (25)\
+27 Rock Guit6	 (26)\
+28 ROCKORGAN 	 (27)\
+29 RogerMoore	 (28)\
+30 Romana    	 (29)\
+31 Roto Bass 	 (30)\
+32 Roto2Tom+ 	 (31)\
+\
+\
+Filename: 060\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 ROTOBASS  	 (0)\
+ 2 Rough Bass	 (1)\
+ 3 RubberBand	 (2)\
+ 4 Ruckus    	 (3)\
+ 5 Running   	 (4)\
+ 6 RunningMan	 (5)\
+ 7 S/H Synth 	 (6)\
+ 8 S/H Synth 	 (7)\
+ 9 S/H Synth 	 (8)\
+10 S/Hguitar 	 (9)\
+11 Sable&Glow	 (10)\
+12 Sarrow    	 (11)\
+13 SAW PAD   	 (12)\
+14 Sax      1	 (13)\
+15 Sax      2	 (14)\
+16 Sax Synth 	 (15)\
+17 Sax V     	 (16)\
+18 Saxo-SYNH 	 (17)\
+19 Saxophone1	 (18)\
+20 Saxophone2	 (19)\
+21 Saxophone3	 (20)\
+22 Saxophone4	 (21)\
+23 Saxophone5	 (22)\
+24 Saxophone6	 (23)\
+25 SAX~0O1   	 (24)\
+26 Schmooh   	 (25)\
+27 Schmooh   	 (26)\
+28 SCI-FI    	 (27)\
+29 SCI-FI 2  	 (28)\
+30 Science.BS	 (29)\
+31 SCM Writer	 (30)\
+32 SCOTLAND  	 (31)\
+\
+\
+Filename: 061\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 SCRATCH   	 (0)\
+ 2 Searcher  	 (1)\
+ 3 SEQUENCRBS	 (2)\
+ 4 sequential	 (3)\
+ 5 Serium    	 (4)\
+ 6 SERVICES  	 (5)\
+ 7 Seti Alpha	 (6)\
+ 8 SH 07     	 (7)\
+ 9 SH 7.....1	 (8)\
+10 SH 7.....2	 (9)\
+11 Shada     	 (10)\
+12 Shadows   	 (11)\
+13 Shakuhachi	 (12)\
+14 SHAMAGAN 2	 (13)\
+15 Shamagan 3	 (14)\
+16 Shamansnth	 (15)\
+17 Shamtar   	 (16)\
+18 SHANAI    	 (17)\
+19 ShardSYNTH	 (18)\
+20 SHARP LEAD	 (19)\
+21 Shatt.Per.	 (20)\
+22 Shiver    	 (21)\
+23 ShiverSynt	 (22)\
+24 shlihk    	 (23)\
+25 ShmganBass	 (24)\
+26 Shogakko  	 (25)\
+27 ShortCirc.	 (26)\
+28 Sick Siren	 (27)\
+29 SilentRun.	 (28)\
+30 Silk Cello	 (29)\
+31 SiMmoMan  	 (30)\
+32 Simon Says	 (31)\
+\
+\
+Filename: 062\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Simple    	 (0)\
+ 2 SineWood1 	 (1)\
+ 3 SineWood2 	 (2)\
+ 4 Sitar     	 (3)\
+ 5 Sitar     	 (4)\
+ 6 Sitar II  	 (5)\
+ 7 Sitar....1	 (6)\
+ 8 Sitar....2	 (7)\
+ 9 Sitar....3	 (8)\
+10 Sitar.Vib 	 (9)\
+11 SitarSynth	 (10)\
+12 Sitarzi   	 (11)\
+13 SizzSynth 	 (12)\
+14 Skid Marks	 (13)\
+15 Skool*Daze	 (14)\
+16 SkoolPiano	 (15)\
+17 Slap*appy2	 (16)\
+18 SlapBass.1	 (17)\
+19 SlapBass.2	 (18)\
+20 Slapsynth 	 (19)\
+21 sleeper   	 (20)\
+22 SleepSynth	 (21)\
+23 SleighBell	 (22)\
+24 Slice&Dice	 (23)\
+25 Slidesynth	 (24)\
+26 SLOW LEAD 	 (25)\
+27 SLOW Synth	 (26)\
+28 SlowString	 (27)\
+29 Small Pipe	 (28)\
+30 Small Pipe	 (29)\
+31 SMILEY    	 (30)\
+32 SmoothBass	 (31)\
+\
+\
+Filename: 063\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 SmoothBass	 (0)\
+ 2 SNARE     	 (1)\
+ 3 Snare    1	 (2)\
+ 4 Snare    2	 (3)\
+ 5 Snare 1   	 (4)\
+ 6 Snare 2   	 (5)\
+ 7 Snare Bass	 (6)\
+ 8 Snare....3	 (7)\
+ 9 Snare....4	 (8)\
+10 SnareDrum1	 (9)\
+11 SnareDrum2	 (10)\
+12 SnareSynth	 (11)\
+13 Snarf Bass	 (12)\
+14 Snatch    	 (13)\
+15 So        	 (14)\
+16 So So     	 (15)\
+17 SO STRANGE	 (16)\
+18 So#&%$Warm	 (17)\
+19 Soft Flute	 (18)\
+20 Soft Harp 	 (19)\
+21 SoftTouch 	 (20)\
+22 SOLAR WIND	 (21)\
+23 Solid Bass	 (22)\
+24 SolidBass2	 (23)\
+25 SOLO RESON	 (24)\
+26 Solo Vln V	 (25)\
+27 SOLO VOICE	 (26)\
+28 SOLO!!!!!!	 (27)\
+29 SOLOSWEEP 	 (28)\
+30 SoloViolin	 (29)\
+31 SoloViolin	 (30)\
+32 SOLOVOICE2	 (31)\
+\
+\
+Filename: 064\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Solstice  	 (0)\
+ 2 Song Flute	 (1)\
+ 3 SORCEROR  	 (2)\
+ 4 SOUNDTRACK	 (3)\
+ 5 SOUR PAD  	 (4)\
+ 6 SOUTHERNER	 (5)\
+ 7 Southpaw  	 (6)\
+ 8 Space BUG?	 (7)\
+ 9 Space Gong	 (8)\
+10 Space Gun 	 (9)\
+11 SPACE PAD 	 (10)\
+12 Space Talk	 (11)\
+13 Space Talk	 (12)\
+14 Space Talk	 (13)\
+15 Space Talk	 (14)\
+16 Space Vibe	 (15)\
+17 Space Vibe	 (16)\
+18 Space....1	 (17)\
+19 Space....2	 (18)\
+20 Space....3	 (19)\
+21 Space....4	 (20)\
+22 SpaceBell1	 (21)\
+23 SpaceBell2	 (22)\
+24 SpaceBells	 (23)\
+25 SpaceBirds	 (24)\
+26 SpaceBRASS	 (25)\
+27 SpaceChime	 (26)\
+28 SpaceChime	 (27)\
+29 SpaceOrgan	 (28)\
+30 SPACEPAD 2	 (29)\
+31 SpaceScene	 (30)\
+32 SpaceSITAR	 (31)\
+\
+\
+Filename: 065\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 SPACEYVIBE	 (0)\
+ 2 SPARKLE   	 (1)\
+ 3 SPARKLER  	 (2)\
+ 4 Spc Midiot	 (3)\
+ 5 SpellTalk 	 (4)\
+ 6 SpiralSynt	 (5)\
+ 7 SpitBoneBC	 (6)\
+ 8 SplashClav	 (7)\
+ 9 SplatBrass	 (8)\
+10 Split Perc	 (9)\
+11 SplitPerc2	 (10)\
+12 SPONGY    	 (11)\
+13 Spooksynth	 (12)\
+14 SpreadThin	 (13)\
+15 SPRINKLE  	 (14)\
+16 SPRITE    	 (15)\
+17 SqncrBass 	 (16)\
+18 SQUARELEAD	 (17)\
+19 SQUARELEAD	 (18)\
+20 Squeezebox	 (19)\
+21 Squeezebox	 (20)\
+22 Squeezebox	 (21)\
+23 sselterF  	 (22)\
+24 St Nick..1	 (23)\
+25 St Nick..2	 (24)\
+26 StadiumSol	 (25)\
+27 STAR SONG 	 (26)\
+28 StartPiano	 (27)\
+29 StarVeins 	 (28)\
+30 StarVeins2	 (29)\
+31 StarVeins3	 (30)\
+32 StatNation	 (31)\
+\
+\
+Filename: 066\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Steel Drum	 (0)\
+ 2 Steel Perc	 (1)\
+ 3 Steel*Mal.	 (2)\
+ 4 SteelBasss	 (3)\
+ 5 STEELDRUM 	 (4)\
+ 6 STEELDRUM 	 (5)\
+ 7 SteelDrum2	 (6)\
+ 8 SteelDrums	 (7)\
+ 9 SteelPulse	 (8)\
+10 SteelSynth	 (9)\
+11 StellarPn.	 (10)\
+12 Steurmer  	 (11)\
+13 Steurmer 2	 (12)\
+14 Stevie Win	 (13)\
+15 STINGGGGGG	 (14)\
+16 StonedCycl	 (15)\
+17 STOOGES   	 (16)\
+18 Stopkeyz  	 (17)\
+19 STOPS IN  	 (18)\
+20 Storm Wind	 (19)\
+21 Storm Wind	 (20)\
+22 STRANGER  	 (21)\
+23 STRATA    	 (22)\
+24 STRATA 2  	 (23)\
+25 String 2  	 (24)\
+26 StringEns1	 (25)\
+27 StringEns2	 (26)\
+28 StringEns3	 (27)\
+29 StringEns4	 (28)\
+30 StringEns5	 (29)\
+31 StringEns6	 (30)\
+32 StringEns7	 (31)\
+\
+\
+Filename: 067\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 StringEns8	 (0)\
+ 2 StringLead	 (1)\
+ 3 Strings   	 (2)\
+ 4 Strings  1	 (3)\
+ 5 Strings  1	 (4)\
+ 6 Strings  2	 (5)\
+ 7 Strings  2	 (6)\
+ 8 Strings  3	 (7)\
+ 9 STRINGS 1 	 (8)\
+10 Strings 2\\	 (9)\
+11 StrngBrass	 (10)\
+12 StrwBryFel	 (11)\
+13 Subculture	 (12)\
+14 Substance 	 (13)\
+15 SummerBUGS	 (14)\
+16 SummerBUGS	 (15)\
+17 Sunbeam   	 (16)\
+18 SundayBell	 (17)\
+19 SunSnow   	 (18)\
+20 SUPER BASS	 (19)\
+21 Surakarta 	 (20)\
+22 SURGE     	 (21)\
+23 SwampBugs 	 (22)\
+24 SwampBugs2	 (23)\
+25 Swat  It  	 (24)\
+26 SWEEP LEAD	 (25)\
+27 Sweeper   	 (26)\
+28 SWEEPS    	 (27)\
+29 SWIRLY    	 (28)\
+30 SWIRLY PAD	 (29)\
+31 Sy.AftrTch	 (30)\
+32 Sy.Bass  1	 (31)\
+\
+\
+Filename: 068\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Sy.Bass  2	 (0)\
+ 2 Sy.Bass  3	 (1)\
+ 3 Sy.Bass  4	 (2)\
+ 4 Sy.Bass  5	 (3)\
+ 5 Sy.Brass 1	 (4)\
+ 6 Sy.Brass 2	 (5)\
+ 7 Sy.Brass 3	 (6)\
+ 8 Sy.Brass 4	 (7)\
+ 9 Sy.Decay 1	 (8)\
+10 Sy.Decay 2	 (9)\
+11 Sy.Ensem.1	 (10)\
+12 Sy.Ensem.2	 (11)\
+13 Sy.Ensem.3	 (12)\
+14 Sy.Ensem.4	 (13)\
+15 Sy.Ensem.5	 (14)\
+16 Sy.Organ 1	 (15)\
+17 Sy.Organ 2	 (16)\
+18 Sy.Perc. 1	 (17)\
+19 Sy.Perc. 2	 (18)\
+20 Sy.Perc. 3	 (19)\
+21 Sy.Perc. 4	 (20)\
+22 Sy.Sitar  	 (21)\
+23 Sy.Solo  1	 (22)\
+24 Sy.Solo  2	 (23)\
+25 Sy.Solo  3	 (24)\
+26 Sy.Solo  4	 (25)\
+27 Sy.Solo  4	 (26)\
+28 Sy.Voice 1	 (27)\
+29 Sy.Voice 2	 (28)\
+30 Syamisen  	 (29)\
+31 SyBon     	 (30)\
+32 Symbollo  	 (31)\
+\
+\
+Filename: 069\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Symphonica	 (0)\
+ 2 Symphony.1	 (1)\
+ 3 Symphony.2	 (2)\
+ 4 Symphony.3	 (3)\
+ 5 Symphony.4	 (4)\
+ 6 Symphony.5	 (5)\
+ 7 Symphony.6	 (6)\
+ 8 Symphony.7	 (7)\
+ 9 SYN DIST  	 (8)\
+10 SYN DIST. 	 (9)\
+11 SYN HIT   	 (10)\
+12 SYN VOICE2	 (11)\
+13 Syn.Str  1	 (12)\
+14 Syn.Str  2	 (13)\
+15 Syn/Record	 (14)\
+16 Synballs  	 (15)\
+17 Synballs  	 (16)\
+18 SynblChime	 (17)\
+19 Sync Lead 	 (18)\
+20 SYNERGY   	 (19)\
+21 SYNERGY 2 	 (20)\
+22 SynFunkBas	 (21)\
+23 SynGameran	 (22)\
+24 SYNOPHONE 	 (23)\
+25 SynPercusv	 (24)\
+26 Synphonic!	 (25)\
+27 Synphonic2	 (26)\
+28 SynString 	 (27)\
+29 Synth D 2 	 (28)\
+30 Synth Drum	 (29)\
+31 Synth Perc	 (30)\
+32 SYNTH TOM 	 (31)\
+\
+\
+Filename: 070\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 SYNTH VIBE	 (0)\
+ 2 Synth....1	 (1)\
+ 3 Synth....2	 (2)\
+ 4 Synth....3	 (3)\
+ 5 Synth....4	 (4)\
+ 6 Synth....5	 (5)\
+ 7 Synth....6	 (6)\
+ 8 Synth....7	 (7)\
+ 9 Synthalife	 (8)\
+10 SynthBass1	 (9)\
+11 SynthBass2	 (10)\
+12 SynthBass3	 (11)\
+13 SynthBell 	 (12)\
+14 SynthBell2	 (13)\
+15 SynthBells	 (14)\
+16 SynthChime	 (15)\
+17 SYNTHCHORD	 (16)\
+18 SYNTHCYCLE	 (17)\
+19 SYNTHDIST*	 (18)\
+20 SynthDrm.6	 (19)\
+21 SynthDrm13	 (20)\
+22 SynthDrm14	 (21)\
+23 SynthDrm15	 (22)\
+24 SynthDrm16	 (23)\
+25 SyntheBass	 (24)\
+26 Synthedge 	 (25)\
+27 SYNTHFLUTE	 (26)\
+28 SynthHiHat	 (27)\
+29 SynthHiHat	 (28)\
+30 SynthMarib	 (29)\
+31 SynthOrgan	 (30)\
+32 SynthRise1	 (31)\
+\
+\
+Filename: 071\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 SynthRise2	 (0)\
+ 2 Synthstra 	 (1)\
+ 3 Synthstra2	 (2)\
+ 4 Synthual  	 (3)\
+ 5 SYNTHVOICE	 (4)\
+ 6 SYNTHYplop	 (5)\
+ 7 SYNTHY\}\}\} 	 (6)\
+ 8 Synvox    	 (7)\
+ 9 SYSTEM    	 (8)\
+10 System 15 	 (9)\
+11 System35.1	 (10)\
+12 System35.2	 (11)\
+13 System35.3	 (12)\
+14 System55.1	 (13)\
+15 System55.2	 (14)\
+16 T Pluck..1	 (15)\
+17 T Pluck..2	 (16)\
+18 T Pluck..3	 (17)\
+19 TABOO     	 (18)\
+20 TALISMAN  	 (19)\
+21 TALL TALE 	 (20)\
+22 TAM TAM   	 (21)\
+23 TAM TAM 2 	 (22)\
+24 Tamboura.1	 (23)\
+25 Tamboura.2	 (24)\
+26 Tamboura.3	 (25)\
+27 TAP TAP<<<	 (26)\
+28 TECHNICS  	 (27)\
+29 TECHNO!!!!	 (28)\
+30 TECHNODRUM	 (29)\
+31 TEHCNOWIND	 (30)\
+32 Telephone 	 (31)\
+\
+\
+Filename: 072\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 TempleFlt2	 (0)\
+ 2 Templegong	 (1)\
+ 3 Terror!   	 (2)\
+ 4 The  organ	 (3)\
+ 5 The Circus	 (4)\
+ 6 THE DOORS 	 (5)\
+ 7 The Funk  	 (6)\
+ 8 Theater   	 (7)\
+ 9 Theater   	 (8)\
+10 TheBIGBass	 (9)\
+11 THEMEstrng	 (10)\
+12 TheyreHere	 (11)\
+13 THICK     	 (12)\
+14 Thik Thing	 (13)\
+15 Thin Clav 	 (14)\
+16 Things    	 (15)\
+17 Throb     	 (16)\
+18 THUMBASS 1	 (17)\
+19 THUMBASS-2	 (18)\
+20 Thump Pno 	 (19)\
+21 Tibet Drum	 (20)\
+22 TightBrass	 (21)\
+23 Timbales~1	 (22)\
+24 Timbales~2	 (23)\
+25 Time Winds	 (24)\
+26 Timelord  	 (25)\
+27 Timelord 2	 (26)\
+28 Timpani   	 (27)\
+29 Timpani   	 (28)\
+30 TISPER    	 (29)\
+31 TISPER    	 (30)\
+32 TOM       	 (31)\
+\
+\
+Filename: 073\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 TOM       	 (0)\
+ 2 Tom      1	 (1)\
+ 3 Tom      2	 (2)\
+ 4 Tom      3	 (3)\
+ 5 Tom      4	 (4)\
+ 6 TOM TOM   	 (5)\
+ 7 Tom Toms  	 (6)\
+ 8 Tom-Pany  	 (7)\
+ 9 Tomsynth  	 (8)\
+10 Tomsynth 2	 (9)\
+11 Ton       	 (10)\
+12 Ton 3     	 (11)\
+13 TonightTT 	 (12)\
+14 Touch-Tone	 (13)\
+15 Toy Piano 	 (14)\
+16 Toy Piano 	 (15)\
+17 Toymaker  	 (16)\
+18 TR-CYMBLES	 (17)\
+19 Traffic..1	 (18)\
+20 Traffic..2	 (19)\
+21 Trails end	 (20)\
+22 Trails end	 (21)\
+23 Trails end	 (22)\
+24 Tranquilo 	 (23)\
+25 Tranquilos	 (24)\
+26 Tranquilot	 (25)\
+27 Tranquo   	 (26)\
+28 TrashRds  	 (27)\
+29 Traveller 	 (28)\
+30 Trekkie   	 (29)\
+31 Triangle.1	 (30)\
+32 Triangle.2	 (31)\
+\
+\
+Filename: 074\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 TROGLIDYTE	 (0)\
+ 2 Trombone  	 (1)\
+ 3 Trombone  	 (2)\
+ 4 TROMBONE  	 (3)\
+ 5 Trombone.1	 (4)\
+ 6 Trombone.2	 (5)\
+ 7 Tron Bugs 	 (6)\
+ 8 Tropicana 	 (7)\
+ 9 TRUMPET   	 (8)\
+10 trumpet   	 (9)\
+11 Trumpet  1	 (10)\
+12 Trumpet  2	 (11)\
+13 Trumpet V 	 (12)\
+14 Trumpet..1	 (13)\
+15 Trumpet..2	 (14)\
+16 Trumpet..3	 (15)\
+17 Trumpet..4	 (16)\
+18 Trumpet..5	 (17)\
+19 Trumpet81Z	 (18)\
+20 TRUMPETEER	 (19)\
+21 TrumptSolo	 (20)\
+22 TTT 3     	 (21)\
+23 TTT II    	 (22)\
+24 Tuba      	 (23)\
+25 TUBA      	 (24)\
+26 Tube Bell 	 (25)\
+27 Tube Bells	 (26)\
+28 Tube Bells	 (27)\
+29 Tube Bells	 (28)\
+30 Tube Bells	 (29)\
+31 TublarBell	 (30)\
+32 TublarBell	 (31)\
+\
+\
+Filename: 075\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 TUBULAR   	 (0)\
+ 2 Tug Boat  	 (1)\
+ 3 TURN it ON	 (2)\
+ 4 TusonThndr	 (3)\
+ 5 Twangy    	 (4)\
+ 6 TwelveStrg	 (5)\
+ 7 TWILIGHTA 	 (6)\
+ 8 TWINKLE * 	 (7)\
+ 9 TX~81Ztar2	 (8)\
+10 Ubud 1    	 (9)\
+11 Ubud 1    	 (10)\
+12 UFO Decent	 (11)\
+13 UFO Synth 	 (12)\
+14 UFOFX OK? 	 (13)\
+15 UFOFX OK?2	 (14)\
+16 Unbass    	 (15)\
+17 UnicrnHorn	 (16)\
+18 UNISON    	 (17)\
+19 Univac    	 (18)\
+20 Unshamagan	 (19)\
+21 Unsynth   	 (20)\
+22 Up We Go  	 (21)\
+23 UpInTheAir	 (22)\
+24 Upright   	 (23)\
+25 UPRIGHT   	 (24)\
+26 Uprt Bass 	 (25)\
+27 Uprt Bass2	 (26)\
+28 Uprt pno V	 (27)\
+29 Valve Plop	 (28)\
+30 Vangelis  	 (29)\
+31 Vannation 	 (30)\
+32 velosasnth	 (31)\
+\
+\
+Filename: 076\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Ventures  	 (0)\
+ 2 Vespers   	 (1)\
+ 3 Vib Lead.1	 (2)\
+ 4 Vib Lead.2	 (3)\
+ 5 Vibe      	 (4)\
+ 6 VIBE PAD  	 (5)\
+ 7 Vibe.     	 (6)\
+ 8 Vibe.....1	 (7)\
+ 9 Vibe.....2	 (8)\
+10 Vibe.....3	 (9)\
+11 Vibe.....4	 (10)\
+12 Vibe.....5	 (11)\
+13 Vibe.....6	 (12)\
+14 VibElectro	 (13)\
+15 VIBES     	 (14)\
+16 VibeSynth 	 (15)\
+17 Vibrabelle	 (16)\
+18 VIBRAFOAM 	 (17)\
+19 VIBRAPHONE	 (18)\
+20 Vibraphone	 (19)\
+21 VibraStrng	 (20)\
+22 Victorian 	 (21)\
+23 Viola 5th 	 (22)\
+24 Viola....1	 (23)\
+25 Viola....2	 (24)\
+26 ViolaSynth	 (25)\
+27 ViolaSynth	 (26)\
+28 violin    	 (27)\
+29 Violin   1	 (28)\
+30 Violin   2	 (29)\
+31 Violin...1	 (30)\
+32           	 (31)\
+\
+\
+Filename: 077\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Violin...2	 (0)\
+ 2 Violin...3	 (1)\
+ 3 Violin...4	 (2)\
+ 4 Violin...5	 (3)\
+ 5 Violin...6	 (4)\
+ 6 Violin...7	 (5)\
+ 7 Violin...9	 (6)\
+ 8 Violin..10	 (7)\
+ 9 Violin..11	 (8)\
+10 Violin..12	 (9)\
+11 Violin..13	 (10)\
+12 Violin..14	 (11)\
+13 Violin..15	 (12)\
+14 Violin..16	 (13)\
+15 Violin..17	 (14)\
+16 Violin..18	 (15)\
+17 Violin..19	 (16)\
+18 Violins..1	 (17)\
+19 Violins..2	 (18)\
+20 Violins..3	 (19)\
+21 Violins..4	 (20)\
+22 Violintar 	 (21)\
+23 Vista     	 (22)\
+24 Voc.Shimmr	 (23)\
+25 Vocal     	 (24)\
+26 VocalNuts 	 (25)\
+27 VOCALWAVE 	 (26)\
+28 VOCODER 1 	 (27)\
+29 VOCODER 2 	 (28)\
+30 VOCODER 2 	 (29)\
+31 VOCODER 3 	 (30)\
+32 VOCODER 3 	 (31)\
+\
+\
+Filename: 078\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Vocsssound	 (0)\
+ 2 VoiceChime	 (1)\
+ 3 VoicePad 1	 (2)\
+ 4 Voices    	 (3)\
+ 5 Voices    	 (4)\
+ 6 Voices    	 (5)\
+ 7 Voices    	 (6)\
+ 8 Voices :)\\	 (7)\
+ 9 Void      	 (8)\
+10 Vox Fx    	 (9)\
+11 VOYAGER   	 (10)\
+12 VS-Horns  	 (11)\
+13 VsElcGrand	 (12)\
+14 W/O/M/E/N 	 (13)\
+15 WAGNER    	 (14)\
+16 WaitingRm.	 (15)\
+17 Walt/Wendy	 (16)\
+18 WANNABE   	 (17)\
+19 Wapper...1	 (18)\
+20 Wapper...2	 (19)\
+21 Warm*Bell 	 (20)\
+22 WarmSquare	 (21)\
+23 WARP HORN 	 (22)\
+24 WATERDRAM2	 (23)\
+25 WATERDRAMA	 (24)\
+26 WaterGlass	 (25)\
+27 WATERPHONE	 (26)\
+28 WATERYBELL	 (27)\
+29 Wave      	 (28)\
+30 Waves....1	 (29)\
+31 Waves....2	 (30)\
+32 Waves....3	 (31)\
+\
+\
+Filename: 079\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Waves....4	 (0)\
+ 2 Waves....5	 (1)\
+ 3 WAVESAY   	 (2)\
+ 4 Wd Block~1	 (3)\
+ 5 Weatherman	 (4)\
+ 6 weird     	 (5)\
+ 7 Weird Bass	 (6)\
+ 8 WeirdSynth	 (7)\
+ 9 Wendy C   	 (8)\
+10 Wha Brass1	 (9)\
+11 WHALES?   	 (10)\
+12 WHALES? 2 	 (11)\
+13 WhereItsAt	 (12)\
+14 Whistle..1	 (13)\
+15 Whistle..2	 (14)\
+16 Whistle..3	 (15)\
+17 Whistling 	 (16)\
+18 Whistling 	 (17)\
+19 Whistlix  	 (18)\
+20 White Blow	 (19)\
+21 Whos Upset	 (20)\
+22 WhstlOrgan	 (21)\
+23 Wild War!!	 (22)\
+24 WILLOW    	 (23)\
+25 Willowisp\\	 (24)\
+26 Wind Voice	 (25)\
+27 Windbells 	 (26)\
+28 WINDCHIME 	 (27)\
+29 WindChime1	 (28)\
+30 WindChime2	 (29)\
+31 WindeBells	 (30)\
+32 WindEns..1	 (31)\
+\
+\
+Filename: 080\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 WindEns..2	 (0)\
+ 2 Winds     	 (1)\
+ 3 WindString	 (2)\
+ 4 Wine Glass	 (3)\
+ 5 WINTERGLAS	 (4)\
+ 6 Wisdom    	 (5)\
+ 7 WNDRBASS-2	 (6)\
+ 8 WNDRBASSVS	 (7)\
+ 9 WO  PO  O 	 (8)\
+10 WO  PX    	 (9)\
+11 Wonderland	 (10)\
+12 Wood Bass 	 (11)\
+13 WOOD BASS 	 (12)\
+14 Wood Block	 (13)\
+15 Wood Drum 	 (14)\
+16 WOOD PAD  	 (15)\
+17 Wood Perc 	 (16)\
+18 Wood Piano	 (17)\
+19 Wood Wind 	 (18)\
+20 Wood*Marim	 (19)\
+21 WoodBlock1	 (20)\
+22 WoodBlock2	 (21)\
+23 WoodBlock3	 (22)\
+24 WoodGuitr?	 (23)\
+25 WOODWIND  	 (24)\
+26 Woozy     	 (25)\
+27 WotGorilla	 (26)\
+28 WOW FOW   	 (27)\
+29 WT11  A17 	 (28)\
+30 WT11  A18 	 (29)\
+31 WURLITZER1	 (30)\
+32 WURLITZER2	 (31)\
+\
+\
+Filename: 081\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 WW2 Synth 	 (0)\
+ 2 WW3 Synth 	 (1)\
+ 3 xenomorph 	 (2)\
+ 4 Xenophobia	 (3)\
+ 5 XQ,13-VS-3	 (4)\
+ 6 XQ-77     	 (5)\
+ 7 XQtar     	 (6)\
+ 8 XTRACT    	 (7)\
+ 9 XYLIMBA   	 (8)\
+10 Xylophone 	 (9)\
+11 Xylophone 	 (10)\
+12 Xylophone1	 (11)\
+13 Xylophone1	 (12)\
+14 Xylophone2	 (13)\
+15 Xylophone2	 (14)\
+16 Xylophone3	 (15)\
+17 Xylophone4	 (16)\
+18 Xylophone5	 (17)\
+19 Xylophone6	 (18)\
+20 Xylophone7	 (19)\
+21 Xylophone8	 (20)\
+22 Xylosnare 	 (21)\
+23 XyloSpring	 (22)\
+24 XYLOTONE  	 (23)\
+25 YANHAMMERY	 (24)\
+26 YAZ       	 (25)\
+27 YOWW !!   	 (26)\
+28 YS 11     	 (27)\
+29 YS 11     	 (28)\
+30 Z 19      	 (29)\
+31 Z 20      	 (30)\
+32 Z-PLANE   	 (31)\
+\
+\
+Filename: 082\
+Make: Yamaha TX81Z\
+Data: Voice Bank\
+Notes: \
+Tags: \
+\
+ 1 Zen       	 (0)\
+ 2 Zeta Minor	 (1)\
+ 3 Zillionth 	 (2)\
+ 4 Zillionth2	 (3)\
+ 5 Zing Plop 	 (4)\
+ 6 Zitar     	 (5)\
+ 7 Zither    	 (6)\
+ 8 Zither    	 (7)\
+ 9 zzzzZEPHYR	 (8)\
+10 [[[[XX]]]]	 (9)\
+11 \\ Kitaro.1	 (10)\
+12 \\ Kitaro.2	 (11)\
+13 \\ Okinawa 	 (12)\
+14 \\ Osaka \\ 	 (13)\
+15 \{  9999  \}	 (14)\
+16 \{-VACUUM-\}	 (15)\
+17 \{risisira\}	 (16)\
+18           	 (17)\
+19           	 (18)\
+20           	 (19)\
+21           	 (20)\
+22           	 (21)\
+23           	 (22)\
+24           	 (23)\
+25           	 (24)\
+26           	 (25)\
+27           	 (26)\
+28           	 (27)\
+29           	 (28)\
+30           	 (29)\
+31           	 (30)\
+32           	 (31)\
+\
+}

@@ -1,0 +1,164 @@
+declare name "Agostino Di Scipio - AUDIBLE ECOSYSTEMICS n.2 Library";
+import("seam.lib");
+//-------------------------------------------------------------------- DELAY ---
+delMax = 2^16;
+//Sepcific delay line with a maximum delay of 1 second
+delayfb(del,fb) = (+ : de.delay(ma.SR,ba.sec2samp(d)))~*(fb)
+with{
+  d = min(0, del);
+  dmax = d : ba.sec2samp : ma.np2;
+};
+//------------------------------------------------------------------ MAPPERS ---
+mapsum(x,s,m) = s+(x*(m));
+mapsub(x,s,m) = s-(x*(m));
+mapmul(x,s,m) = m*(x+s);
+mapcond(x) = select2(x>0.5,1, (1-x)*2);
+//--------------------------------------------------------------- INTEGRATOR ---
+// returns the average absolute value over a specific time frame
+// (one may use RMS measures, instead, or other amplitude-following methods);
+// output range is [0, 1]
+integrator(s) = an.amp_follower(s);
+//----------------------------------------------------------------- LOCALMAX ---
+// returns the maximum signal amplitude (absolute value) in a given time frame;
+// frame duration is dynamically adjusted: the next frame duration is set at the
+// end of the previous frame
+localmax(frame) = ba.peakholder(frame);
+//--------------------------------------------------------------- SAMPLEREAD ---
+sampleread(var1,ratio, memchunk, sig) =
+// delay frazionario                * crossfade
+  de.fdelay(delMax,d,sig)         *    ma.fmin(d/xfade,1) +
+  de.fdelay(delMax,d+bufsize,sig) * (1-ma.fmin(d/xfade,1))
+with {
+    bufsize = int(min(delMax, var1) * (memchunk) : si.smoo);
+    xfade = 128;
+	d = (1 - ratio : si.smoo) : (+ : +(bufsize) : fmod(_,bufsize)) ~ _;
+};
+//-------------------------------------------------------- GRANULAR SAMPLING ---
+// read sample sequences off subsequent buffer memory chunks, and envelopes the
+// signal chunk with a pseudo-Gaussian envelope curve; the particular
+// implementation should allow for time-stretching (slower memory pointer
+// increments at grain level), as well as for "grain density" controls and
+// slight random deviations ("jitter") on grain parameters; no frequency shift
+// necessary
+
+/*
+Granular Sampling -
+version with - Overlap Add To One - Granulator
+for:
+Agostino Di Scipio - AUDIBLE ECOSYSTEMICS
+n.2a / Feedback Study (2003)
+n.2b / Feedback Study, sound installation (2004).
+*/
+
+/*
+- mem.pointer is the pointer to the next location in the memory
+    buffer; in the present notation, it varies between -1 (beginning
+    of buffer) and 1 (end of buffer)
+- mem.pointer : timeIndex1 - a signal between -1 and -0.5
+
+- mem.pointer.jitter is a random deviation of the current
+    mem.pointer value; any viable method can be used to
+    calculate the current actual value of mem.pointer
+- mem.pointer.jitter: (1 - memWriteDel1) / 100
+
+- memWriteDel1 = a signal between 0 and 1
+
+- grain.duration: 0.023 + ((1 - memWriteDel1) / 21) s
+
+- grain.dur.jitter is a random deviation of the current
+    grain.duration value: the current actual grain duration =
+    grain.duration + (rnd ⋅ grain.dur.jitter(0.1) ⋅ grain.duration)
+- with rnd = random value in the interval [-1, 1]
+- grain.dur.jitter: 0.1 - constant value
+
+- density: cntrlLev: a signal between 0 and 1 (1 max, 0 no grains)
+*/
+
+declare name "granular_sampling for AUDIBLE ECOSYSTEMICS n.2";
+declare version "xxx";
+declare author "Luca Spanedda";
+declare author "Dario Sanfilippo";
+declare description "Realised on composer's instructions of the year 2017
+                     edited in L’Aquila, Italy";
+
+primesnumbers(index) = ba.take(index , list)
+  with{
+    list = sma.primes;
+};
+
+primenoise(seed) = (+(primesnumbers(1000+seed))~*(1103515245))/(2147483647.0);
+
+
+grain(seed,var1,timeIndex,memWriteDel,cntrlLev, divDur, x) =
+  hann(readingSegment) * buffer(bufferSize, readPtr, x)
+    with{
+      // density
+      _grainRate = (cntrlLev*(100-1))+1;
+      // target grain duration in seconds
+      _grainDuration = 0.023 + ((1 - memWriteDel) / divDur);
+      // target grain position in the buffer
+      _grainPosition = ((timeIndex)+1)/2;
+      // make sure to have decorrelated noises
+      // grain.dur.jitter: 0.1 - constant value
+      durationJitter = primenoise(seed+1) * .1 + .1;
+      positionJitter = primenoise(seed+2) * (1-memWriteDel)/100;
+      // buffer size
+      bufferSize = var1*196000;
+      // hann window
+      hann(x) = sin(ma.PI * x) ^ 2.0;
+      // a phasor that read new params only when: y_1 < y_2
+      phasorLocking = loop ~ _
+        with {
+          loop(y_1) = ph , unlock
+            with{
+              y_2 = y_1';
+              ph = os.phasor(1, ba.sAndH(unlock, _grainRate));
+              unlock = (y_1 < y_2) + 1 - 1';
+            };
+        };
+      // two outputs of the phasor: phasor, trigger(y_1<y_2)
+      phasor = phasorLocking : _ , !;
+      unlocking = phasorLocking : ! , _;
+      // new param with lock function based on the phasor
+      lock(param) = ba.sAndH(unlocking, param);
+      // TO DO: wrap & receive param from AE2
+      grainPosition = lock(_grainPosition * positionJitter);
+      // TO DO: wrap & receive param from AE2
+      grainRate = lock(_grainRate);
+      // TO DO: wrap & receive param from AE2
+      grainDuration = lock(_grainDuration * durationJitter);
+      // maximum allowed grain duration in seconds
+      maxGrainDuration = 1.0 / grainRate;
+      // phase segment multiplication factor to complete a Hann cycle in the
+      // target duration
+      phasorSlopeFactor = maxGrainDuration / min(maxGrainDuration, grainDuration);
+      readingSegment = min(1.0, phasor * phasorSlopeFactor);
+      // read pointer
+      readPtr = grainPosition * bufferSize + readingSegment *
+                (ma.SR / (grainRate * phasorSlopeFactor));
+      buffer(length, readPtr, x) = it.frwtable(5, 1920000, .0, writePtr, x, readPtr)
+        with {
+          writePtr = ba.period(length);
+        };
+    };
+  // par (how much grains/instances do you want?)
+  grainN(voices,var1,timeIndex,memWriteDel,cntrlLev, divDur,x) =
+    par(i, voices,
+           grain(i,var1,timeIndex,memWriteDel,cntrlLev, divDur,x/voices));
+
+// timeIndex1 - a signal between -1 and -0.5
+GtimeIndex = hslider("timeIndex1", -1, -1, -0.5, .001);
+// memWriteDel1 - a signal between 0 and 1
+GmemWriteDel = hslider("memWriteDel1", 0, 0, 1, .001);
+volume = hslider("volume", 0, 0, 10, .001);
+// cntrlLev: a signal between 0 and 1 (1 max, 0 no grains)
+GcntrlLev = hslider("cntrlLev", .5, 0, 1, .001);
+// var1 distance (in meters) between the two farthest removed loudspeakers
+
+GnVoices = 8;
+GdivDur = 21;
+granular_sampling(nVoices, var1, timeIndex, memWriteDel, cntrlLev, divDur, x) =
+  grainN(nVoices, var1, timeIndex, memWriteDel, cntrlLev, divDur,x)
+  :> _;
+
+//process = os.osc(600): granular_sampling(GnVoices, GtimeIndex,GmemWriteDel, GcntrlLev, GdivDur);

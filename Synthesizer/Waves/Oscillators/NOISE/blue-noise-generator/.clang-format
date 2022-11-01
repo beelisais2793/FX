@@ -1,0 +1,10 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+BreakBeforeBraces: Allman
+TabWidth: 4
+PointerAlignment: Left
+SpaceBeforeParens: Never
+IndentWidth: 4
+UseTab: ForIndentation
+...

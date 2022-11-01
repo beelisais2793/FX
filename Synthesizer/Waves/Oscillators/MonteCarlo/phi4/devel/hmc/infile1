@@ -1,0 +1,7 @@
+kappa       0.25
+lambda      1.145
+ntherm      600
+ntraj       1000000
+traj_length 1
+nstep       30
+seed        513

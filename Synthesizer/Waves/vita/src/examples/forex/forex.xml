@@ -1,0 +1,28 @@
+<mtgp>
+  <files>
+	<driver>driver.py</driver>
+	<ea>gpea.mq5</ea>
+	<ini>gpea.ini</ini>
+	<results>results.txt</results>
+	<template>template.mq5</template>
+	<workingdir>./</workingdir>
+  </files>
+
+  <metatrader>
+	<data_dir>C:/Users/manlio/AppData/Roaming/MetaQuotes/Terminal/D0E8209F77C8CF37AD8BF550E51FF075/</data_dir>
+	<metaeditor>C:/Program Files/MetaTrader 5/metaeditor64.exe</metaeditor>
+	<terminal>C:/Program Files/MetaTrader 5/terminal64.exe</terminal>
+	<timeout>120</timeout>
+  </metatrader>
+
+  <tester>
+	<symbol>EURUSD</symbol>
+	<period>M15</period>
+	<deposit>10000</deposit>
+	<model>1</model>  <!-- see https://www.mql5.com/en/articles/2612 -->
+	<execution_mode>65</execution_mode>
+	<from_date>2018-01-01</from_date>
+	<to_date>2019-01-01</to_date>
+	<forward_date></forward_date>
+  </tester>
+</mtgp>
