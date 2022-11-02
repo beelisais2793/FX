@@ -43,3 +43,18 @@
 [submodule "Matlab/Introduction-to-Audio-Analysis---a-MATLAB-approach"]
 	path = Matlab/Introduction-to-Audio-Analysis---a-MATLAB-approach
 	url = https://github.com/pikrakis/Introduction-to-Audio-Analysis---a-MATLAB-approach
+[submodule "FX/FX/ChowPhaser"]
+	path = FX/FX/ChowPhaser
+	url = https://github.com/jatinchowdhury18/ChowPhaser
+[submodule "FX/Camomile"]
+	path = FX/Camomile
+	url = https://github.com/pierreguillot/Camomile
+[submodule "FX/cabbage"]
+	path = FX/cabbage
+	url = https://github.com/rorywalsh/cabbage
+[submodule "FX/ATK-plugins"]
+	path = FX/ATK-plugins
+	url = https://github.com/mbrucher/ATK-plugins
+[submodule "FX/DtBlkFx"]
+	path = FX/DtBlkFx
+	url = https://github.com/dozius/DtBlkFx
