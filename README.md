@@ -5,3 +5,6 @@ Audio FX for the Machine Learning Experiments
 * Audio Effects
 * FXObjects
 * Hack Audio 
+* LV2 Plugins
+* FaustFX
+
