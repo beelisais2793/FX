@@ -9,3 +9,5 @@ Audio FX for the Machine Learning Experiments
 * LV2 Plugins
 * FaustFX
 
+# It is not ready for anything
+* It will be connected soon
