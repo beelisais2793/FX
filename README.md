@@ -25,6 +25,20 @@ Octave for the Machine Learning Experiments
 # Audio/MIDI
 * Can work in Octave 
 
+# Essential
+* Analyzers
+* Synthesizers
+* Vocoders
+* Voders
+* Filters
+* Oscillators
+* Waveshapers
+* Envelopes
+* Noise
+* Modulation
+* Resonators
+* Waveguides
+
 # Cranium/Octave
 * Works in Octave/C++
 * Can use any octave scripts
