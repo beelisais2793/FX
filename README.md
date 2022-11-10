@@ -1,6 +1,12 @@
 # FX
 Octave for the Machine Learning Experiments
 
+# FX
+* DAFX
+* Audio Effects
+* FXObjects
+* Hack Audio
+
 # Octave
 * interpreter
 * eval
