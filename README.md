@@ -32,9 +32,5 @@ Octave for the Machine Learning Experiments
 * Can swig it to work in Octave
 * Can use it with LuaJIT/Octave
 
-# GPU
-* Can send matrix to GPU
-* Can get matrix back from GPU
-* Can not do GPU in Octave
 
 
