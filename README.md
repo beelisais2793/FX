@@ -6,6 +6,9 @@ Octave for the Machine Learning Experiments
 * eval
 * eigen matrix
 
+# Swig
+* some experiment to use Octave from swig
+
 # Eigen
 * used for passing matrix from/to octave
 
