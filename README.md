@@ -25,11 +25,13 @@ Octave for the Machine Learning Experiments
 * Haste
 * CudnnRNN
 * PyTorch/C++
+* Could run Python script too, doesn't
 
 # CNN
 * Works in Octave with Swig
 * Teaism
 * PyToch/C++
+* Could run Python script too, doesn't
 
 # AudioDSP
 * Can swig it to work in Octave
