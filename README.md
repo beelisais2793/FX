@@ -6,6 +6,9 @@ Octave for the Machine Learning Experiments
 * eval
 * eigen matrix
 
+# Eigen
+* used for passing matrix from/to octave
+
 # LuaJIT
 * Call from luajit
 * Embed luajit
